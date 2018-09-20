@@ -6,6 +6,7 @@ import './components/Popups';
 import './components/Form';
 import './sections/Contact';
 import './components/Sliders';
+import './components/CTabs';
 
 export class Common {
   constructor() {

@@ -1,11 +1,20 @@
 $icons: (0:0)
-$icons: map-merge($icons,('H': (X: -62px, Y:0px, W: 36px, H: 42px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('P': (X: 0px, Y:-65px, W: 43px, H: 56px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('certificate': (X: -108px, Y:-88px, W: 34px, H: 30px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('discount': (X: -62px, Y:-52px, W: 34px, H: 34px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('like': (X: -108px, Y:0px, W: 34px, H: 34px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('wrench': (X: -108px, Y:-44px, W: 34px, H: 34px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('А': (X: 0px, Y:0px, W: 52px, H: 55px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('N': (X: -358px, Y:-247px, W: 36px, H: 42px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('P': (X: -349px, Y:-312px, W: 35px, H: 42px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('R': (X: -296px, Y:-312px, W: 43px, H: 56px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('Z': (X: -296px, Y:-378px, W: 32px, H: 44px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('allert-message': (X: -404px, Y:-247px, W: 16px, H: 17px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('car-1': (X: -151px, Y:0px, W: 135px, H: 237px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('car-2': (X: 0px, Y:0px, W: 141px, H: 236px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('car-3': (X: 0px, Y:-246px, W: 138px, H: 237px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('car-4': (X: -296px, Y:0px, W: 133px, H: 237px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('car-5': (X: -151px, Y:-247px, W: 134px, H: 234px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('certificate': (X: -296px, Y:-432px, W: 34px, H: 30px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('discount': (X: -394px, Y:-312px, W: 34px, H: 34px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('lamp': (X: -404px, Y:-274px, W: 12px, H: 15px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('like': (X: -338px, Y:-378px, W: 34px, H: 34px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('wrench': (X: -382px, Y:-378px, W: 34px, H: 34px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('А': (X: -296px, Y:-247px, W: 52px, H: 55px, TW: 429px, TH: 483px, IMG: '../img/sprite.png')))
 
 
 // Gets an attribute from the sass map
@@ -41,45 +50,99 @@ $icons: map-merge($icons,('А': (X: 0px, Y:0px, W: 52px, H: 55px, TW: 142px, TH:
 @mixin sr($i)
   +sprite-retina($i)  
 
-
-.icon-H
+//
+.icon-N
   width: 36px
   height: 42px
   background-image: url('../img/sprite.png')
-  background-position: -62px 0px
+  background-position: -358px -247px
 
 .icon-P
+  width: 35px
+  height: 42px
+  background-image: url('../img/sprite.png')
+  background-position: -349px -312px
+
+.icon-R
   width: 43px
   height: 56px
   background-image: url('../img/sprite.png')
-  background-position: 0px -65px
+  background-position: -296px -312px
+
+.icon-Z
+  width: 32px
+  height: 44px
+  background-image: url('../img/sprite.png')
+  background-position: -296px -378px
+
+.icon-allert-message
+  width: 16px
+  height: 17px
+  background-image: url('../img/sprite.png')
+  background-position: -404px -247px
+
+.icon-car-1
+  width: 135px
+  height: 237px
+  background-image: url('../img/sprite.png')
+  background-position: -151px 0px
+
+.icon-car-2
+  width: 141px
+  height: 236px
+  background-image: url('../img/sprite.png')
+  background-position: 0px 0px
+
+.icon-car-3
+  width: 138px
+  height: 237px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -246px
+
+.icon-car-4
+  width: 133px
+  height: 237px
+  background-image: url('../img/sprite.png')
+  background-position: -296px 0px
+
+.icon-car-5
+  width: 134px
+  height: 234px
+  background-image: url('../img/sprite.png')
+  background-position: -151px -247px
 
 .icon-certificate
   width: 34px
   height: 30px
   background-image: url('../img/sprite.png')
-  background-position: -108px -88px
+  background-position: -296px -432px
 
 .icon-discount
   width: 34px
   height: 34px
   background-image: url('../img/sprite.png')
-  background-position: -62px -52px
+  background-position: -394px -312px
+
+.icon-lamp
+  width: 12px
+  height: 15px
+  background-image: url('../img/sprite.png')
+  background-position: -404px -274px
 
 .icon-like
   width: 34px
   height: 34px
   background-image: url('../img/sprite.png')
-  background-position: -108px 0px
+  background-position: -338px -378px
 
 .icon-wrench
   width: 34px
   height: 34px
   background-image: url('../img/sprite.png')
-  background-position: -108px -44px
+  background-position: -382px -378px
 
 .icon-А
   width: 52px
   height: 55px
   background-image: url('../img/sprite.png')
-  background-position: 0px 0px
+  background-position: -296px -247px

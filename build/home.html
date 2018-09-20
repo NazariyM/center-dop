@@ -1,4 +1,3 @@
-<!--mixin arcDecor(classMod)-->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -80,7 +79,7 @@
       <!--begin screen-->
       <section class="screen section">
         <div class="screen__slider-controls-wrap container">
-          <div class="screen__slider-controls slider-controls"></div>
+          <div class="screen__slider-controls slider-controls slider-controls_gray"></div>
         </div>
         <div class="screen__slider slider js-screen-slider">
           <div class="screen__slider-item">
@@ -89,7 +88,7 @@
                 <div class="screen__content">
                   <div class="section-title section-title_left section-title_white screen__content-title">
                     <div class="section-title__inner">
-                      <i class="section-title__icon icon-P"></i>
+                      <i class="section-title__icon icon-R"></i>
                       <h2 class="section-title__text">РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?
                         <span>— ДА!</span>
                       </h2>
@@ -151,6 +150,13 @@
           </svg>
           <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
             <defs>
+              <filter id="noise">
+                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
+                  <fecolormatrix type="saturate" values="0">
+                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
+                  </fecolormatrix>
+                </feturbulence>
+              </filter>
               <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
             </defs>
             <g clip-path="url(#clip-662)" transform="translate(0 -630)">
@@ -158,6 +164,11 @@
             </g>
           </svg>
         </div>
+        <button class="scroll-next-btn">
+          <svg class="icon-angle-down ">
+            <use xlink:href="img/sprite.svg#icon-angle-down"></use>
+          </svg>
+        </button>
       </section>
       <!--end screen-->
       <!--begin benefits-->
@@ -165,7 +176,7 @@
         <div class="benefits__container container">
           <div class="section-title section-title_center section-title_black benefits__title">
             <div class="section-title__inner">
-              <i class="section-title__icon icon-H"></i>
+              <i class="section-title__icon icon-N"></i>
               <h2 class="section-title__text">Наши
                 <span>Преимущества</span>
               </h2>
@@ -249,8 +260,432 @@
             </div>
           </div>
         </div>
+        <div class="arc-decor arc-decor_color-1">
+          <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
+            <defs>
+              <path id="arc-decor-1" d="M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z"></path>
+            </defs>
+            <g>
+              <g clip-path="url(#clip-665)" transform="translate(0 -601)">
+                <use xlink:href="#arc-decor-1"></use>
+              </g>
+            </g>
+          </svg>
+          <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
+            <defs>
+              <filter id="noise">
+                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
+                  <fecolormatrix type="saturate" values="0">
+                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
+                  </fecolormatrix>
+                </feturbulence>
+              </filter>
+              <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
+            </defs>
+            <g clip-path="url(#clip-662)" transform="translate(0 -630)">
+              <use xlink:href="#arc-decor-2"></use>
+            </g>
+          </svg>
+        </div>
       </section>
       <!--end benefits-->
+      <!--begin faq-->
+      <section class="faq section noise-bg noise-bg_type-1">
+        <div class="faq__container container">
+          <div class="section-title section-title_left section-title_white faq__title">
+            <div class="section-title__inner">
+              <i class="section-title__icon icon-Z"></i>
+              <h2 class="section-title__text">Захотят —
+                <span>угонят?</span>
+              </h2>
+            </div>
+            <p class="section-title__descr section-title__descr_color-2">Распостроненные мнения автолюбителей об угоне</p>
+          </div>
+          <div class="faq__row row">
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h5 class="faq__item-title title title_white">Автомобиль не нуждается в средствах защиты от сторонних производителей</h5>
+                <p>Оригинальные системы безопасности в свободном доступе, изучены и имеют массу изъянов для взлома.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h5 class="faq__item-title title title_white">Страховые продукты - Каско, как решение всех проблем</h5>
+                <p>Действительно. Для любителей халявной движимости это взаимовыгодное сотрудничество. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h5 class="faq__item-title title title_white">Мой автомобиль неугоняем по статистике. Он просто никому не нужен.</h5>
+                <p>Но Вы же купили именно его? Как минимум, запчасти нужны всем и подешевле.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h5 class="faq__item-title title title_white">Авто куплен с установленной в салоне автосигнализацей</h5>
+                <p>Заплатили крупную сумму. Давайте разберемся. Задача автосалона - прибыль или чьё-то спокойствие?</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h5 class="faq__item-title title title_white">У меня качественная система безопасности известного бренда</h5>
+                <p>Правда в том, что в 80% установок нет смысла и мотивации испонителя на результат. Дело не в бренде.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h5 class="faq__item-title title title_white">Лучше механической защиты ничего нет. Все просто и надежно.</h5>
+                <p>Серьёзно? Откройте Youtube и воспользуйтесь поиском. Устраняется без особых усилий.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end faq-->
+      <!--begin solutions-->
+      <section class="solutions section">
+        <div class="solutions__container container">
+          <div class="section-title section-title_center section-title_black solutions__title">
+            <div class="section-title__inner">
+              <i class="section-title__icon icon-P"></i>
+              <h2 class="section-title__text">Проблемы
+                <span>и решения</span>
+              </h2>
+            </div>
+            <p class="section-title__descr">Кратко о действующих способах защиты автомобиля</p>
+          </div>
+          <div class="solutions__slider slider js-solutions-slider">
+            <div class="solutions__slider-item">
+              <div class="solutions__block solutions__block_l">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-allert-message"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Проблема</h4>
+                  </div>
+                  <p>
+                    <strong>Бесключевой доступ.</strong> Радиосигнал смарт-ключа возможно передать на большие расстояния, посредством GSM операторов. Штатная система откроет двери автомобиля любому, с несложным тех. оборудованием.</p>
+                </div>
+              </div>
+              <div class="solutions__image">
+                <div class="solutions__image-icon icon-car-1"></div>
+              </div>
+              <div class="solutions__block solutions__block_r">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-lamp"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Решение</h4>
+                  </div>
+                  <p>
+                    <strong>Блокировка радиоканала.</strong> Smart Key работает только при наличии сторонней метки или авторизированного смартфона. Общение с модулем системы происходит диалоговым кодом.</p>
+                  <p>Взлом исключен.</p>
+                </div>
+              </div>
+            </div>
+            <div class="solutions__slider-item">
+              <div class="solutions__block solutions__block_l">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-allert-message"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Проблема</h4>
+                  </div>
+                  <p>
+                    <strong>Бесключевой доступ.</strong> Радиосигнал смарт-ключа возможно передать на большие расстояния, посредством GSM операторов. Штатная система откроет двери автомобиля любому, с несложным тех. оборудованием.</p>
+                </div>
+              </div>
+              <div class="solutions__image">
+                <div class="solutions__image-icon icon-car-2"></div>
+              </div>
+              <div class="solutions__block solutions__block_r">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-lamp"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Решение</h4>
+                  </div>
+                  <p>
+                    <strong>Блокировка радиоканала.</strong> Smart Key работает только при наличии сторонней метки или авторизированного смартфона. Общение с модулем системы происходит диалоговым кодом.</p>
+                  <p>Взлом исключен.</p>
+                </div>
+              </div>
+            </div>
+            <div class="solutions__slider-item">
+              <div class="solutions__block solutions__block_l">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-allert-message"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Проблема</h4>
+                  </div>
+                  <p>
+                    <strong>Бесключевой доступ.</strong> Радиосигнал смарт-ключа возможно передать на большие расстояния, посредством GSM операторов. Штатная система откроет двери автомобиля любому, с несложным тех. оборудованием.</p>
+                </div>
+              </div>
+              <div class="solutions__image">
+                <div class="solutions__image-icon icon-car-3"></div>
+              </div>
+              <div class="solutions__block solutions__block_r">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-lamp"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Решение</h4>
+                  </div>
+                  <p>
+                    <strong>Блокировка радиоканала.</strong> Smart Key работает только при наличии сторонней метки или авторизированного смартфона. Общение с модулем системы происходит диалоговым кодом.</p>
+                  <p>Взлом исключен.</p>
+                </div>
+              </div>
+            </div>
+            <div class="solutions__slider-item">
+              <div class="solutions__block solutions__block_l">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-allert-message"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Проблема</h4>
+                  </div>
+                  <p>
+                    <strong>Бесключевой доступ.</strong> Радиосигнал смарт-ключа возможно передать на большие расстояния, посредством GSM операторов. Штатная система откроет двери автомобиля любому, с несложным тех. оборудованием.</p>
+                </div>
+              </div>
+              <div class="solutions__image">
+                <div class="solutions__image-icon icon-car-4"></div>
+              </div>
+              <div class="solutions__block solutions__block_r">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-lamp"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Решение</h4>
+                  </div>
+                  <p>
+                    <strong>Блокировка радиоканала.</strong> Smart Key работает только при наличии сторонней метки или авторизированного смартфона. Общение с модулем системы происходит диалоговым кодом.</p>
+                  <p>Взлом исключен.</p>
+                </div>
+              </div>
+            </div>
+            <div class="solutions__slider-item">
+              <div class="solutions__block solutions__block_l">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-allert-message"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Проблема</h4>
+                  </div>
+                  <p>
+                    <strong>Бесключевой доступ.</strong> Радиосигнал смарт-ключа возможно передать на большие расстояния, посредством GSM операторов. Штатная система откроет двери автомобиля любому, с несложным тех. оборудованием.</p>
+                </div>
+              </div>
+              <div class="solutions__image">
+                <div class="solutions__image-icon icon-car-5"></div>
+              </div>
+              <div class="solutions__block solutions__block_r">
+                <div class="solutions__block-inner">
+                  <div class="solutions__block-top">
+                    <div class="solutions__block-icon">
+                      <div class="icon-lamp"></div>
+                    </div>
+                    <h4 class="solutions__block-title title title_black">Решение</h4>
+                  </div>
+                  <p>
+                    <strong>Блокировка радиоканала.</strong> Smart Key работает только при наличии сторонней метки или авторизированного смартфона. Общение с модулем системы происходит диалоговым кодом.</p>
+                  <p>Взлом исключен.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__slider-controls slider-controls slider-controls_black"></div>
+        </div>
+        <div class="arc-decor arc-decor_color-2">
+          <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
+            <defs>
+              <path id="arc-decor-1" d="M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z"></path>
+            </defs>
+            <g>
+              <g clip-path="url(#clip-665)" transform="translate(0 -601)">
+                <use xlink:href="#arc-decor-1"></use>
+              </g>
+            </g>
+          </svg>
+          <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
+            <defs>
+              <filter id="noise">
+                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
+                  <fecolormatrix type="saturate" values="0">
+                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
+                  </fecolormatrix>
+                </feturbulence>
+              </filter>
+              <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
+            </defs>
+            <g clip-path="url(#clip-662)" transform="translate(0 -630)">
+              <use xlink:href="#arc-decor-2"></use>
+            </g>
+          </svg>
+        </div>
+      </section>
+      <!--end solutions-->
+      <!--begin complex-->
+      <section class="complex">
+        <div class="complex__container container">
+          <div class="section-title section-title_center section-title_black complex__title">
+            <div class="section-title__inner">
+              <i class="section-title__icon icon-P"></i>
+              <h2 class="section-title__text">Противоугонные
+                <span>комплексы</span>
+              </h2>
+            </div>
+            <p class="section-title__descr">Сформированные на каждый бюджет</p>
+          </div>
+          <div class="c-tabs">
+            <div class="c-tabs__nav">
+              <button class="c-tabs__btn is-active">
+                <span>Базовый</span>
+                <svg class="icon-angle-right c-tabs__btn-icon">
+                  <use xlink:href="img/sprite.svg#icon-angle-right"></use>
+                </svg>
+              </button>
+              <button class="c-tabs__btn">
+                <span>Базовый +</span>
+                <svg class="icon-angle-right c-tabs__btn-icon">
+                  <use xlink:href="img/sprite.svg#icon-angle-right"></use>
+                </svg>
+              </button>
+              <button class="c-tabs__btn">
+                <span>Максимум</span>
+                <svg class="icon-angle-right c-tabs__btn-icon">
+                  <use xlink:href="img/sprite.svg#icon-angle-right"></use>
+                </svg>
+              </button>
+              <button class="c-tabs__btn">
+                <span>Оптима</span>
+                <svg class="icon-angle-right c-tabs__btn-icon">
+                  <use xlink:href="img/sprite.svg#icon-angle-right"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="c-tabs__for">
+              <div class="c-tabs__tab">
+                <div class="complex__item">
+                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <ul class="complex__item-list">
+                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Охранно-телематический комплекс</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>Подкапотный Bluetooth-модуль</li>
+                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Функция "свободные руки"</li>
+                    <li>Slave управление штатным ключом</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-tabs__tab">
+                <div class="complex__item">
+                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <ul class="complex__item-list">
+                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Охранно-телематический комплекс</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>Подкапотный Bluetooth-модуль</li>
+                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Функция "свободные руки"</li>
+                    <li>Slave управление штатным ключом</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-tabs__tab">
+                <div class="complex__item">
+                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <ul class="complex__item-list">
+                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Охранно-телематический комплекс</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>Подкапотный Bluetooth-модуль</li>
+                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Функция "свободные руки"</li>
+                    <li>Slave управление штатным ключом</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-tabs__tab">
+                <div class="complex__item">
+                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <ul class="complex__item-list">
+                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Охранно-телематический комплекс</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>Подкапотный Bluetooth-модуль</li>
+                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Функция "свободные руки"</li>
+                    <li>Slave управление штатным ключом</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>Управление и контроль по GSM/Bluetooth</li>
+                    <li>Координаты по базовым станциям GSM</li>
+                    <li>CAN Блокировка двигателя (уточнять)</li>
+                    <li>Автозакрытие стекол (уточнять)</li>
+                    <li>Управление догревателем (уточнять)</li>
+                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end complex-->
     </div>
     <!--end main-->
     <!--begin footer-->

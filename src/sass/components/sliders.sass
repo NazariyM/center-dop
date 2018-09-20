@@ -9,6 +9,18 @@
    width: 150px
    height: 20px
    z-index: 1
+   &_gray .slider-btn
+      svg
+         fill: #808080
+   &_black .slider-btn
+      svg
+         fill: $color2
+   &__count
+      color: $color2
+      +f('ub700', 18, 18)
+      opacity: .1
+      &.is-disabled
+         opacity: 0
    
 .slider-dots
    $parent: &
@@ -16,19 +28,27 @@
    justify-content: center
    padding: 0 20px
    line-height: 0
+   &_gray
+      button
+         background-color: #808080
+   &_black
+      button
+         background-color: $color2
    li
       &:not(:last-child)
          margin-right: 24px
       &.slick-active
          button
+            pointer-events: none
             background-color: $color1
       button
          width: 6px
          height: 6px
-         background-color: #808080
          border-radius: 50%
          +hide-text
          transition: .3s ease-in-out
+         &:hover
+            opacity: .5
          
 .slider-btn
    position: absolute
@@ -36,13 +56,9 @@
    transition: .3s ease-in-out
    &:hover
       opacity: .5
-   //&.slick-disabled
-      pointer-events: none
-      opacity: .2
    &_prev
       left: 0
    &_next
       right: 0
    svg
-      fill: #808080
       font-size: 22px

@@ -13,6 +13,8 @@ body
       overflow: hidden
 
 .container
+   position: relative
+   z-index: 1
    max-width: 1170px
    margin: 0 auto
    padding: 0 15px
@@ -27,6 +29,7 @@ body
    
 .section
    position: relative
+   
 .section-title
    $parent: &
    position: relative
@@ -84,6 +87,9 @@ body
       color: $color2
    &_white
       color: $white
+      
+strong
+   +f('ub500')
 
 .btn
    position: relative
@@ -135,6 +141,33 @@ body
       &_top
          #{$parent}_color-1 &
             fill: $color8
+         #{$parent}_color-2 &
+            fill: $color8
+            opacity: .1
       &_bot
-         #{$parent}_color-1 &
+         #{$parent}_color-1 &,
+         #{$parent}_color-2 &
              fill: $white
+
+.noise-bg
+   $parent: &
+   position: relative
+   background: #17171a url(../img/decor/noise_black.png)
+   &::before, &::after
+      position: absolute
+      z-index: 1
+      +cover
+      content: ''
+   &_type-1
+      &::before
+         top: 30%
+         left: 0
+         width: 808px
+         height: 803px
+         background: url("../img/decor/tire-tracks_l.png")
+      &::after
+         top: 20%
+         right: 0
+         width: 491px
+         height: 633px
+         background: url("../img/decor/tire-tracks_r.png")

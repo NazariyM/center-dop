@@ -11,7 +11,7 @@ block content
 		//begin screen
 		+b.SECTION.screen.section
 			+e.slider-controls-wrap.container
-				+e.slider-controls.slider-controls
+				+e.slider-controls.slider-controls._gray
 			+e.slider.slider.js-screen-slider
 				+e.slider-item
 					+e.bg(style='background-image: url(img/bg/screen-sld_1.jpg)')
@@ -19,7 +19,7 @@ block content
 							+e.content
 								+b.section-title._left._white.screen__content-title
 									+e.inner
-										+e.I.icon.icon-P
+										+e.I.icon.icon-R
 										+e.H2.text
 											| РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?
 											span —  ДА!
@@ -60,19 +60,8 @@ block content
 										classMod: '_red'
 									})
 
-			+b.arc-decor._color-1
-				+e.SVG.mask._top(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1920', height='149', viewBox='0 0 1920 149')
-					defs
-						path#arc-decor-1(d='M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z')
-					g
-						g(clip-path='url(#clip-665)', transform='translate(0 -601)')
-							use(xlink:href='#arc-decor-1')
-
-				+e.SVG.mask._bot(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1920', height='120', viewBox='0 0 1920 120')
-					defs
-						path#arc-decor-2(d='M0 630s478 120 957 120c481 0 963-120 963-120v147H0z')
-					g(clip-path='url(#clip-662)', transform='translate(0 -630)')
-						use(xlink:href='#arc-decor-2')
+			+arcDecor('1')
+			+b.BUTTON.scroll-next-btn: +i('angle-down')
 
 		//end screen
 
@@ -81,7 +70,7 @@ block content
 			+e.container.container
 				+b.section-title._center._black.benefits__title
 					+e.inner
-						+e.I.icon.icon-H
+						+e.I.icon.icon-N
 						+e.H2.text
 							| Наши
 							span Преимущества
@@ -132,6 +121,144 @@ block content
 							li: span По рекомендации
 							li: span Повторное обращение
 							li: span Индивидуальные ситуации
+
+			+arcDecor('1')
 		//end benefits
+			
+		//begin faq
+		+b.SECTION.faq.section.noise-bg._type-1
+			+e.container.container
+				+b.section-title._left._white.faq__title
+					+e.inner
+						+e.I.icon.icon-Z
+						+e.H2.text
+							| Захотят —
+							span угонят?
+					+e.P.descr._color-2 Распостроненные мнения автолюбителей об угоне
+
+				+e.row.row
+					-
+						faqQ = [
+						'Автомобиль не нуждается в средствах защиты от сторонних производителей',
+						'Страховые продукты - Каско, как решение всех проблем',
+						'Мой автомобиль неугоняем по статистике. Он просто никому не нужен.',
+						'Авто куплен с установленной в салоне автосигнализацей',
+						'У меня качественная система безопасности известного бренда',
+						'Лучше механической защиты ничего нет. Все просто и надежно.'
+						]
+					-
+						faqA = [
+						'Оригинальные системы безопасности в свободном доступе, изучены и имеют массу изъянов для взлома.',
+						'Действительно. Для любителей халявной движимости это взаимовыгодное сотрудничество. ',
+						'Но Вы же купили именно его? Как минимум, запчасти нужны всем и подешевле.',
+						'Заплатили крупную сумму. Давайте разберемся. Задача автосалона - прибыль или чьё-то спокойствие?',
+						'Правда в том, что в 80% установок нет смысла и мотивации испонителя на \n'+
+						'результат. Дело не в бренде.',
+						'Серьёзно? Откройте Youtube и воспользуйтесь поиском. Устраняется без особых усилий.'
+						]
+
+					mixin faqItem(index)
+						+e.item
+							+e.item-inner
+								+e.H5.item-title.title._white= faqQ[index]
+								+e.P= faqA[index]
+
+					each item, index in faqQ
+						+faqItem(index)
+		//end faq
+
+		//begin solutions
+		+b.SECTION.solutions.section
+			+e.container.container
+				+b.section-title._center._black.solutions__title
+					+e.inner
+						+e.I.icon.icon-P
+						+e.H2.text Проблемы
+							span и решения
+					+e.P.descr Кратко о действующих способах защиты автомобиля
+
+				+e.slider.slider.js-solutions-slider
+					-solutionItem = 0
+					while solutionItem < 5
+						+e.slider-item
+							+e.block._l
+								+e.block-inner
+									+e.block-top
+										+e.block-icon
+											.icon-allert-message
+										+e.H4.block-title.title._black Проблема
+									+e.P
+										strong Бесключевой доступ.
+										= ' '
+										| Радиосигнал смарт-ключа возможно передать на большие расстояния, посредством GSM операторов. Штатная система откроет двери автомобиля любому, с несложным тех. оборудованием.
+							+e.image
+								+e.image-icon(class=`icon-car-${solutionItem + 1}`)
+
+							+e.block._r
+								+e.block-inner
+									+e.block-top
+										+e.block-icon
+											.icon-lamp
+										+e.H4.block-title.title._black Решение
+									+e.P
+										strong Блокировка радиоканала.
+										= ' '
+										| Smart Key работает только при наличии сторонней метки или авторизированного смартфона. Общение с модулем системы происходит диалоговым кодом.
+									+e.P Взлом исключен.
+						-solutionItem++
+
+				+e.slider-controls.slider-controls._black
+
+			+arcDecor('2')
+		//end solutions
+			
+		//begin complex
+		+b.SECTION.complex
+			+e.container.container
+				+b.section-title._center._black.complex__title
+					+e.inner
+						+e.I.icon.icon-P
+						+e.H2.text Противоугонные
+							span комплексы
+					+e.P.descr Сформированные на каждый бюджет
+
+				.c-tabs
+					.c-tabs__nav
+						-
+							tabsList = ['Базовый', 'Базовый +', 'Максимум', 'Оптима']
+						-activeIndex = 0
+						for tabsText, index in tabsList
+							button.c-tabs__btn(class= index === activeIndex ? 'is-active' : '')
+								span= tabsText
+								+i('angle-right', 'c-tabs__btn-icon')
+
+					.c-tabs__for
+						-i = 0
+						while i < 4
+							.c-tabs__tab
+								+e.item
+									+e.H6.item-title Опции комплекса
+									+e.UL.item-list
+										li Электромеханические замки капота x 2 шт
+										li Охранно-телематический комплекс
+										li Координаты по базовым станциям GSM
+										li Подкапотный Bluetooth-модуль
+										li Bluetooth-метки x 2 шт или смартфон
+										li Функция "свободные руки"
+										li Slave управление штатным ключом
+										li Управление и контроль по GSM/Bluetooth
+										li Координаты по базовым станциям GSM
+										li CAN Блокировка двигателя (уточнять)
+										li Автозакрытие стекол (уточнять)
+										li Управление догревателем (уточнять)
+										li Авторизация по штатным кнопкам (уточнять)
+										li Управление и контроль по GSM/Bluetooth
+										li Координаты по базовым станциям GSM
+										li CAN Блокировка двигателя (уточнять)
+										li Автозакрытие стекол (уточнять)
+										li Управление догревателем (уточнять)
+										li Авторизация по штатным кнопкам (уточнять)
+							-i++
+		//end complex
 
 	//end main

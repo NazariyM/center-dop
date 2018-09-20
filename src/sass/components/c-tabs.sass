@@ -1,0 +1,47 @@
+.c-tabs
+   $parent: &
+   display: flex
+   align-items: flex-start
+   &__nav
+      flex: 0 0 276px
+      width: 276px
+      padding-top: 40px
+   &__for
+      position: relative
+      flex: 1
+   &__btn
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      padding: 30px 36px 30px 39px
+      cursor: pointer
+      line-height: 1
+      +f('ub500', 20, 20)
+      text-transform: uppercase
+      background: #17171a url(../img/decor/noise_black.png)
+      +trs
+      color: $white
+      &.is-active
+         pointer-events: none
+         background: $white
+         color: $color2
+      &:hover
+         opacity: .9
+      &:not(:last-child)
+         margin-bottom: 1px
+      span
+         padding-right: 20px
+         text-align: left
+      &-icon
+         fill: $white
+         font-size: 10px
+         .is-active &
+            fill: $color1
+            
+   &__tab
+      display: none
+      box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
+      background-color: #ffffff
+      &:first-child
+         display: block

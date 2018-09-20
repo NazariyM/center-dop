@@ -41,7 +41,7 @@
 
 // *** begin benefits *** //
 .benefits
-   padding: 60px 0
+   padding: 80px 0 150px
    &__title
       margin-bottom: 30px
    &__item
@@ -84,3 +84,143 @@
       &-title
          flex: 0 1 calc(100% - 50px)
 // end benefits //
+
+// *** begin faq *** //
+.faq
+   padding: 100px 0 200px
+   &__title
+      margin-bottom: 40px
+   &__row
+      flex-wrap: wrap
+   &__item
+      flex: 0 1 50%
+      width: 50%
+      padding: 0 15px
+      &:nth-child(2) ~ &
+         padding: 30px 15px 0
+   
+      &-inner
+         padding-left: 80px
+      &-title
+         position: relative
+         margin-bottom: 5px
+         &::before
+            position: absolute
+            top: calc(50% - 1px)
+            right: calc(100% + 15px)
+            width: 55px
+            height: 2px
+            background-color: $color1
+            content: ''
+      p
+         color: $color6
+         font-size: 14px
+         line-height: 22px
+
+// end faq //
+
+// *** begin solutions *** //
+.solutions
+   padding: 200px 0
+   background-color: #ebebed
+   &__title
+      margin-bottom: 50px
+   &__slider
+      .slick-list
+         margin: 0 -40px
+      &-item
+         position: relative
+         +gpu
+         //padding: 40px
+         +clr
+      &-controls
+         left: 50%
+         transform: translateX(-50%)
+   &__block
+      $parent: &
+      padding: 40px
+      //padding: 20px 40px 50px
+      //box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
+      //background-color: $white
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: 50% 50%
+      &_l
+         float: left
+         width: percentage(490 / 1140)
+         background: url("../img/decor/solutions-block_l.svg")
+      &_r
+         float: right
+         width: percentage(508 / 1140)
+         text-align: right
+         background: url("../img/decor/solutions-block_r.svg")
+         
+      &-inner
+         position: relative
+         #{$parent}_l &
+            &::before
+               position: absolute
+               top: 0
+               left: 0
+               width: 15px
+               height: 15px
+               border-top: 2px solid $color1
+               border-left: 2px solid $color1
+               content: ''
+         #{$parent}_r &
+            &::before
+               position: absolute
+               bottom: 0
+               right: 0
+               width: 15px
+               height: 15px
+               border-bottom: 2px solid $color1
+               border-right: 2px solid $color1
+               content: ''
+      &-top
+         display: flex
+         align-items: center
+         margin-bottom: 20px
+         #{$parent}_r &
+            flex-flow: row-reverse
+            
+      &-title
+         font-size: 18px
+      &-icon
+         +flexCenter
+         flex: 0 0 40px
+         width: 40px
+         height: 40px
+         border-radius: 50%
+         background-color: #c6c6c6
+         #{$parent}_l &
+            margin-right: 20px
+         #{$parent}_r &
+            margin-left: 26px
+   &__image
+      position: absolute
+      top: 50%
+      left: 50%
+      transition: .8s .3s ease-in-out
+      transform: translate3d(-50%, -50%, 0)
+      &::after
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate3d(-50%, -50%, 0)
+         width: 116px
+         height: 116px
+         border-radius: 50%
+         z-index: -1
+         background-color: $color1
+         content: ''
+      &-icon
+      
+// end solutions //
+
+// *** begin complex *** //
+.complex
+   padding: 200px 0
+   &__title
+      margin-bottom: 50px
+// end complex //

@@ -17,7 +17,7 @@
          display: inline-block
          vertical-align: middle
          margin-right: 7px
-         +arr(5, 5, $color1, r)
+         +arr(4, 4, $color1, r)
          content: ''
       span, strong
          display: inline
@@ -25,6 +25,37 @@
          font-size: 16px
          line-height: 22px
       strong
-         +f('ub500')
+         margin-right: 4px
    
 // end list-triangled //
+
+// *** begin .scroll-next-btn *** //
+.scroll-next-btn
+   position: absolute
+   left: calc(50% - 50px)
+   width: 108px
+   z-index: 2
+   +flexCenter
+   border-radius: 50%
+   pointer-events: none
+   &::after, &::before
+      +vcenter
+      background: $white
+      border-radius: 50%
+      content: ''
+   &::before
+      pointer-events: auto
+      z-index: 1
+      width: 45px
+      height: 45px
+      box-shadow: 0 15px 40px rgba(26, 3, 4, 0.2), 0 0 48px 3px rgba(240, 67, 79, 0.2)
+      background-color: $color1
+   &::after
+      width: 100px
+      height: 108px
+   
+   svg
+      z-index: 3
+      font-size: 16px
+      fill: $white
+// end .scroll-next-btn //

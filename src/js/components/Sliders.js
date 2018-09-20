@@ -1,5 +1,5 @@
 import 'slick-carousel';
-import { svgIcon } from '../_helpers';
+import { svgIcon, css} from '../_helpers';
 
 class Slider {
   constructor({ el= '.js-slider', showCount = 1, scrollCount = 1, ...opts } = {}) {
@@ -17,6 +17,8 @@ class Slider {
     this.transform = opts.transform || true;
     this.speed = opts.speed || 800;
     this.ease = opts.ease;
+    this.counter = opts.counter || false;
+    this.onInit = opts.onInit || false;
 
     const iconLeft = svgIcon('angle-left');
     const iconRight = svgIcon('angle-right');
@@ -46,14 +48,40 @@ class Slider {
   }
 
   init() {
+    if (this.counter) this.initCounter();
+    if (this.onInit) this.$slider.on('init afterChange reInit', (event, slick, currentSlide) => this.onInit(event, slick, currentSlide));
+
     this.initSlider();
 
-    if (typeof this.function !== 'function') return;
-    this.function();
+    if (this.function) {
+      if (typeof this.function !== 'function') return;
+      this.function();
+    }
   }
 
   initSlider() {
     this.$slider.slick($.extend({}, this.defaultOptions));
+  }
+
+  initCounter() {
+    const $sliderControls = this.$slider.parent().find('.slider-controls');
+    const $prevSld = $(`<div class="slider-controls__count slider-controls__count_l"></div>`);
+    const $nextSld = $(`<div class="slider-controls__count slider-controls__count_r"></div>`);
+
+    setTimeout(() => {
+      $prevSld.prependTo($sliderControls);
+      $nextSld.appendTo($sliderControls);
+    }, 0);
+
+    this.$slider.on('init afterChange reInit', (event, slick, currentSlide) => {
+      const i = (currentSlide ? currentSlide : 0) + 1;
+
+      $prevSld.text(i - 1);
+      $nextSld.text(i + 1);
+
+      $prevSld.text() === `0` ? $prevSld.addClass(css.disabled) : $prevSld.removeClass(css.disabled);
+      $nextSld.text() === `${slick.slideCount + 1}` ? $nextSld.addClass(css.disabled) : $nextSld.removeClass(css.disabled);
+    });
   }
 }
 
@@ -61,12 +89,19 @@ export default new Slider();
 
 const screenSld = new Slider({
   el: '.js-screen-slider',
-  showCount: 1,
-  scrollCount: 1,
   ease: 'cubic-bezier(0.74, 0.1, 0.32, 0.98)',
   transform: false,
-  speed: 1000,
+  speed: 1100,
   dotsClass: 'screen__slider-dots slider-dots slider-dots_gray',
   appendArrows: '.screen__slider-controls',
   appendDots: '.screen__slider-controls'
+});
+
+const solutionsSld = new Slider({
+  el: '.js-solutions-slider',
+  ease: 'cubic-bezier(0.74, 0.1, 0.32, 0.98)',
+  dotsClass: 'solutions__slider-dots slider-dots slider-dots_black',
+  appendArrows: '.solutions__slider-controls',
+  appendDots: '.solutions__slider-controls',
+  counter: true
 });

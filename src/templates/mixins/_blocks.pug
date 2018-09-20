@@ -7,4 +7,23 @@ mixin btn(btn)
 			+e.BUTTON.btn.btn(class= btn.classMod type='button' data-popup-target= btn.popup)
 				span= btn.text
 
-//mixin arcDecor(classMod)
+mixin arcDecor(classMod)
+	+b.arc-decor(class= `_color-${classMod}`)
+		+e.SVG.mask._top(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1920', height='149', viewBox='0 0 1920 149')
+			defs
+				path#arc-decor-1(d='M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z')
+			g
+				g(clip-path='url(#clip-665)', transform='translate(0 -601)')
+					use(xlink:href='#arc-decor-1')
+
+		+e.SVG.mask._bot(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1920', height='120', viewBox='0 0 1920 120')
+			defs
+				filter#noise
+					feturbulence(type='fractalNoise', basefrequency='30', result='noisy')
+						fecolormatrix(type='saturate', values='0')
+							feblend(in='SourceGraphic', in2='noisy', mode='multiply')
+
+				path#arc-decor-2(d='M0 630s478 120 957 120c481 0 963-120 963-120v147H0z')
+			g(clip-path='url(#clip-662)', transform='translate(0 -630)')
+				use(xlink:href='#arc-decor-2')
+
