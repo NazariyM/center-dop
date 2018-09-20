@@ -1,0 +1,137 @@
+extends layouts/_layout
+
+block variables
+	-title = 'Главная'
+
+block content
+
+	//begin main
+	.main
+
+		//begin screen
+		+b.SECTION.screen.section
+			+e.slider-controls-wrap.container
+				+e.slider-controls.slider-controls
+			+e.slider.slider.js-screen-slider
+				+e.slider-item
+					+e.bg(style='background-image: url(img/bg/screen-sld_1.jpg)')
+						+e.container.container
+							+e.content
+								+b.section-title._left._white.screen__content-title
+									+e.inner
+										+e.I.icon.icon-P
+										+e.H2.text
+											| РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?
+											span —  ДА!
+									+e.P.descr._color-1 Удобство. Экономия. Эффективность.
+								+e.content-bot
+									+e.content-price
+										+e.SPAN.content-price-text от
+										+b.price-block._white
+											span 10 000
+											= ' '
+											| ₽
+									+btn({
+										type: 'b',
+										text: 'Заказать звонок',
+										classMod: '_red'})
+
+				+e.slider-item
+					+e.bg(style='background-image: url(img/bg/screen-sld_2.jpg)')
+						+e.container.container
+							+e.content
+								+b.section-title._left._white.screen__content-title
+									+e.inner
+										+e.I.icon.icon-A
+										+e.H2.text
+											| Автоматический запуск
+											span двигателя
+									+e.P.descr._color-1 Удобство. Экономия. Эффективность.
+								+e.content-bot
+									+e.content-price
+										+e.SPAN.content-price-text от
+										+b.price-block._white
+											span 10 000
+											= ' '
+											| ₽
+									+btn({
+										type: 'b',
+										text: 'Заказать звонок',
+										classMod: '_red'
+									})
+
+			+b.arc-decor._color-1
+				+e.SVG.mask._top(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1920', height='149', viewBox='0 0 1920 149')
+					defs
+						path#arc-decor-1(d='M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z')
+					g
+						g(clip-path='url(#clip-665)', transform='translate(0 -601)')
+							use(xlink:href='#arc-decor-1')
+
+				+e.SVG.mask._bot(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1920', height='120', viewBox='0 0 1920 120')
+					defs
+						path#arc-decor-2(d='M0 630s478 120 957 120c481 0 963-120 963-120v147H0z')
+					g(clip-path='url(#clip-662)', transform='translate(0 -630)')
+						use(xlink:href='#arc-decor-2')
+
+		//end screen
+
+		//begin benefits
+		+b.SECTION.benefits.section
+			+e.container.container
+				+b.section-title._center._black.benefits__title
+					+e.inner
+						+e.I.icon.icon-H
+						+e.H2.text
+							| Наши
+							span Преимущества
+				+e.row.row
+					+e.item
+						+e.item-decor
+						+e.item-top
+							+e.H5.item-title.title._black Гарантия
+							+e.item-icon(class=`icon-certificate`)
+						+e.UL.item-list.list-triangled
+							li
+								strong На работу —
+								= ' '
+								span до смены владельца
+							li
+								strong На оборудование —
+								= ' '
+								span согласно условиям производителя
+					+e.item
+						+e.item-decor
+						+e.item-top
+							+e.H5.item-title.title._black Стоимость
+							+e.item-icon(class=`icon-like`)
+						+e.UL.item-list.list-triangled
+							li: span Боль конкурентов
+							li: span Без скрытых условий
+							li: span Фактический расчет
+							li: span Отсутствие посредников
+					+e.item
+						+e.item-decor
+						+e.item-top
+							+e.H5.item-title.title._black Техподдержка
+							+e.item-icon(class=`icon-wrench`)
+						+e.UL.item-list.list-triangled
+							li
+								strong 24/ 7 —
+								= ' '
+								span без выходных
+							li: span С пониманием
+							li: span По эксплуатации и техническим вопросам
+
+					+e.item
+						+e.item-decor
+						+e.item-top
+							+e.H5.item-title.title._black Скидки
+							+e.item-icon(class=`icon-discount`)
+						+e.UL.item-list.list-triangled
+							li: span По рекомендации
+							li: span Повторное обращение
+							li: span Индивидуальные ситуации
+		//end benefits
+
+	//end main

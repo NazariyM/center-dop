@@ -1,0 +1,53 @@
+.header
+   $parent: &
+   position: fixed
+   top: 0
+   width: 100%
+   &__info
+      padding: 20px 0
+      box-shadow: 0 15px 35px rgba(26, 23, 23, 0.05)
+      background-color: $white
+      &-container
+         display: flex
+         align-items: center
+         justify-content: space-between
+   &__logo
+      &-text
+         +f('ub700', 30, 30)
+         i
+            +f('ub400')
+            font-style: normal
+            color: $color1
+         span
+            +f('ub300')
+   &__contact
+      &-item
+         display: inline-flex
+         align-items: center
+         color: $color2
+         font-size: 16px
+         &:not(:last-child)
+            margin-right: 30px
+         address
+            font-style: normal
+         &-icon
+            position: relative
+            +flexCenter
+            margin-right: 15px
+            width: 26px
+            height: 26px
+            border: 1px solid #e6e6e6
+            font-size: 11px
+            &::after, &::before
+               position: absolute
+               top: 50%
+               z-index: 1
+               margin-top: -3px
+               width: 1px
+               height: 6px
+               background-color: $color1
+               content: ''
+            &::before
+               left: -1px
+            &::after
+               right: -1px

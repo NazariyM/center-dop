@@ -1,0 +1,39 @@
+//begin header
++b.HEADER.header(class= headerClass)
+	+e.info
+		+e.info-container.container
+			+e.logo
+				+e.logo-text Center
+					i |
+					span Dop
+
+			+e.contact
+				+e.contact-item
+					+e.contact-item-icon
+						+i('map-marker-alt')
+					address г. Москва, ул. Осенняя, 23
+				+e.contact-item
+					+e.contact-item-icon
+						+i('phone')
+					+e.A(href='tel:+79650990090') +7 (965) 099 00 90
+
+	+b.nav
+		+e.NAV.body
+			-
+				navList = [
+				['Главная', 'services'],
+				['Преимущества', 'pros'],
+				['FAQ', 'work'],
+				['Решения', 'guarantees'],
+				['Конфигуратор', 'testimonials'],
+				['Доп. опции', 'testimonials'],
+				['Контакты', 'testimonials']
+				]
+			+e.UL.list
+				for navLink in navList
+					+e.LI.list-item: +e.A.list-link(href=`#${navLink[1]}`)= navLink[0]
+
+		+e.BUTTON.btn(type='button')
+			+e.SPAN.btn-burger
+				+e.SPAN.btn-lines
+//end header

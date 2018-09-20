@@ -1,0 +1,10 @@
+mixin btn(btn)
+	case btn.type
+		when 'a'
+			+e.A.btn.btn(class= btn.classMod href='#!')
+				span= btn.text
+		when 'b'
+			+e.BUTTON.btn.btn(class= btn.classMod type='button' data-popup-target= btn.popup)
+				span= btn.text
+
+//mixin arcDecor(classMod)

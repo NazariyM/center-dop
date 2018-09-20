@@ -1,0 +1,86 @@
+// *** begin screen *** //
+.screen
+   &__container
+      display: flex
+      align-items: center
+      height: 100%
+   &__slider
+      .slick-track,
+      .slick-list
+         -webkit-perspective: 2000px!important
+         -webkit-backface-visibility: hidden!important
+      &-item
+         position: relative
+         height: 620px
+      &-dots
+      &-controls
+         top: 50px
+         left: 0
+         &-wrap
+            position: relative
+   &__bg
+      +coverdiv
+      +cover
+   &__content
+      flex: 0 1 50%
+      width: 50%
+   &__content
+      &-title
+         margin-bottom: 10px
+      &-bot
+         display: flex
+         align-items: center
+      &-price
+         display: flex
+         align-items: center
+         margin-right: 30px
+         &-text
+            color: #d9d9d9
+   
+// end screen //
+
+// *** begin benefits *** //
+.benefits
+   padding: 60px 0
+   &__title
+      margin-bottom: 30px
+   &__item
+      $parent: &
+      position: relative
+      flex: 0 1 calc(25% - 30px)
+      width: calc(25% - 30px)
+      margin: 0 15px
+      padding: 20px 25px
+      background-color: $white
+      cursor: default
+      &-decor
+         +coverdiv
+         box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
+         border: 1px solid #f7f7f7
+         transition: .3s ease-in-out
+         pointer-events: none
+         #{$parent}:hover &
+            opacity: .5
+         &::before, &::after
+            position: absolute
+            width: 15px
+            height: 15px
+            content: ''
+         &::before
+            top: 0
+            left: 0
+            border-top: 2px solid $color1
+            border-left: 2px solid $color1
+         &::after
+            right: 0
+            bottom: 0
+            border-right: 2px solid $color1
+            border-bottom: 2px solid $color1
+      &-top
+         display: flex
+         align-items: center
+         justify-content: space-between
+         margin-bottom: 20px
+      &-title
+         flex: 0 1 calc(100% - 50px)
+// end benefits //

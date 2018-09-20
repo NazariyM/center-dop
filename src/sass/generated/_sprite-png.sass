@@ -1,0 +1,85 @@
+$icons: (0:0)
+$icons: map-merge($icons,('H': (X: -62px, Y:0px, W: 36px, H: 42px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('P': (X: 0px, Y:-65px, W: 43px, H: 56px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('certificate': (X: -108px, Y:-88px, W: 34px, H: 30px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('discount': (X: -62px, Y:-52px, W: 34px, H: 34px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('like': (X: -108px, Y:0px, W: 34px, H: 34px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('wrench': (X: -108px, Y:-44px, W: 34px, H: 34px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('А': (X: 0px, Y:0px, W: 52px, H: 55px, TW: 142px, TH: 121px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+
+.icon-H
+  width: 36px
+  height: 42px
+  background-image: url('../img/sprite.png')
+  background-position: -62px 0px
+
+.icon-P
+  width: 43px
+  height: 56px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -65px
+
+.icon-certificate
+  width: 34px
+  height: 30px
+  background-image: url('../img/sprite.png')
+  background-position: -108px -88px
+
+.icon-discount
+  width: 34px
+  height: 34px
+  background-image: url('../img/sprite.png')
+  background-position: -62px -52px
+
+.icon-like
+  width: 34px
+  height: 34px
+  background-image: url('../img/sprite.png')
+  background-position: -108px 0px
+
+.icon-wrench
+  width: 34px
+  height: 34px
+  background-image: url('../img/sprite.png')
+  background-position: -108px -44px
+
+.icon-А
+  width: 52px
+  height: 55px
+  background-image: url('../img/sprite.png')
+  background-position: 0px 0px

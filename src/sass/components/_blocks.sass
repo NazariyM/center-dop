@@ -1,0 +1,30 @@
+// *** begin price-block *** //
+.price-block
+   +f('mp400', 36, 36)
+   &_white
+      color: $white
+   span
+      +f('ub700')
+// end price-block //
+
+// *** begin list-triangled *** //
+.list-triangled
+   li
+      font-size: 0
+      &:not(:last-child)
+         margin-bottom: 6px
+      &::before
+         display: inline-block
+         vertical-align: middle
+         margin-right: 7px
+         +arr(5, 5, $color1, r)
+         content: ''
+      span, strong
+         display: inline
+         vertical-align: middle
+         font-size: 16px
+         line-height: 22px
+      strong
+         +f('ub500')
+   
+// end list-triangled //
