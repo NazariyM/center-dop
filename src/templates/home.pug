@@ -214,7 +214,7 @@ block content
 		//end solutions
 			
 		//begin complex
-		+b.SECTION.complex
+		+b.SECTION.complex.section
 			+e.container.container
 				+b.section-title._center._black.complex__title
 					+e.inner
@@ -293,7 +293,7 @@ block content
 		//end complex
 			
 		//begin config
-		+b.SECTION.config.noise-bg._type-2
+		+b.SECTION.config.section.noise-bg._type-2
 			+e.container.container
 				+b.section-title._left._white.config__title
 					+e.inner
@@ -346,8 +346,7 @@ block content
 
 					+e.item.grid__item
 						+e.H5.item-title.title._white Телематика
-						+checkBox('_type-2 config__item-checkbox', 'Управление по GSM ')(checked)
-						+checkBox('_type-2 config__item-checkbox', '(звонок и смс)')
+						+checkBox('_type-2 config__item-checkbox', 'Управление по GSM (звонок и смс)')(checked)
 						+checkBox('_type-2 config__item-checkbox', 'Управление по internet (смартфон или Web)')
 						+checkBox('_type-2 config__item-checkbox', 'Управление по  Bluetooth (смартфон)')
 						+checkBox('_type-2 config__item-checkbox', 'Данные о расходе топлива, пробег')(checked)
@@ -379,14 +378,85 @@ block content
 		//end config
 			
 		//begin equip
-		+b.SECTION.equip
+		+b.SECTION.equip.section
 			+e.container.container
-				+b.section-title._left._white.config__title
+				+b.section-title._center._black.equip__title
 					+e.inner
 						+e.I.icon.icon-P
 						+e.H2.text Подбор и установка
 							span доп.оборудования
-					+e.P.descr._color-2 Нужно что-то еще? Все можно установить в одном месте
+					+e.P.descr Нужно что-то еще? Все можно установить в одном месте
+
+				+e.row.row
+					+e.UL.list.list-triangled
+						-
+							equipList = [
+							'Парковочные радары',
+							'Видеорегистраторы',
+							'Антирадары',
+							'Защитные сетки',
+							'Номерные рамки',
+							'Подогреватели Webasto',
+							'Подогрев сидений',
+							'Светодиодные лампы']
+						for text in equipList
+							li: span= text
+
+					+e.UL.list.list-triangled
+						-
+							equipList = [
+							'Потолочные мониторы',
+							'Консольные мониторы',
+							'Мониторы на зеркало',
+							'Мониторы в подголовниках',
+							'Оригинальные мониторы',
+							'Доводчики дверей']
+						for text in equipList
+							li: span= text
+
+					+e.UL.list.list-triangled
+						-
+							equipList = [
+							'Камеры заднего вида',
+							'Камеры переднего вида',
+							'Круговой 360 видеообзор',
+							'Онлайн видеонаблюдение',
+							'Аудиоконтроль салона',
+							'Тонировка',
+							'Оклейка пленкой']
+						for text in equipList
+							li: span= text
+
+					+e.UL.list.list-triangled
+						-
+							equipList = [
+							'Видеоинтерфейсы',
+							'Контроллеры и адаптеры',
+							'Android / Я.Навигатор',
+							'Отображение смартфона',
+							'Цифровые TV-тюнеры',
+							'Шумоизоляция',
+							'Химчистка салона',
+							'Полировка кузова',
+							'Звуковые сигналы']
+						for text in equipList
+							li: span= text
+
+				+e.img-wrap
+					+e.IMG(src='img/other/mercedes.png' alt='Mercedes-Benz')
+			+arcDecor('2')
 		//end equip
+
+		//begin contacts
+		+b.SECTION.contacts
+			+e.container.container
+				+b.section-title._center._black.contacts__title
+					+e.inner
+						+e.I.icon.icon-N
+						+e.H2.text Наши
+							span контакты
+
+
+		//end contacts
 
 	//end main

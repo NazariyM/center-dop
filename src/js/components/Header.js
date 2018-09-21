@@ -10,8 +10,8 @@ class Header {
 	constructor() {
 		this.body = document.querySelector('body');
 		this.header = document.querySelector('.header');
-		this.nav = this.header.querySelector('.nav_header');
-		this.navBtn = this.header.querySelector('.nav-btn');
+		this.nav = this.header.querySelector('.nav');
+		this.navBtn = this.nav.querySelector('.nav__btn');
 		this.scrollTop = 0;
 
 		this.init();
@@ -56,18 +56,23 @@ class Header {
 
 	initFix() {
 		const _this = this;
-		const toggleHeaderScroll = throttle(() => {
-			toggleHeader();
+		const toggleHeaderScroll = throttle((e) => {
+      toggleHeader(e);
 		}, 0, this);
 
-		function toggleHeader() {
+		function toggleHeader(e) {
+			const scrolledTop = e.currentTarget.oldScroll > e.currentTarget.scrollY;
+
+      scrolledTop ? _this.header.classList.add(css.visible) : _this.header.classList.remove(css.visible);
+
+      e.currentTarget.oldScroll = e.currentTarget.scrollY;
 
       if (window.pageYOffset > 0) {
 				_this.header.classList.add(css.fixed);
 			} else {
 				_this.header.classList.remove(css.fixed);
 			}
-		}
+    }
 
 		window.addEventListener('scroll', toggleHeaderScroll);
 	}
@@ -88,4 +93,4 @@ class Header {
   }
 }
 
-// export const HeaderAPI = new Header();
+export const HeaderAPI = new Header();
