@@ -99,7 +99,12 @@
                     <div class="screen__content-price">
                       <span class="screen__content-price-text">от</span>
                       <div class="price-block price-block_white">
-                        <span>10 000</span> ₽</div>
+                        <div class="price-block__current">
+                          <span>10 000
+                            <i>₽</i>
+                          </span>
+                        </div>
+                      </div>
                     </div>
                     <button class="screen__btn btn btn_red" type="button">
                       <span>Заказать звонок</span>
@@ -579,106 +584,498 @@
             <div class="c-tabs__for">
               <div class="c-tabs__tab">
                 <div class="complex__item">
-                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <h6 class="complex__item-title">
+                    <span>Опции комплекса</span>
+                  </h6>
                   <ul class="complex__item-list">
-                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Электромеханические замки капота
+                      <span>x 2 шт</span>
+                    </li>
                     <li>Охранно-телематический комплекс</li>
                     <li>Координаты по базовым станциям GSM</li>
                     <li>Подкапотный Bluetooth-модуль</li>
-                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Bluetooth-метки
+                      <span>x 2 шт</span> или смартфон</li>
                     <li>Функция "свободные руки"</li>
                     <li>Slave управление штатным ключом</li>
                     <li>Управление и контроль по GSM/Bluetooth</li>
                     <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
-                    <li>Управление и контроль по GSM/Bluetooth</li>
-                    <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>CAN Блокировка двигателя
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Автозакрытие стекол
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Управление догревателем
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Авторизация по штатным кнопкам
+                      <span>(уточнять)</span>
+                    </li>
                   </ul>
+                </div>
+                <div class="complex__item">
+                  <h6 class="complex__item-sub-title">
+                    <span>Дополнительные опции</span>
+                  </h6>
+                  <div class="complex__item-options">
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Модуль аварийного открытия замков</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Координаты по GPS</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="complex__bottom">
+                  <div class="complex__price">
+                    <span class="complex__price-text title title_black">Цена:</span>
+                    <div class="price-block price-block_black">
+                      <div class="price-block__old">
+                        <span>25 000</span>
+                        <i>₽</i>
+                      </div>
+                      <div class="price-block__current">
+                        <span>20 000</span>
+                        <i>₽</i>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="complex__btn btn btn_red" type="button">
+                    <span>Заказать звонок</span>
+                  </button>
                 </div>
               </div>
               <div class="c-tabs__tab">
                 <div class="complex__item">
-                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <h6 class="complex__item-title">
+                    <span>Опции комплекса</span>
+                  </h6>
                   <ul class="complex__item-list">
-                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Электромеханические замки капота
+                      <span>x 2 шт</span>
+                    </li>
                     <li>Охранно-телематический комплекс</li>
                     <li>Координаты по базовым станциям GSM</li>
                     <li>Подкапотный Bluetooth-модуль</li>
-                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Bluetooth-метки
+                      <span>x 2 шт</span> или смартфон</li>
                     <li>Функция "свободные руки"</li>
                     <li>Slave управление штатным ключом</li>
                     <li>Управление и контроль по GSM/Bluetooth</li>
                     <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
-                    <li>Управление и контроль по GSM/Bluetooth</li>
-                    <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>CAN Блокировка двигателя
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Автозакрытие стекол
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Управление догревателем
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Авторизация по штатным кнопкам
+                      <span>(уточнять)</span>
+                    </li>
                   </ul>
+                </div>
+                <div class="complex__item">
+                  <h6 class="complex__item-sub-title">
+                    <span>Дополнительные опции</span>
+                  </h6>
+                  <div class="complex__item-options">
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Модуль аварийного открытия замков</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Координаты по GPS</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="complex__bottom">
+                  <div class="complex__price">
+                    <span class="complex__price-text title title_black">Цена:</span>
+                    <div class="price-block price-block_black">
+                      <div class="price-block__old">
+                        <span>25 000</span>
+                        <i>₽</i>
+                      </div>
+                      <div class="price-block__current">
+                        <span>20 000</span>
+                        <i>₽</i>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="complex__btn btn btn_red" type="button">
+                    <span>Заказать звонок</span>
+                  </button>
                 </div>
               </div>
               <div class="c-tabs__tab">
                 <div class="complex__item">
-                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <h6 class="complex__item-title">
+                    <span>Опции комплекса</span>
+                  </h6>
                   <ul class="complex__item-list">
-                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Электромеханические замки капота
+                      <span>x 2 шт</span>
+                    </li>
                     <li>Охранно-телематический комплекс</li>
                     <li>Координаты по базовым станциям GSM</li>
                     <li>Подкапотный Bluetooth-модуль</li>
-                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Bluetooth-метки
+                      <span>x 2 шт</span> или смартфон</li>
                     <li>Функция "свободные руки"</li>
                     <li>Slave управление штатным ключом</li>
                     <li>Управление и контроль по GSM/Bluetooth</li>
                     <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
-                    <li>Управление и контроль по GSM/Bluetooth</li>
-                    <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>CAN Блокировка двигателя
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Автозакрытие стекол
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Управление догревателем
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Авторизация по штатным кнопкам
+                      <span>(уточнять)</span>
+                    </li>
                   </ul>
+                </div>
+                <div class="complex__item">
+                  <h6 class="complex__item-sub-title">
+                    <span>Дополнительные опции</span>
+                  </h6>
+                  <div class="complex__item-options">
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Модуль аварийного открытия замков</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Координаты по GPS</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="complex__bottom">
+                  <div class="complex__price">
+                    <span class="complex__price-text title title_black">Цена:</span>
+                    <div class="price-block price-block_black">
+                      <div class="price-block__old">
+                        <span>25 000</span>
+                        <i>₽</i>
+                      </div>
+                      <div class="price-block__current">
+                        <span>20 000</span>
+                        <i>₽</i>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="complex__btn btn btn_red" type="button">
+                    <span>Заказать звонок</span>
+                  </button>
                 </div>
               </div>
               <div class="c-tabs__tab">
                 <div class="complex__item">
-                  <h6 class="complex__item-title">Опции комплекса</h6>
+                  <h6 class="complex__item-title">
+                    <span>Опции комплекса</span>
+                  </h6>
                   <ul class="complex__item-list">
-                    <li>Электромеханические замки капота x 2 шт</li>
+                    <li>Электромеханические замки капота
+                      <span>x 2 шт</span>
+                    </li>
                     <li>Охранно-телематический комплекс</li>
                     <li>Координаты по базовым станциям GSM</li>
                     <li>Подкапотный Bluetooth-модуль</li>
-                    <li>Bluetooth-метки x 2 шт или смартфон</li>
+                    <li>Bluetooth-метки
+                      <span>x 2 шт</span> или смартфон</li>
                     <li>Функция "свободные руки"</li>
                     <li>Slave управление штатным ключом</li>
                     <li>Управление и контроль по GSM/Bluetooth</li>
                     <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
-                    <li>Управление и контроль по GSM/Bluetooth</li>
-                    <li>Координаты по базовым станциям GSM</li>
-                    <li>CAN Блокировка двигателя (уточнять)</li>
-                    <li>Автозакрытие стекол (уточнять)</li>
-                    <li>Управление догревателем (уточнять)</li>
-                    <li>Авторизация по штатным кнопкам (уточнять)</li>
+                    <li>CAN Блокировка двигателя
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Автозакрытие стекол
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Управление догревателем
+                      <span>(уточнять)</span>
+                    </li>
+                    <li>Авторизация по штатным кнопкам
+                      <span>(уточнять)</span>
+                    </li>
                   </ul>
+                </div>
+                <div class="complex__item">
+                  <h6 class="complex__item-sub-title">
+                    <span>Дополнительные опции</span>
+                  </h6>
+                  <div class="complex__item-options">
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Модуль аварийного открытия замков</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Координаты по GPS</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="complex__bottom">
+                  <div class="complex__price">
+                    <span class="complex__price-text title title_black">Цена:</span>
+                    <div class="price-block price-block_black">
+                      <div class="price-block__old">
+                        <span>25 000</span>
+                        <i>₽</i>
+                      </div>
+                      <div class="price-block__current">
+                        <span>20 000</span>
+                        <i>₽</i>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="complex__btn btn btn_red" type="button">
+                    <span>Заказать звонок</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -686,6 +1083,519 @@
         </div>
       </section>
       <!--end complex-->
+      <!--begin config-->
+      <section class="config noise-bg noise-bg_type-2">
+        <div class="config__container container">
+          <div class="section-title section-title_left section-title_white config__title">
+            <div class="section-title__inner">
+              <i class="section-title__icon icon-O"></i>
+              <h2 class="section-title__text">Онлайн - конфигуратор
+                <span>средств защиты от угона</span>
+              </h2>
+            </div>
+            <p class="section-title__descr section-title__descr_color-2">Выберите опции, заполните форму заказа и отправьте заявку</p>
+          </div>
+          <div class="config__grid grid">
+            <div class="grid__sizer"></div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Базовое устройство</h5>
+              <div class="check-box check-box_type-2 check-box_radio config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="radio" name="radio" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Иммобилайзер</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 check-box_radio config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="radio" name="radio" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Охранная система</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 check-box_radio config__item-checkbox is-disabled">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="radio" name="radio" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Телематический комплекс</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Способ управления</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Метка</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Брелок</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox is-disabled">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Смартфон Bluetooth</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Штатный ключ</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox is-disabled">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Штатные кнопки</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Координаты</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Мониторинг</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Местоположение по запросу</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Автономный маяк</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Эл. блокировка</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Двигателя (капот)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Двигателя (салон)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">По шине CAN</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Радиоканал</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">OBD (диагностика)</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Комфорт</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Автозапуск</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Свободные руки</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Бесключевой доступ</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Автозакрытие стекол</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Автозакрытие люка</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Складывание зеркал</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Управление видеорегистратором</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Управление догревателем</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Телематика</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Управление по GSM </span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">(звонок и смс)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Управление по internet (смартфон или Web)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Управление по Bluetooth (смартфон)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Данные о расходе топлива, пробег</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Автозапуск</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Копия чипа ключа</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Бесключевой обход</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Мягкая посадка</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Турботаймер</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Активация подогрева сидений</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Управление климат. системой</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Акт. подогрева зеркал и стекол</span>
+                </label>
+              </div>
+            </div>
+            <div class="config__item grid__item">
+              <h5 class="config__item-title title title_white">Блокировка доступа</h5>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Эл. мех замок (капот)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox is-disabled">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Эл. мех замки 2 шт (капот)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox is-disabled">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Авторские замки (капот)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" checked="checked" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Эл. мех блокираторы (двери)</span>
+                </label>
+              </div>
+              <div class="check-box check-box_type-2 config__item-checkbox">
+                <label class="check-box__label">
+                  <input class="check-box__input" type="checkbox" name="" />
+                  <span class="check-box__square">
+                    <svg class="icon-check check-box__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="check-box__text">Модуль аварийного открытия</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="config__actions">
+            <button class="config__btn btn btn_red config__actions-btn" type="button">
+              <span>Оформить заказ</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--end config-->
+      <!--begin equip-->
+      <section class="equip">
+        <div class="equip__container container">
+          <div class="section-title section-title_left section-title_white config__title">
+            <div class="section-title__inner">
+              <i class="section-title__icon icon-P"></i>
+              <h2 class="section-title__text">Подбор и установка
+                <span>доп.оборудования</span>
+              </h2>
+            </div>
+            <p class="section-title__descr section-title__descr_color-2">Нужно что-то еще? Все можно установить в одном месте</p>
+          </div>
+        </div>
+      </section>
+      <!--end equip-->
     </div>
     <!--end main-->
     <!--begin footer-->

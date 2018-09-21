@@ -20,11 +20,12 @@
       +f('ub500', 20, 20)
       text-transform: uppercase
       background: #17171a url(../img/decor/noise_black.png)
-      +trs
+      transition: .3s ease-in-out
       color: $white
       &.is-active
          pointer-events: none
          background: $white
+         box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
          color: $color2
       &:hover
          opacity: .9
@@ -41,7 +42,22 @@
             
    &__tab
       display: none
+      position: relative
+      padding: 30px 31px
       box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
       background-color: #ffffff
+      &::before, &::after
+         position: absolute
+         right: 0
+         width: 15px
+         height: 15px
+         border-right: 2px solid $color1
+         content: ''
+      &::before
+         top: 0
+         border-top: 2px solid $color1
+      &::after
+         border-bottom: 2px solid $color1
+         bottom: 0
       &:first-child
          display: block

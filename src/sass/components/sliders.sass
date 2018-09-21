@@ -19,8 +19,17 @@
       color: $color2
       +f('ub700', 18, 18)
       opacity: .1
+      transform: translateX(0)
+      transition: .3s ease-in-out
       &.is-disabled
          opacity: 0
+         transition: none
+      .is-left &
+         opacity: 0
+         transform: translateX(10px)
+      .is-right &
+         opacity: 0
+         transform: translateX(-10px)
    
 .slider-dots
    $parent: &
@@ -62,3 +71,6 @@
       right: 0
    svg
       font-size: 22px
+   &.slick-disabled
+      pointer-events: none
+      opacity: .15

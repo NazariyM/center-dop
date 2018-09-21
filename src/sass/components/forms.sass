@@ -67,45 +67,62 @@
    input
       display: none
 
-.form-ask
-   display: flex
-   align-items: center
-   font-size: 15px
-   &__text
-      margin-right: 23px
-      color: #333333
-   &__choice
-      $parent: &
-      display: flex
-      align-items: center
-      &-item
-         display: flex
-         cursor: pointer
-         &:not(:last-child)
-            margin-right: 15px
-         input
-            display: none
-            &:checked + #{$parent}-visual
-               border-color: #1799ed
-               &::after
-                  opacity: 1
-            
-      &-text
-         color: #75797b
-      &-visual
-         position: relative
-         width: 18px
-         height: 18px
-         margin-right: 8px
-         border: 1px solid rgba(#1799ed, .5)
-         border-radius: 50%
-         transition: .3s ease-in-out
+.check-box
+   $parent: &
+   &.is-disabled
+      pointer-events: none
+   &__label
+      display: inline-flex
+      align-items: flex-start
+      cursor: pointer
+      
+   &__square
+      position: relative
+      width: 12px
+      height: 12px
+      flex: 0 0 12px
+      margin-top: 7px
+      border-radius: 4px
+      border: 1px solid #808080
+      #{$parent}_type-1 &
+         margin-right: 20px
+      #{$parent}_type-2 &
+         margin-right: 10px
+      #{$parent}.is-disabled &
+         opacity: .3
+      #{$parent}_radio &
          &::after
-            +vcenter
-            width: 10px
-            height: 10px
-            background-image: linear-gradient(to right, #1799ed 0%, #59bffa 100%)
+            position: absolute
+            top: calc(50% - 3px)
+            left: calc(50% - 3px)
+            opacity: 0
+            transform: scale(0)
+            width: 6px
+            height: 6px
+            background-color: $color1
             border-radius: 50%
             transition: .3s ease-in-out
-            opacity: 0
             content: ''
+   &__icon
+      opacity: 0
+      transform: scale(0)
+      position: absolute
+      top: -1px
+      left: 2px
+      transition: .3s ease-in-out
+      font-size: 10px
+      fill: $color1
+      #{$parent}_radio &
+         display: none
+   &__text
+      +f('ub400', 14, 24)
+      #{$parent}_type-2 &
+         color: $color5
+   &__input
+      display: none
+      &:checked ~ #{$parent}__square #{$parent}__icon,
+      &:checked ~ #{$parent}__square::after
+         opacity: 1
+         transform: scale(1)
+         
+   

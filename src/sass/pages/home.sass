@@ -134,8 +134,10 @@
          //padding: 40px
          +clr
       &-controls
-         left: 50%
-         transform: translateX(-50%)
+         position: relative
+         top: auto
+         left: auto
+         margin: 0 auto
    &__block
       $parent: &
       padding: 40px
@@ -201,7 +203,6 @@
       position: absolute
       top: 50%
       left: 50%
-      transition: .8s .3s ease-in-out
       transform: translate3d(-50%, -50%, 0)
       &::after
          position: absolute
@@ -215,7 +216,6 @@
          background-color: $color1
          content: ''
       &-icon
-      
 // end solutions //
 
 // *** begin complex *** //
@@ -223,4 +223,90 @@
    padding: 200px 0
    &__title
       margin-bottom: 50px
+   &__item
+      $parent: &
+      padding: 5px 0 20px
+      border-bottom: 1px solid rgba($black, .06)
+      &-title
+         position: relative
+         margin-bottom: 20px
+         +f('ub700', 18, 34)
+         color: #000
+         span
+            position: relative
+            z-index: 1
+            padding-right: 70px
+            background: $white
+         &::after
+            position: absolute
+            top: 50%
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: #000000
+            opacity: 0.06
+            content: ''
+      &-sub-title
+         @extend #{$parent}-title
+         font-size: 16px
+      &-list
+         line-height: 36px
+         color: $color4
+         counter-reset: complexList
+         column-count: 2
+         column-gap: 30px
+         li
+            counter-increment: complexList
+            line-height: 36px
+            &::before
+               margin-right: 5px
+               content: counters(complexList, ".", decimal-leading-zero) "."
+            span
+               color: $color6
+      &-options
+         display: flex
+         flex-wrap: wrap
+         margin: 0 -15px
+      &-checkbox
+         pointer-events: none
+         flex: 0 1 calc(50% - 30px)
+         width: calc(50% - 30px)
+         margin: 0 15px
+         &:nth-child(2) ~ &
+            margin-top: 10px
+   &__bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 30px
+   &__price
+      display: flex
+      align-items: center
+      &-text
+         margin-right: 50px
+         text-transform: none
+      &-old
 // end complex //
+
+// *** begin config *** //
+.config
+   padding: 90px 0
+   &__grid
+   &__item
+      width: 25%
+      padding: 15px
+      &-title
+         position: relative
+         margin-bottom: 10px
+         padding-bottom: 15px
+         &::after
+            position: absolute
+            bottom: 0
+            left: -30px
+            width: 75px
+            height: 2px
+            background-color: $color1
+            content: ''
+   &__actions
+      text-align: center
+// end config //

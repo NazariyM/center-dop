@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="356a5c50-0d27-4383-96b8-9f959773a430" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/img/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp/tasks/sprite-png/sprite.template.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/sprite-png/sprite.template.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/P.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/P.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/Common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/CTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/CTabs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/Sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Sliders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_common.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_common.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/app.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/_blocks.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_blocks.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/c-tabs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/c-tabs.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/forms.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/forms.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/sliders.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/sliders.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/generated/_sprite-png.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/generated/_sprite-png.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/pages/home.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/home.sass" afterDir="false" />
@@ -28,6 +31,97 @@
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="node_modules/gsap/src/minified/easing/EasePack.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/AttrPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/BezierPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/ColorPropsPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/CSSPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/CSSRulePlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/DirectionalRotationPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/EaselPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/EndArrayPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/ModifiersPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/PixiPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/RaphaelPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/RoundPropsPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/ScrollToPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/plugins/TextPlugin.min.js" />
+    <ignored path="node_modules/gsap/src/minified/utils/Draggable.min.js" />
+    <ignored path="node_modules/gsap/src/minified/jquery.gsap.min.js" />
+    <ignored path="node_modules/gsap/src/minified/TimelineLite.min.js" />
+    <ignored path="node_modules/gsap/src/minified/TimelineMax.min.js" />
+    <ignored path="node_modules/gsap/src/minified/TweenLite.min.js" />
+    <ignored path="node_modules/gsap/src/minified/TweenMax.min.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/easing/EasePack.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/AttrPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/BezierPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/ColorPropsPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/CSSPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/CSSRulePlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/DirectionalRotationPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/EaselPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/EndArrayPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/ModifiersPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/PixiPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/RaphaelPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/RoundPropsPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/TEMPLATE_Plugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/plugins/TextPlugin.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/utils/Draggable.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/jquery.gsap.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/TimelineLite.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/TimelineMax.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/TweenLite.js" />
+    <ignored path="node_modules/gsap/src/uncompressed/TweenMax.js" />
+    <ignored path="node_modules/gsap/umd/AttrPlugin.js" />
+    <ignored path="node_modules/gsap/umd/BezierPlugin.js" />
+    <ignored path="node_modules/gsap/umd/ColorPropsPlugin.js" />
+    <ignored path="node_modules/gsap/umd/CSSPlugin.js" />
+    <ignored path="node_modules/gsap/umd/CSSRulePlugin.js" />
+    <ignored path="node_modules/gsap/umd/DirectionalRotationPlugin.js" />
+    <ignored path="node_modules/gsap/umd/Draggable.js" />
+    <ignored path="node_modules/gsap/umd/EaselPlugin.js" />
+    <ignored path="node_modules/gsap/umd/EasePack.js" />
+    <ignored path="node_modules/gsap/umd/EndArrayPlugin.js" />
+    <ignored path="node_modules/gsap/umd/jquery.gsap.js" />
+    <ignored path="node_modules/gsap/umd/ModifiersPlugin.js" />
+    <ignored path="node_modules/gsap/umd/PixiPlugin.js" />
+    <ignored path="node_modules/gsap/umd/RaphaelPlugin.js" />
+    <ignored path="node_modules/gsap/umd/RoundPropsPlugin.js" />
+    <ignored path="node_modules/gsap/umd/ScrollToPlugin.js" />
+    <ignored path="node_modules/gsap/umd/TEMPLATE_Plugin.js" />
+    <ignored path="node_modules/gsap/umd/TextPlugin.js" />
+    <ignored path="node_modules/gsap/umd/TimelineLite.js" />
+    <ignored path="node_modules/gsap/umd/TimelineMax.js" />
+    <ignored path="node_modules/gsap/umd/TweenLite.js" />
+    <ignored path="node_modules/gsap/umd/TweenMax.js" />
+    <ignored path="node_modules/gsap/all.js" />
+    <ignored path="node_modules/gsap/AttrPlugin.js" />
+    <ignored path="node_modules/gsap/BezierPlugin.js" />
+    <ignored path="node_modules/gsap/bower.json" />
+    <ignored path="node_modules/gsap/ColorPropsPlugin.js" />
+    <ignored path="node_modules/gsap/CSSPlugin.js" />
+    <ignored path="node_modules/gsap/CSSRulePlugin.js" />
+    <ignored path="node_modules/gsap/DirectionalRotationPlugin.js" />
+    <ignored path="node_modules/gsap/Draggable.js" />
+    <ignored path="node_modules/gsap/EaselPlugin.js" />
+    <ignored path="node_modules/gsap/EasePack.js" />
+    <ignored path="node_modules/gsap/EndArrayPlugin.js" />
+    <ignored path="node_modules/gsap/index.js" />
+    <ignored path="node_modules/gsap/ModifiersPlugin.js" />
+    <ignored path="node_modules/gsap/package.json" />
+    <ignored path="node_modules/gsap/PixiPlugin.js" />
+    <ignored path="node_modules/gsap/README.md" />
+    <ignored path="node_modules/gsap/RoundPropsPlugin.js" />
+    <ignored path="node_modules/gsap/ScrollToPlugin.js" />
+    <ignored path="node_modules/gsap/TEMPLATE_Plugin.js" />
+    <ignored path="node_modules/gsap/TextPlugin.js" />
+    <ignored path="node_modules/gsap/TimelineLite.js" />
+    <ignored path="node_modules/gsap/TimelineMax.js" />
+    <ignored path="node_modules/gsap/TweenLite.js" />
+    <ignored path="node_modules/gsap/TweenMax.js" />
+    <ignored path="node_modules/gsap/TweenMaxBase.js" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,52 +132,60 @@
     <session id="-1985164730">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="9" />
-          <entry key="pug" value="12" />
-          <entry key="sass" value="25" />
+          <entry key="js" value="16" />
+          <entry key="mustache" value="1" />
+          <entry key="pug" value="15" />
+          <entry key="sass" value="32" />
           <entry key="svg" value="3" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Jade" value="12" />
-          <entry key="JavaScript" value="9" />
+          <entry key="Handlebars/Mustache" value="1" />
+          <entry key="Jade" value="15" />
+          <entry key="JavaScript" value="16" />
           <entry key="SVG" value="3" />
-          <entry key="Sass" value="25" />
-          <entry key="Scratch" value="2" />
+          <entry key="Sass" value="32" />
+          <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1510" />
-          <entry key="pug" value="2676" />
-          <entry key="sass" value="4692" />
+          <entry key="js" value="2510" />
+          <entry key="mustache" value="9" />
+          <entry key="pug" value="3682" />
+          <entry key="sass" value="6458" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Jade" value="2676" />
-          <entry key="JavaScript" value="1510" />
-          <entry key="Sass" value="4692" />
+          <entry key="Handlebars/Mustache" value="9" />
+          <entry key="Jade" value="3682" />
+          <entry key="JavaScript" value="2510" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Sass" value="6458" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
           <entry key="ESLintLanguageService" value="4" />
-          <entry key="LanguageService" value="6" />
+          <entry key="LanguageService" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -100,14 +202,14 @@
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6">
+    <splitter split-orientation="horizontal" split-proportion="0.60833335">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="718">
-                  <caret line="260" column="18" selection-start-line="260" selection-start-column="18" selection-end-line="260" selection-end-column="18" />
+                <state relative-caret-position="546">
+                  <caret line="353" lean-forward="true" selection-start-line="353" selection-end-line="353" />
                 </state>
               </provider>
             </entry>
@@ -115,21 +217,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="183">
-                  <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+                <state relative-caret-position="595">
+                  <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/js/components/CTabs.js">
+            <entry file="file://$PROJECT_DIR$/src/js/components/Grid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
-                  <caret line="63" column="64" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
-                  <folding>
-                    <element signature="e#0#35#0" expanded="true" />
-                    <marker date="1537458411811" expanded="true" signature="29:33" ph="..." />
-                  </folding>
+                <state relative-caret-position="323">
+                  <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -141,26 +239,37 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="154" column="56" lean-forward="true" selection-start-line="154" selection-start-column="3" selection-end-line="154" selection-end-column="56" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="858">
-                  <caret line="222" column="19" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="19" />
+                <state relative-caret-position="342">
+                  <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/sass/components/c-tabs.sass">
+            <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+                <state relative-caret-position="463">
+                  <caret line="294" column="10" lean-forward="true" selection-start-line="294" selection-start-column="10" selection-end-line="294" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="356">
+                  <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/components/Form.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -174,10 +283,13 @@
       <find>title-s</find>
       <find>has</find>
       <find>nois</find>
+      <find>solut</find>
+      <find>sol</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -188,25 +300,30 @@
         <option value="$PROJECT_DIR$/src/js/components/Header.js" />
         <option value="$PROJECT_DIR$/src/templates/partials/_header.pug" />
         <option value="$PROJECT_DIR$/src/sass/components/nav.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/header.sass" />
         <option value="$PROJECT_DIR$/src/sass/helpers/_mixins.sass" />
         <option value="$USER_HOME$/Documents/arc-rect.svg" />
         <option value="$USER_HOME$/Documents/Rectangle_9_copy.svg" />
-        <option value="$PROJECT_DIR$/src/templates/mixins/_blocks.pug" />
-        <option value="$PROJECT_DIR$/src/sass/generated/_sprite-png.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/_blocks.sass" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_21.txt" />
         <option value="$PROJECT_DIR$/src/sass/components/footer.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/sliders.sass" />
-        <option value="$PROJECT_DIR$/src/js/components/Sliders.js" />
-        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_22.txt" />
-        <option value="$PROJECT_DIR$/src/js/Common.js" />
-        <option value="$PROJECT_DIR$/src/js/components/CTabs.js" />
         <option value="$PROJECT_DIR$/src/sass/app.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/header.sass" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_23.txt" />
+        <option value="$PROJECT_DIR$/src/sass/components/_blocks.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/CTabs.js" />
+        <option value="$PROJECT_DIR$/src/sass/components/c-tabs.sass" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_24.txt" />
+        <option value="$PROJECT_DIR$/src/sass/generated/_sprite-png.sass" />
+        <option value="$PROJECT_DIR$/gulp/tasks/sprite-png/sprite.template.mustache" />
+        <option value="$PROJECT_DIR$/src/js/components/Sliders.js" />
+        <option value="$PROJECT_DIR$/src/sass/components/sliders.sass" />
+        <option value="$PROJECT_DIR$/src/templates/mixins/_blocks.pug" />
+        <option value="$PROJECT_DIR$/src/sass/components/forms.sass" />
+        <option value="$PROJECT_DIR$/src/js/Common.js" />
+        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/Grid.js" />
         <option value="$PROJECT_DIR$/src/templates/home.pug" />
         <option value="$PROJECT_DIR$/src/sass/pages/home.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/c-tabs.sass" />
       </list>
     </option>
   </component>
@@ -238,9 +355,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="-22" />
     <option name="width" value="1440" />
-    <option name="height" value="922" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -279,6 +395,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,31 +425,17 @@
               <item name="center-dop" type="b2602c69:ProjectViewProjectNode" />
               <item name="center-dop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="center-dop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="center-dop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="center-dop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="center-dop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/nazar/Work/center-dop/src/sass/components/_blocks.sass" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/nazar/Work/center-dop/src/templates/home.pug" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -348,7 +451,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -405,12 +508,23 @@
       <workItem from="1537381573538" duration="43000" />
       <workItem from="1537385432968" duration="4226000" />
       <workItem from="1537427933111" duration="4428000" />
-      <workItem from="1537433454687" duration="22471000" />
+      <workItem from="1537433454687" duration="35269000" />
+      <workItem from="1537523838504" duration="7672000" />
+      <workItem from="1537537313680" duration="3047000" />
+      <workItem from="1537545913628" duration="2214000" />
     </task>
+    <task id="LOCAL-00001" summary="upd">
+      <created>1537459661835</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537459661835</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44221000" />
+    <option name="totallyTimeSpent" value="69952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -443,6 +557,13 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="uod" />
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sass/helpers/_fonts.sass">
@@ -494,39 +615,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/arc-rect.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_variables.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/arc-rect.svg" />
     <entry file="file://$USER_HOME$/Documents/Rectangle_9_copy.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/mixins/_blocks.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/generated/_sprite-png.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="148" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="148" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_21.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -542,28 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Sliders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#2383#2645#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/helpers/_mixins.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="133" column="12" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="133" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/sliders.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -581,27 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/Common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="154" column="56" lean-forward="true" selection-start-line="154" selection-start-column="3" selection-end-line="154" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/app.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -609,35 +661,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_23.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/CTabs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="64" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1537458411811" expanded="true" signature="29:33" ph="..." />
-          </folding>
+        <state relative-caret-position="648">
+          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_24.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="260" column="18" selection-start-line="260" selection-start-column="18" selection-end-line="260" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="222" column="19" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/c-tabs.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="582">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite-png/sprite.template.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/generated/_sprite-png.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite-png/sprite-png.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/_helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="196" column="14" lean-forward="true" selection-start-line="196" selection-start-column="14" selection-end-line="196" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Sliders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/sliders.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/mixins/_blocks.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="353" lean-forward="true" selection-start-line="353" selection-end-line="353" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="294" column="10" lean-forward="true" selection-start-line="294" selection-start-column="10" selection-end-line="294" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -22,10 +22,14 @@ body
 .row
    display: flex
    margin: 0 -15px
-
+   
 .main
    overflow: hidden
    padding-top: 130px
+   
+.grid
+   &__sizer
+      float: left
    
 .section
    position: relative
@@ -100,6 +104,7 @@ strong
    text-align: center
    border-radius: 28px
    cursor: pointer
+   transition: .1s ease-in-out
    &::after, &::before
       +coverdiv
       border-radius: 28px
@@ -110,18 +115,22 @@ strong
    &_red
       color: $white
       &:hover
+         &::before
+            background-color: lighten($color1, 10)
+      &:active
+         transform: translateY(5px)
          &::after
-            transform: translateY(0)
             box-shadow: none
-            content: ''
+            transform: translateY(0)
       &::after
          transform: translateY(5px)
          background-color: $color7
          box-shadow: 0 0 48px 3px rgba(240, 67, 79, 0.2)
-         transition: .3s ease-in-out
+         transition: .1s ease-in-out
       &::before
          z-index: 1
          background-color: $color1
+         transition: .3s ease-in-out
 
 .arc-decor
    $parent: &
@@ -171,3 +180,12 @@ strong
          width: 491px
          height: 633px
          background: url("../img/decor/tire-tracks_r.png")
+   &_type-2
+      &::before
+         width: 255px
+         height: 579px
+         background: url("../img/decor/gear_l.png")
+      &::after
+         width: 290px
+         height: 579px
+         background: url("../img/decor/gear_r.png")

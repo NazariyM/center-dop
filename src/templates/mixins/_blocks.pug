@@ -27,3 +27,12 @@ mixin arcDecor(classMod)
 			g(clip-path='url(#clip-662)', transform='translate(0 -630)')
 				use(xlink:href='#arc-decor-2')
 
+mixin checkBox(classMod, text, radio)
+	+b.check-box(class= classMod)
+		+e.LABEL.label
+			if radio
+				+e.INPUT.input(type='radio' name='radio')&attributes(attributes)
+			else
+				+e.INPUT.input(type='checkbox' name='')&attributes(attributes)
+			+e.square: +i('check', 'check-box__icon')
+			+e.SPAN.text= text

@@ -28,9 +28,10 @@ block content
 									+e.content-price
 										+e.SPAN.content-price-text от
 										+b.price-block._white
-											span 10 000
-											= ' '
-											| ₽
+											+e.current
+												span 10 000
+													= ' '
+													i ₽
 									+btn({
 										type: 'b',
 										text: 'Заказать звонок',
@@ -237,28 +238,155 @@ block content
 						while i < 4
 							.c-tabs__tab
 								+e.item
-									+e.H6.item-title Опции комплекса
+									+e.H6.item-title: span Опции комплекса
 									+e.UL.item-list
-										li Электромеханические замки капота x 2 шт
+										li Электромеханические замки капота
+											span x 2 шт
 										li Охранно-телематический комплекс
 										li Координаты по базовым станциям GSM
 										li Подкапотный Bluetooth-модуль
-										li Bluetooth-метки x 2 шт или смартфон
+										li Bluetooth-метки
+											span x 2 шт
+											= ' '
+											| или смартфон
 										li Функция "свободные руки"
 										li Slave управление штатным ключом
 										li Управление и контроль по GSM/Bluetooth
 										li Координаты по базовым станциям GSM
-										li CAN Блокировка двигателя (уточнять)
-										li Автозакрытие стекол (уточнять)
-										li Управление догревателем (уточнять)
-										li Авторизация по штатным кнопкам (уточнять)
-										li Управление и контроль по GSM/Bluetooth
-										li Координаты по базовым станциям GSM
-										li CAN Блокировка двигателя (уточнять)
-										li Автозакрытие стекол (уточнять)
-										li Управление догревателем (уточнять)
-										li Авторизация по штатным кнопкам (уточнять)
+										li CAN Блокировка двигателя
+											span (уточнять)
+										li Автозакрытие стекол
+											span (уточнять)
+										li Управление догревателем
+											span (уточнять)
+										li Авторизация по штатным кнопкам
+											span (уточнять)
+
+								+e.item
+									+e.H6.item-sub-title: span Дополнительные опции
+									+e.item-options
+										+checkBox('_type-1 complex__item-checkbox', 'Модуль аварийного открытия замков')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Блокировка радиоканала')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Защита диагностического разъема')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Бесключевой (безопасный) автозапуск')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Поисковый маяк')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Координаты по GPS')(disabled, checked)
+
+								+e.bottom
+									+e.price
+										+e.SPAN.price-text.title._black Цена:
+										+b.price-block._black
+											+e.old
+												span 25 000
+												i ₽
+											+e.current
+												span 20 000
+												= ' '
+												i ₽
+
+									+btn({
+										type: 'b',
+										text: 'Заказать звонок',
+										classMod: '_red'
+									})
 							-i++
 		//end complex
+			
+		//begin config
+		+b.SECTION.config.noise-bg._type-2
+			+e.container.container
+				+b.section-title._left._white.config__title
+					+e.inner
+						+e.I.icon.icon-O
+						+e.H2.text Онлайн - конфигуратор
+							span средств защиты от угона
+					+e.P.descr._color-2 Выберите опции, заполните форму заказа и отправьте заявку
+				+e.grid.grid
+					.grid__sizer
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Базовое устройство
+						+checkBox('_type-2 _radio config__item-checkbox', 'Иммобилайзер', true)(checked)
+						+checkBox('_type-2 _radio config__item-checkbox', 'Охранная система', true)
+						+checkBox('_type-2 _radio config__item-checkbox is-disabled', 'Телематический комплекс', true)
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Способ управления
+						+checkBox('_type-2 config__item-checkbox', 'Метка')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'Брелок')
+						+checkBox('_type-2 config__item-checkbox is-disabled', 'Смартфон Bluetooth')
+						+checkBox('_type-2 config__item-checkbox', 'Штатный ключ')
+						+checkBox('_type-2 config__item-checkbox is-disabled', 'Штатные кнопки')
+
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Координаты
+						+checkBox('_type-2 config__item-checkbox', 'Мониторинг')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'Местоположение по запросу')
+						+checkBox('_type-2 config__item-checkbox', 'Автономный маяк')
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Эл. блокировка
+						+checkBox('_type-2 config__item-checkbox', 'Двигателя (капот)')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'Двигателя (салон)')
+						+checkBox('_type-2 config__item-checkbox', 'По шине CAN')
+						+checkBox('_type-2 config__item-checkbox', 'Радиоканал')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'OBD (диагностика)')(checked)
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Комфорт
+						+checkBox('_type-2 config__item-checkbox', 'Автозапуск')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'Свободные руки')
+						+checkBox('_type-2 config__item-checkbox', 'Бесключевой доступ')
+						+checkBox('_type-2 config__item-checkbox', 'Автозакрытие стекол')
+						+checkBox('_type-2 config__item-checkbox', 'Автозакрытие люка')
+						+checkBox('_type-2 config__item-checkbox', 'Складывание зеркал')
+						+checkBox('_type-2 config__item-checkbox', 'Управление видеорегистратором')
+						+checkBox('_type-2 config__item-checkbox', 'Управление догревателем')
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Телематика
+						+checkBox('_type-2 config__item-checkbox', 'Управление по GSM ')(checked)
+						+checkBox('_type-2 config__item-checkbox', '(звонок и смс)')
+						+checkBox('_type-2 config__item-checkbox', 'Управление по internet (смартфон или Web)')
+						+checkBox('_type-2 config__item-checkbox', 'Управление по  Bluetooth (смартфон)')
+						+checkBox('_type-2 config__item-checkbox', 'Данные о расходе топлива, пробег')(checked)
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Автозапуск
+						+checkBox('_type-2 config__item-checkbox', 'Копия чипа ключа')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'Бесключевой обход')
+						+checkBox('_type-2 config__item-checkbox', 'Мягкая посадка')
+						+checkBox('_type-2 config__item-checkbox', 'Турботаймер')
+						+checkBox('_type-2 config__item-checkbox', 'Активация подогрева сидений')
+						+checkBox('_type-2 config__item-checkbox', 'Управление климат. системой')
+						+checkBox('_type-2 config__item-checkbox', 'Акт. подогрева зеркал и стекол')
+
+					+e.item.grid__item
+						+e.H5.item-title.title._white Блокировка доступа
+						+checkBox('_type-2 config__item-checkbox', 'Эл. мех замок (капот)')(checked)
+						+checkBox('_type-2 config__item-checkbox is-disabled', 'Эл. мех замки 2 шт (капот)')
+						+checkBox('_type-2 config__item-checkbox is-disabled', 'Авторские замки (капот)')
+						+checkBox('_type-2 config__item-checkbox', 'Эл. мех блокираторы (двери)')(checked)
+						+checkBox('_type-2 config__item-checkbox', 'Модуль аварийного открытия')
+
+				+e.actions
+					+btn({
+						type: 'b',
+						text: 'Оформить заказ',
+						classMod: '_red config__actions-btn'
+					})
+		//end config
+			
+		//begin equip
+		+b.SECTION.equip
+			+e.container.container
+				+b.section-title._left._white.config__title
+					+e.inner
+						+e.I.icon.icon-P
+						+e.H2.text Подбор и установка
+							span доп.оборудования
+					+e.P.descr._color-2 Нужно что-то еще? Все можно установить в одном месте
+		//end equip
 
 	//end main

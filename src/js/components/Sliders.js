@@ -1,5 +1,5 @@
 import 'slick-carousel';
-import { svgIcon, css} from '../_helpers';
+import { svgIcon, css } from '../_helpers';
 
 class Slider {
   constructor({ el= '.js-slider', showCount = 1, scrollCount = 1, ...opts } = {}) {
@@ -8,14 +8,14 @@ class Slider {
     this.scrollCount = scrollCount;
     this.responsive = opts.responsive;
     this.arrows = opts.arrows || true;
-    this.infinite = opts.infinite || true;
+    this.infinite = opts.infinite || false;
     this.function = opts.function || false;
     this.dots = opts.dots || true;
     this.dotsClass = opts.dotsClass || 'slider-dots';
     this.appendArrows = opts.appendArrows;
     this.appendDots = opts.appendDots;
     this.transform = opts.transform || true;
-    this.speed = opts.speed || 800;
+    this.speed = opts.speed || 1000;
     this.ease = opts.ease;
     this.counter = opts.counter || false;
     this.onInit = opts.onInit || false;
@@ -73,14 +73,25 @@ class Slider {
       $nextSld.appendTo($sliderControls);
     }, 0);
 
-    this.$slider.on('init afterChange reInit', (event, slick, currentSlide) => {
+    this.$slider.on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+      if ((currentSlide > nextSlide && (nextSlide !== 0 || currentSlide === 1)) || (currentSlide === 0 && nextSlide === slick.slideCount - 1)) {
+        $sliderControls.addClass('is-left');
+      } else {
+        $sliderControls.addClass('is-right');
+      }
+
+    });
+
+    this.$slider.on('init afterChange reInit', (e, slick, currentSlide) => {
+      $sliderControls.removeClass('is-left is-right');
+
       const i = (currentSlide ? currentSlide : 0) + 1;
 
-      $prevSld.text(i - 1);
-      $nextSld.text(i + 1);
+      $prevSld.text(`0${i - 1}`);
+      $nextSld.text(`0${i + 1}`);
 
-      $prevSld.text() === `0` ? $prevSld.addClass(css.disabled) : $prevSld.removeClass(css.disabled);
-      $nextSld.text() === `${slick.slideCount + 1}` ? $nextSld.addClass(css.disabled) : $nextSld.removeClass(css.disabled);
+      $prevSld.text() === `00` ? $prevSld.text(`0${slick.slideCount}`) : false;
+      $nextSld.text() === `0${slick.slideCount + 1}` ? $nextSld.text('01') : false;
     });
   }
 }
@@ -94,7 +105,8 @@ const screenSld = new Slider({
   speed: 1100,
   dotsClass: 'screen__slider-dots slider-dots slider-dots_gray',
   appendArrows: '.screen__slider-controls',
-  appendDots: '.screen__slider-controls'
+  appendDots: '.screen__slider-controls',
+  infinite: true
 });
 
 const solutionsSld = new Slider({
@@ -103,5 +115,6 @@ const solutionsSld = new Slider({
   dotsClass: 'solutions__slider-dots slider-dots slider-dots_black',
   appendArrows: '.solutions__slider-controls',
   appendDots: '.solutions__slider-controls',
-  counter: true
+  counter: true,
+  infinite: true
 });

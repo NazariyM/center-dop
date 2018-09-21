@@ -1,10 +1,24 @@
 // *** begin price-block *** //
 .price-block
-   +f('mp400', 36, 36)
+   display: flex
+   align-items: center
+   +f('mp400', 30, 30)
    &_white
       color: $white
-   span
-      +f('ub700')
+   &__current
+      span
+         +f('ub700')
+   &__old
+      margin-right: 45px
+      font-size: 16px
+      line-height: 16px
+      text-decoration: line-through
+      color: $color5
+      i
+         vertical-align: -1px
+   i
+      +f('mp400')
+      font-style: normal
 // end price-block //
 
 // *** begin list-triangled *** //
