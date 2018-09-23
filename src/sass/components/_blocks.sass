@@ -3,6 +3,10 @@
    $parent: &
    font-size: 0
    letter-spacing: 0
+   &_extended
+      display: flex
+      justify-content: space-between
+      padding-right: 8px
    &__item
       display: inline-flex
       color: $color2
@@ -10,13 +14,13 @@
       #{$parent}_default &
          align-items: center
       #{$parent}_extended &
+         width: 250px
          align-items: flex-start
       
       &:not(:last-child)
-         margin-right: 57px
          #{$parent}_default &
             margin-right: 57px
-            
+         
       address
          font-style: normal
       a
@@ -36,6 +40,8 @@
          height: 26px
          border: 1px solid #e6e6e6
          font-size: 11px
+         #{$parent}_extended &
+            margin-right: 15px
          &::after, &::before
             position: absolute
             top: 50%
