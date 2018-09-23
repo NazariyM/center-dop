@@ -6,7 +6,6 @@
 .slider-controls
    position: absolute
    +flexCenter
-   width: 150px
    height: 20px
    z-index: 1
    &_gray .slider-btn
@@ -16,11 +15,16 @@
       svg
          fill: $color2
    &__count
+      position: absolute
       color: $color2
       +f('ub700', 18, 18)
       opacity: .1
       transform: translateX(0)
       transition: .3s ease-in-out
+      &_l
+         left: -35px
+      &_r
+         right: -35px
       &.is-disabled
          opacity: 0
          transition: none
@@ -35,7 +39,6 @@
    $parent: &
    display: flex
    justify-content: center
-   padding: 0 20px
    line-height: 0
    &_gray
       button

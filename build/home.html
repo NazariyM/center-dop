@@ -20,17 +20,17 @@
               <span>Dop</span>
             </div>
           </div>
-          <div class="header__contact">
-            <div class="header__contact-item">
-              <div class="header__contact-item-icon">
+          <div class="contact-block contact-block_default header__contact-block">
+            <div class="contact-block__item">
+              <div class="contact-block__item-icon">
                 <svg class="icon-map-marker-alt ">
                   <use xlink:href="img/sprite.svg#icon-map-marker-alt"></use>
                 </svg>
               </div>
               <address>г. Москва, ул. Осенняя, 23</address>
             </div>
-            <div class="header__contact-item">
-              <div class="header__contact-item-icon">
+            <div class="contact-block__item">
+              <div class="contact-block__item-icon">
                 <svg class="icon-phone ">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
@@ -77,7 +77,7 @@
     <!--begin main-->
     <div class="main">
       <!--begin screen-->
-      <section class="screen section">
+      <section class="screen section noise-bg">
         <div class="screen__slider-controls-wrap container">
           <div class="screen__slider-controls slider-controls slider-controls_gray"></div>
         </div>
@@ -86,19 +86,19 @@
             <div class="screen__bg" style="background-image: url(img/bg/screen-sld_1.jpg)">
               <div class="screen__container container">
                 <div class="screen__content">
-                  <div class="section-title section-title_left section-title_white screen__content-title">
+                  <div class="section-title section-title_left section-title_white section-title_lg screen__content-title">
                     <div class="section-title__inner">
                       <i class="section-title__icon icon-R"></i>
-                      <h2 class="section-title__text">РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?
-                        <span>— ДА!</span>
+                      <h2 class="section-title__text section-title__text_lg">РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?&nbsp;
+                        <span>—&nbsp; ДА!</span>
                       </h2>
                     </div>
-                    <p class="section-title__descr section-title__descr_color-1">Удобство. Экономия. Эффективность.</p>
                   </div>
+                  <p class="screen__content-descr">Удобство. Экономия. Эффективность.</p>
                   <div class="screen__content-bot">
                     <div class="screen__content-price">
                       <span class="screen__content-price-text">от</span>
-                      <div class="price-block price-block_white">
+                      <div class="price-block price-block_white screen__price-block">
                         <div class="price-block__current">
                           <span>10 000
                             <i>₽</i>
@@ -106,7 +106,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="screen__btn btn btn_red" type="button">
+                    <button class="btn btn_red screen__content-btn" type="button">
                       <span>Заказать звонок</span>
                     </button>
                   </div>
@@ -118,23 +118,28 @@
             <div class="screen__bg" style="background-image: url(img/bg/screen-sld_2.jpg)">
               <div class="screen__container container">
                 <div class="screen__content">
-                  <div class="section-title section-title_left section-title_white screen__content-title">
+                  <div class="section-title section-title_left section-title_white section-title_lg screen__content-title">
                     <div class="section-title__inner">
                       <i class="section-title__icon icon-A"></i>
-                      <h2 class="section-title__text">Автоматический запуск
+                      <h2 class="section-title__text section-title__text_lg">Автоматический запуск
                         <span>двигателя</span>
                       </h2>
                     </div>
-                    <p class="section-title__descr section-title__descr_color-1">Удобство. Экономия. Эффективность.</p>
                   </div>
+                  <p class="screen__content-descr">Расчетливость. Продуктивность. Комфорт.</p>
                   <div class="screen__content-bot">
                     <div class="screen__content-price">
                       <span class="screen__content-price-text">от</span>
-                      <div class="price-block price-block_white">
-                        <span>10 000</span> ₽</div>
+                      <div class="price-block price-block_white screen__price-block">
+                        <div class="price-block__current">
+                          <span>10 000
+                            <i>₽</i>
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <button class="screen__btn btn btn_red" type="button">
-                      <span>Заказать звонок</span>
+                    <button class="btn btn_red screen__content-btn" type="button">
+                      <span>Консультация</span>
                     </button>
                   </div>
                 </div>
@@ -155,13 +160,6 @@
           </svg>
           <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
             <defs>
-              <filter id="noise">
-                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
-                  <fecolormatrix type="saturate" values="0">
-                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
-                  </fecolormatrix>
-                </feturbulence>
-              </filter>
               <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
             </defs>
             <g clip-path="url(#clip-662)" transform="translate(0 -630)">
@@ -276,21 +274,7 @@
               </g>
             </g>
           </svg>
-          <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
-            <defs>
-              <filter id="noise">
-                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
-                  <fecolormatrix type="saturate" values="0">
-                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
-                  </fecolormatrix>
-                </feturbulence>
-              </filter>
-              <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
-            </defs>
-            <g clip-path="url(#clip-662)" transform="translate(0 -630)">
-              <use xlink:href="#arc-decor-2"></use>
-            </g>
-          </svg>
+          <div class="arc-decor__noise"></div>
         </div>
       </section>
       <!--end benefits-->
@@ -300,8 +284,8 @@
           <div class="section-title section-title_left section-title_white faq__title">
             <div class="section-title__inner">
               <i class="section-title__icon icon-Z"></i>
-              <h2 class="section-title__text">Захотят —
-                <span>угонят?</span>
+              <h2 class="section-title__text">Захотят
+                <span>— угонят?</span>
               </h2>
             </div>
             <p class="section-title__descr section-title__descr_color-2">Распостроненные мнения автолюбителей об угоне</p>
@@ -344,6 +328,26 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="arc-decor arc-decor_color-3">
+          <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
+            <defs>
+              <path id="arc-decor-1" d="M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z"></path>
+            </defs>
+            <g>
+              <g clip-path="url(#clip-665)" transform="translate(0 -601)">
+                <use xlink:href="#arc-decor-1"></use>
+              </g>
+            </g>
+          </svg>
+          <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
+            <defs>
+              <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
+            </defs>
+            <g clip-path="url(#clip-662)" transform="translate(0 -630)">
+              <use xlink:href="#arc-decor-2"></use>
+            </g>
+          </svg>
         </div>
       </section>
       <!--end faq-->
@@ -526,13 +530,6 @@
           </svg>
           <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
             <defs>
-              <filter id="noise">
-                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
-                  <fecolormatrix type="saturate" values="0">
-                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
-                  </fecolormatrix>
-                </feturbulence>
-              </filter>
               <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
             </defs>
             <g clip-path="url(#clip-662)" transform="translate(0 -630)">
@@ -614,7 +611,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="complex__item">
+                <div class="complex__item complex__item_sm">
                   <h6 class="complex__item-sub-title">
                     <span>Дополнительные опции</span>
                   </h6>
@@ -638,28 +635,6 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
-                        <span class="check-box__text">Блокировка радиоканала</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
-                        <span class="check-box__text">Защита диагностического разъема</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
                         <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
                       </label>
                     </div>
@@ -671,7 +646,29 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
                         <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
                       </label>
                     </div>
                     <div class="check-box check-box_type-1 complex__item-checkbox">
@@ -701,8 +698,8 @@
                       </div>
                     </div>
                   </div>
-                  <button class="complex__btn btn btn_red" type="button">
-                    <span>Заказать звонок</span>
+                  <button class="btn btn_red complex__order-btn" type="button">
+                    <span>Заказать комплекс</span>
                   </button>
                 </div>
               </div>
@@ -738,7 +735,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="complex__item">
+                <div class="complex__item complex__item_sm">
                   <h6 class="complex__item-sub-title">
                     <span>Дополнительные опции</span>
                   </h6>
@@ -762,28 +759,6 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
-                        <span class="check-box__text">Блокировка радиоканала</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
-                        <span class="check-box__text">Защита диагностического разъема</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
                         <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
                       </label>
                     </div>
@@ -795,7 +770,29 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
                         <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
                       </label>
                     </div>
                     <div class="check-box check-box_type-1 complex__item-checkbox">
@@ -825,8 +822,8 @@
                       </div>
                     </div>
                   </div>
-                  <button class="complex__btn btn btn_red" type="button">
-                    <span>Заказать звонок</span>
+                  <button class="btn btn_red complex__order-btn" type="button">
+                    <span>Заказать комплекс</span>
                   </button>
                 </div>
               </div>
@@ -862,7 +859,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="complex__item">
+                <div class="complex__item complex__item_sm">
                   <h6 class="complex__item-sub-title">
                     <span>Дополнительные опции</span>
                   </h6>
@@ -886,28 +883,6 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
-                        <span class="check-box__text">Блокировка радиоканала</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
-                        <span class="check-box__text">Защита диагностического разъема</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
                         <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
                       </label>
                     </div>
@@ -919,7 +894,29 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
                         <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
                       </label>
                     </div>
                     <div class="check-box check-box_type-1 complex__item-checkbox">
@@ -949,8 +946,8 @@
                       </div>
                     </div>
                   </div>
-                  <button class="complex__btn btn btn_red" type="button">
-                    <span>Заказать звонок</span>
+                  <button class="btn btn_red complex__order-btn" type="button">
+                    <span>Заказать комплекс</span>
                   </button>
                 </div>
               </div>
@@ -986,7 +983,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="complex__item">
+                <div class="complex__item complex__item_sm">
                   <h6 class="complex__item-sub-title">
                     <span>Дополнительные опции</span>
                   </h6>
@@ -1010,28 +1007,6 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
-                        <span class="check-box__text">Блокировка радиоканала</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
-                        <span class="check-box__text">Защита диагностического разъема</span>
-                      </label>
-                    </div>
-                    <div class="check-box check-box_type-1 complex__item-checkbox">
-                      <label class="check-box__label">
-                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
-                        <span class="check-box__square">
-                          <svg class="icon-check check-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg>
-                        </span>
                         <span class="check-box__text">Бесключевой (безопасный) автозапуск</span>
                       </label>
                     </div>
@@ -1043,7 +1018,29 @@
                             <use xlink:href="img/sprite.svg#icon-check"></use>
                           </svg>
                         </span>
+                        <span class="check-box__text">Блокировка радиоканала</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
                         <span class="check-box__text">Поисковый маяк</span>
+                      </label>
+                    </div>
+                    <div class="check-box check-box_type-1 complex__item-checkbox">
+                      <label class="check-box__label">
+                        <input class="check-box__input" type="checkbox" name="" disabled="disabled" checked="checked" />
+                        <span class="check-box__square">
+                          <svg class="icon-check check-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                        </span>
+                        <span class="check-box__text">Защита диагностического разъема</span>
                       </label>
                     </div>
                     <div class="check-box check-box_type-1 complex__item-checkbox">
@@ -1073,14 +1070,29 @@
                       </div>
                     </div>
                   </div>
-                  <button class="complex__btn btn btn_red" type="button">
-                    <span>Заказать звонок</span>
+                  <button class="btn btn_red complex__order-btn" type="button">
+                    <span>Заказать комплекс</span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="arc-decor arc-decor_color-1">
+          <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
+            <defs>
+              <path id="arc-decor-1" d="M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z"></path>
+            </defs>
+            <g>
+              <g clip-path="url(#clip-665)" transform="translate(0 -601)">
+                <use xlink:href="#arc-decor-1"></use>
+              </g>
+            </g>
+          </svg>
+          <div class="arc-decor__noise"></div>
+        </div>
+        <img class="complex__decor-dots complex__decor-dots_l" src="img/decor/decor-dots_1.png" alt="image" title="" />
+        <img class="complex__decor-dots complex__decor-dots_r" src="img/decor/decor-dots_2.png" alt="image" title="" />
       </section>
       <!--end complex-->
       <!--begin config-->
@@ -1563,10 +1575,30 @@
             </div>
           </div>
           <div class="config__actions">
-            <button class="config__btn btn btn_red config__actions-btn" type="button">
+            <button class="btn btn_red config__actions-btn" type="button">
               <span>Оформить заказ</span>
             </button>
           </div>
+        </div>
+        <div class="arc-decor arc-decor_color-3">
+          <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
+            <defs>
+              <path id="arc-decor-1" d="M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z"></path>
+            </defs>
+            <g>
+              <g clip-path="url(#clip-665)" transform="translate(0 -601)">
+                <use xlink:href="#arc-decor-1"></use>
+              </g>
+            </g>
+          </svg>
+          <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
+            <defs>
+              <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
+            </defs>
+            <g clip-path="url(#clip-662)" transform="translate(0 -630)">
+              <use xlink:href="#arc-decor-2"></use>
+            </g>
+          </svg>
         </div>
       </section>
       <!--end config-->
@@ -1699,13 +1731,6 @@
           </svg>
           <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
             <defs>
-              <filter id="noise">
-                <feturbulence type="fractalNoise" basefrequency="30" result="noisy">
-                  <fecolormatrix type="saturate" values="0">
-                    <feblend in="SourceGraphic" in2="noisy" mode="multiply"></feblend>
-                  </fecolormatrix>
-                </feturbulence>
-              </filter>
               <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
             </defs>
             <g clip-path="url(#clip-662)" transform="translate(0 -630)">
@@ -1726,6 +1751,84 @@
               </h2>
             </div>
           </div>
+          <div class="contacts__row row">
+            <div class="contacts__col col">
+              <div class="contact-block contact-block_extended contacts__contact-block">
+                <div class="contact-block__item">
+                  <div class="contact-block__item-icon">
+                    <svg class="icon-map-marker-alt ">
+                      <use xlink:href="img/sprite.svg#icon-map-marker-alt"></use>
+                    </svg>
+                  </div>
+                  <div class="contact-block__item-text">
+                    <div class="contact-block__item-title">Адрес</div>
+                    <address>г. Москва, ул. Осенняя, 23</address>
+                    <p>(м-н Крылатское)</p>
+                  </div>
+                </div>
+                <div class="contact-block__item">
+                  <div class="contact-block__item-icon">
+                    <svg class="icon-phone ">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                  <div class="contact-block__item-text">
+                    <div class="contact-block__item-title">Телефон</div>
+                    <a href="tel:+79650990090">+7 (965) 099 00 90</a>
+                    <p>(Viber, Telegram, WhatsApp)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form contact-form_contacts">
+                <h3 class="contact-form__title">Форма
+                  <span>обратной связи</span>
+                </h3>
+                <form class="contact-form__form js-form" action="#!" method="POST">
+                  <div class="contact-form__row row">
+                    <div class="form-field contact-form__field">
+                      <label>
+                        <input class="form-field__input js-input" type="text" name="" placeholder="Ваше имя" required="required" />
+                        <div class="form-field__icon">
+                          <svg class="icon-user-edit ">
+                            <use xlink:href="img/sprite.svg#icon-user-edit"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form-field contact-form__field">
+                      <label>
+                        <input class="form-field__input js-input" type="text" name="" placeholder="Email" required="required" />
+                        <div class="form-field__icon">
+                          <svg class="icon-envelope ">
+                            <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="contact-form__row row">
+                    <div class="form-field form-field_message contact-form__field">
+                      <textarea class="textarea" placeholder="Ваше сообщение" required="required"></textarea>
+                      <div class="form-field__icon">
+                        <svg class="icon-comment-alt ">
+                          <use xlink:href="img/sprite.svg#icon-comment-alt"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn_red contact-form__submit-btn" type="submit">
+                    <span>Отправить</span>
+                  </button>
+                </form>
+                <div class="contact-form__dots">
+                  <div class="contact-form__dots-el"></div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__col col">
+              <div class="contacts__map" data-zoom="17" data-center-lat="55.766820" data-center-lng="37.404096" data-marker-lat="55.766400" data-marker-lng="37.404096" data-marker-icon="img/other/map-marker.png"></div>
+            </div>
+          </div>
         </div>
       </section>
       <!--end contacts-->
@@ -1733,7 +1836,31 @@
     <!--end main-->
     <!--begin footer-->
     <footer class="footer">
-      <div class="footer__container container"></div>
+      <div class="footer__container container">
+        <p class="footer__text">
+          <span>Center</span>
+          <i>|</i> Dop © 2018. Все права защищены</p>
+      </div>
+      <div class="arc-decor arc-decor_color-1">
+        <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
+          <defs>
+            <path id="arc-decor-1" d="M0 601s478 149.5 957 149.5c481 0 963-149.5 963-149.5v197H0z"></path>
+          </defs>
+          <g>
+            <g clip-path="url(#clip-665)" transform="translate(0 -601)">
+              <use xlink:href="#arc-decor-1"></use>
+            </g>
+          </g>
+        </svg>
+        <svg class="arc-decor__mask arc-decor__mask_bot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="120" viewBox="0 0 1920 120">
+          <defs>
+            <path id="arc-decor-2" d="M0 630s478 120 957 120c481 0 963-120 963-120v147H0z"></path>
+          </defs>
+          <g clip-path="url(#clip-662)" transform="translate(0 -630)">
+            <use xlink:href="#arc-decor-2"></use>
+          </g>
+        </svg>
+      </div>
     </footer>
     <!--end footer-->
     <!--+popup({ name: 'thanks-popup' })-->

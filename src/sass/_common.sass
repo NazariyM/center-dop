@@ -23,6 +23,9 @@ body
    display: flex
    margin: 0 -15px
    
+.col
+   padding: 0 15px
+
 .main
    overflow: hidden
    padding-top: 130px
@@ -42,41 +45,60 @@ body
       width: 3px
       content: ''
    &_left
-      padding-left: 30px
+      padding-left: 20px
       text-align: left
       &::before
-         top: 0
-         left: 0
-         height: 100%
+         top: 14px
+         left: -15px
+         bottom: 5px
          background-color: $color1
          content: ''
    &_center
       text-align: center
-      &::after
-         left: calc(50% - 2px)
-         bottom: 0
+      &::before
+         left: calc(50% - 5px)
+         bottom: -40px
+         width: 3px
          height: 25px
+         background-color: $color1
          content: ''
+   &_lg
+      padding-left: 12px
+      &::before
+         top: 15px
+         left: -15px
+         bottom: 15px
    &__inner
-      display: flex
+      position: relative
+      display: inline-flex
       #{$parent}_center &
          justify-content: center
       #{$parent}_left &
          justify-content: flex-start
    &__icon
-      margin: -5px -20px 0 0
+      position: absolute
+      top: -9px
+      left: -15px
       flex-shrink: 0
+      z-index: -1
+      #{$parent}_lg &
+         top: -12px
    &__text
-      +f('ub700', 40, 60)
+      +f('ub700', 40, 50)
       text-transform: uppercase
+      #{$parent}_lg &
+         font-size: 52px
+         line-height: 62px
+   
       #{$parent}_black &
          color: $color2
       #{$parent}_white &
          color: $white
       span
          +f('ub300')
+   &_lg span
+      margin-left: 0
    &__descr
-      margin-top: 10px
       color: $color3
       +f('ub300', 22, 34)
       &_color-1
@@ -140,6 +162,9 @@ strong
    bottom: 0
    height: 150px
    overflow: hidden
+   pointer-events: none
+   +rmin(1950)
+      height: 200px
    &__mask
       position: absolute
       bottom: 0
@@ -153,10 +178,23 @@ strong
          #{$parent}_color-2 &
             fill: $color8
             opacity: .1
+         #{$parent}_color-3 &
+            fill: $color8
+            opacity: .5
+            
       &_bot
          #{$parent}_color-1 &,
          #{$parent}_color-2 &
              fill: $white
+         #{$parent}_color-3 &
+            fill: #ebebed
+   &__noise
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 119px
+      background: url("../img/decor/arc_noise.png")
 
 .noise-bg
    $parent: &
@@ -169,13 +207,13 @@ strong
       content: ''
    &_type-1
       &::before
-         top: 30%
+         top: 11%
          left: 0
          width: 808px
          height: 803px
          background: url("../img/decor/tire-tracks_l.png")
       &::after
-         top: 20%
+         top: 10.5%
          right: 0
          width: 491px
          height: 633px

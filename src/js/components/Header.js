@@ -25,7 +25,7 @@ class Header {
 
 	bindEvents() {
 		this.navBtn.addEventListener('click', () => {
-      this.beforeOpen();
+      // this.beforeOpen();
 			this.toggleMenu();
     });
 		 this.onResize();
@@ -67,7 +67,7 @@ class Header {
 
       e.currentTarget.oldScroll = e.currentTarget.scrollY;
 
-      if (window.pageYOffset > 0) {
+      if (window.pageYOffset > 80) {
 				_this.header.classList.add(css.fixed);
 			} else {
 				_this.header.classList.remove(css.fixed);

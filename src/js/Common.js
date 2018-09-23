@@ -4,7 +4,7 @@ import { $body, detectIE } from './_helpers';
 import './components/Header';
 import './components/Popups';
 import './components/Form';
-import './sections/Contact';
+import './sections/Contacts';
 import './components/Sliders';
 import './components/CTabs';
 import './components/Grid';

@@ -9,7 +9,7 @@ block content
 	.main
 
 		//begin screen
-		+b.SECTION.screen.section
+		+b.SECTION.screen.section.noise-bg
 			+e.slider-controls-wrap.container
 				+e.slider-controls.slider-controls._gray
 			+e.slider.slider.js-screen-slider
@@ -17,17 +17,17 @@ block content
 					+e.bg(style='background-image: url(img/bg/screen-sld_1.jpg)')
 						+e.container.container
 							+e.content
-								+b.section-title._left._white.screen__content-title
+								+b.section-title._left._white._lg.screen__content-title
 									+e.inner
 										+e.I.icon.icon-R
-										+e.H2.text
-											| РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?
-											span —  ДА!
-									+e.P.descr._color-1 Удобство. Экономия. Эффективность.
+										+e.H2.text._lg
+											| РЕАЛЬНАЯ ЗАЩИТА ОТ УГОНА?&nbsp;
+											span —&nbsp; ДА!
+								+e.P.content-descr Удобство. Экономия. Эффективность.
 								+e.content-bot
 									+e.content-price
 										+e.SPAN.content-price-text от
-										+b.price-block._white
+										+b.price-block._white.screen__price-block
 											+e.current
 												span 10 000
 													= ' '
@@ -35,32 +35,32 @@ block content
 									+btn({
 										type: 'b',
 										text: 'Заказать звонок',
-										classMod: '_red'})
+										classMod: '_red screen__content-btn'})
 
 				+e.slider-item
 					+e.bg(style='background-image: url(img/bg/screen-sld_2.jpg)')
 						+e.container.container
 							+e.content
-								+b.section-title._left._white.screen__content-title
+								+b.section-title._left._white._lg.screen__content-title
 									+e.inner
 										+e.I.icon.icon-A
-										+e.H2.text
+										+e.H2.text._lg
 											| Автоматический запуск
 											span двигателя
-									+e.P.descr._color-1 Удобство. Экономия. Эффективность.
+								+e.P.content-descr Расчетливость. Продуктивность. Комфорт.
 								+e.content-bot
 									+e.content-price
 										+e.SPAN.content-price-text от
-										+b.price-block._white
-											span 10 000
-											= ' '
-											| ₽
+										+b.price-block._white.screen__price-block
+											+e.current
+												span 10 000
+													= ' '
+													i ₽
 									+btn({
 										type: 'b',
-										text: 'Заказать звонок',
-										classMod: '_red'
+										text: 'Консультация',
+										classMod: '_red screen__content-btn'
 									})
-
 			+arcDecor('1')
 			+b.BUTTON.scroll-next-btn: +i('angle-down')
 
@@ -123,9 +123,9 @@ block content
 							li: span Повторное обращение
 							li: span Индивидуальные ситуации
 
-			+arcDecor('1')
+			+arcDecor('1', true)
 		//end benefits
-			
+
 		//begin faq
 		+b.SECTION.faq.section.noise-bg._type-1
 			+e.container.container
@@ -133,8 +133,8 @@ block content
 					+e.inner
 						+e.I.icon.icon-Z
 						+e.H2.text
-							| Захотят —
-							span угонят?
+							| Захотят
+							span — угонят?
 					+e.P.descr._color-2 Распостроненные мнения автолюбителей об угоне
 
 				+e.row.row
@@ -166,6 +166,8 @@ block content
 
 					each item, index in faqQ
 						+faqItem(index)
+
+			+arcDecor('3')
 		//end faq
 
 		//begin solutions
@@ -212,7 +214,7 @@ block content
 
 			+arcDecor('2')
 		//end solutions
-			
+
 		//begin complex
 		+b.SECTION.complex.section
 			+e.container.container
@@ -262,14 +264,14 @@ block content
 										li Авторизация по штатным кнопкам
 											span (уточнять)
 
-								+e.item
+								+e.item._sm
 									+e.H6.item-sub-title: span Дополнительные опции
 									+e.item-options
 										+checkBox('_type-1 complex__item-checkbox', 'Модуль аварийного открытия замков')(disabled, checked)
-										+checkBox('_type-1 complex__item-checkbox', 'Блокировка радиоканала')(disabled, checked)
-										+checkBox('_type-1 complex__item-checkbox', 'Защита диагностического разъема')(disabled, checked)
 										+checkBox('_type-1 complex__item-checkbox', 'Бесключевой (безопасный) автозапуск')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Блокировка радиоканала')(disabled, checked)
 										+checkBox('_type-1 complex__item-checkbox', 'Поисковый маяк')(disabled, checked)
+										+checkBox('_type-1 complex__item-checkbox', 'Защита диагностического разъема')(disabled, checked)
 										+checkBox('_type-1 complex__item-checkbox', 'Координаты по GPS')(disabled, checked)
 
 								+e.bottom
@@ -286,12 +288,15 @@ block content
 
 									+btn({
 										type: 'b',
-										text: 'Заказать звонок',
-										classMod: '_red'
+										text: 'Заказать комплекс',
+										classMod: '_red complex__order-btn'
 									})
 							-i++
+			+arcDecor('1', true)
+			+e.IMG.decor-dots._l(src='img/decor/decor-dots_1.png' alt='image')
+			+e.IMG.decor-dots._r(src='img/decor/decor-dots_2.png' alt='image')
 		//end complex
-			
+
 		//begin config
 		+b.SECTION.config.section.noise-bg._type-2
 			+e.container.container
@@ -375,8 +380,9 @@ block content
 						text: 'Оформить заказ',
 						classMod: '_red config__actions-btn'
 					})
+			+arcDecor('3')
 		//end config
-			
+
 		//begin equip
 		+b.SECTION.equip.section
 			+e.container.container
@@ -455,7 +461,58 @@ block content
 						+e.I.icon.icon-N
 						+e.H2.text Наши
 							span контакты
+				+e.row.row
+					+e.col.col
+						+b.contact-block._extended.contacts__contact-block
+							+e.item
+								+e.item-icon
+									+i('map-marker-alt')
+								+e.item-text
+									+e.item-title Адрес
+									address г. Москва, ул. Осенняя, 23
+									+e.P (м-н Крылатское)
 
+							+e.item
+								+e.item-icon
+									+i('phone')
+								+e.item-text
+									+e.item-title Телефон
+									+e.A(href='tel:+79650990090') +7 (965) 099 00 90
+									+e.P (Viber, Telegram, WhatsApp)
+						+b.contact-form._contacts
+							+e.H3.title Форма
+								span обратной связи
+							+e.FORM.form.js-form(action='#!' method='POST')
+								+e.row.row
+									+b.form-field.contact-form__field
+										label
+											+e.INPUT.input.js-input(type='text' name='' placeholder='Ваше имя' required)
+											+e.icon
+												+i('user-edit')
+
+									+b.form-field.contact-form__field
+										label
+											+e.INPUT.input.js-input(type='text' name='' placeholder='Email' required)
+											+e.icon
+												+i('envelope')
+
+								+e.row.row
+									+b.form-field._message.contact-form__field
+										+b.TEXTAREA.textarea(placeholder='Ваше сообщение' required)
+										+e.icon
+											+i('comment-alt')
+
+								+btn({
+									type: 'b',
+									text: 'Отправить',
+									classMod: '_red contact-form__submit-btn'
+								})(type='submit')
+
+							+e.dots
+								+e.dots-el
+
+					+e.col.col
+						+e.map(data-zoom='17' data-center-lat='55.766820' data-center-lng='37.404096' data-marker-lat='55.766400' data-marker-lng='37.404096' data-marker-icon='img/other/map-marker.png')
 
 		//end contacts
 

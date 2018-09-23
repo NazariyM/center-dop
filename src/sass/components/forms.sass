@@ -5,19 +5,21 @@
       width: 100%
       height: 60px
       padding: 0 30px 0 78px
-      +f('ms300', 15, 46)
+      +f('ub400', 14, 24)
       border-radius: 30px
-      background-color: #f9f9f9
+      background-color: $white
       border: 1px solid #e6e6e6
       transition: .3s ease-in-out
-      +placeholder-color(#75797b)
+      +placeholder-color($color5)
+      color: $color2
       +xs
          padding: 0 20px 0 48px
          height: 50px
-         font-size: 14px
       &:focus
-         border-color: #1799ed
-      #{$parent}.has-error &
+         border-color: #cf0110
+         ~ #{$parent}__icon svg
+             fill:  #cf0110
+      //#{$parent}.has-error &
          border-color: rgba(213, 29, 72, 1)
    
    &__icon
@@ -28,39 +30,35 @@
       width: 60px
       color: #3198f0
       +flexCenter
-      font-size: 18px
+      font-size: 10px
       +xs
          width: 40px
-      #{$parent}.has-error &
-         color: rgba(213, 29, 72, 1)
-      &::after
-         position: absolute
-         top: 50%
-         right: 0
-         margin-top: -15px
-         width: 1px
-         height: 30px
-         background-color: #ebebeb
-         content: ''
-      .zmdi
-         position: relative
-         top: -1px
-         right: -4px
+      svg
+         transition: .3s ease-in-out
+      #{$parent}_message &
+         bottom: auto
+         height: 60px
+//#{$parent}.has-error &
+   color: rgba(213, 29, 72, 1)
       
 .textarea
+   $parent: &
    display: block
    width: 100%
-   height: 122px
-   padding: 18px 36px
+   height: 150px
+   padding: 18px 46px
    resize: none
-   box-shadow: 0 15px 40px rgba(18, 3, 58, 0.15)
-   border-radius: 23px
-   background-color: #ebe9f2
-   border: 0
-   +f('gp400', 14, 20)
+   background-color: $white
+   border-radius: 30px
+   border: 1px solid #e6e6e6
+   +f('ub400', 14, 24)
    transition: .3s ease-in-out
+   +placeholder-color($color5)
+   color: $color2
    &:focus
-      background-color: #fff
+      border-color: #cf0110
+      ~ .form-field__icon svg
+         fill:  #cf0110
 
 .form-submit-btn
    cursor: pointer
@@ -125,4 +123,85 @@
          opacity: 1
          transform: scale(1)
          
-   
+
+// *** begin contact-form *** //
+.contact-form
+   $parent: &
+   position: relative
+   padding: 45px 40px
+   box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
+   background-color: $white
+   text-align: center
+   &__title
+      position: relative
+      margin-bottom: 20px
+      padding-bottom: 10px
+      +f('ub700', 26, 34)
+      color: $color2
+      &::before
+         position: absolute
+         left: calc(50% - 2.5px)
+         bottom: -2px
+         z-index: 1
+         width: 5px
+         height: 5px
+         background-color: $color1
+         border-radius: 50%
+         content: ''
+      &::after
+         position: absolute
+         bottom: 0
+         left: calc(50% - 35px)
+         width: 70px
+         height: 1px
+         background-color: $color1
+         opacity: 0.1
+         content: ''
+      span
+         +f('ub300')
+   &__row
+      #{$parent}_contacts &
+         margin: 0 -10px
+      &:not(:last-child)
+         margin-bottom: 30px
+   &__field
+      flex: 1 1 calc(50% - 30px)
+      width: calc(50% - 30px)
+      margin: 0 15px
+      #{$parent}_contacts &
+         margin: 0 10px
+   &__submit-btn
+      #{$parent}_contacts &
+         flex: 1 1 calc(50% - 20px)
+         width: calc(50% - 20px)
+         min-width: 240px
+   &__dots
+      +coverdiv
+      pointer-events: none
+      &::before, &::after
+         position: absolute
+         top: 15px
+         width: 4px
+         height: 4px
+         border-radius: 50%
+         background-color: $color1
+         content: ''
+      &::before
+         left: 15px
+      &::after
+         right: 15px
+      &-el
+         &::before, &::after
+            position: absolute
+            bottom: 15px
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            background-color: $color1
+            content: ''
+         &::before
+            left: 15px
+         &::after
+            right: 15px
+
+// end contact-form //

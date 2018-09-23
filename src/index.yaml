@@ -3,12 +3,3 @@ ProjectTitle: template
 PageList:
 - file: home.html
   ready: 100
-
-#- file: catalog-page.html
-#  ready: 100
-#
-#- file: product-page.html
-#  ready: 100
-#
-#- file: shopping-cart-page.html
-#  ready: 100
