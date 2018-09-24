@@ -13,38 +13,65 @@
       +placeholder-color($color5)
       color: $color2
       +xs
-         padding: 0 20px 0 48px
+         padding: 0 20px 0 37px
          height: 50px
       &:focus
          border-color: #cf0110
          ~ #{$parent}__icon svg
              fill:  #cf0110
       //#{$parent}.has-error &
-         border-color: rgba(213, 29, 72, 1)
+         border-color: #cf0110
    
    &__icon
       position: absolute
       top: 0
       left: 0
-      bottom: 0
       width: 40px
+      height: 60px
       color: #3198f0
       display: flex
       align-items: center
       justify-content: flex-end
       font-size: 10px
       +xs
-         width: 40px
+         width: 30px
+         height: 50px
       svg
          position: relative
          top: 1px
          transition: .3s ease-in-out
+         fill: $color5
       #{$parent}_message &
          bottom: auto
          height: 60px
-//#{$parent}.has-error &
-   color: rgba(213, 29, 72, 1)
-      
+      //#{$parent}.has-error &
+         color: rgba(213, 29, 72, 1)
+   &__choise
+      position: absolute
+      width: 162px
+      bottom: -26px
+      left: calc(50% - 81px)
+      text-align: center
+      font-size: 14px
+      color: $color2
+      +xs
+         position: relative
+         left: auto
+         bottom: auto
+         margin: 0 auto -15px
+      &::before, &::after
+         position: absolute
+         width: 47px
+         top: 50%
+         height: 1px
+         background-color: #000000
+         opacity: 0.06
+         content: ''
+      &::before
+         left: 0
+      &::after
+         right: 0
+         
 .textarea
    $parent: &
    display: block
@@ -59,6 +86,8 @@
    transition: .3s ease-in-out
    +placeholder-color($color5)
    color: $color2
+   +xs
+      padding: 18px 20px 18px 37px
    &:focus
       border-color: #cf0110
       ~ .form-field__icon svg
@@ -86,6 +115,8 @@
       margin-top: 7px
       border-radius: 4px
       border: 1px solid #808080
+      +xs
+         margin-top: 5px
       #{$parent}_type-1 &
          margin-right: 20px
       #{$parent}_type-2 &
@@ -118,6 +149,9 @@
          display: none
    &__text
       +f('ub400', 14, 24)
+      +xs
+         line-height: 20px
+   
       #{$parent}_type-2 &
          color: $color5
    &__input
@@ -136,6 +170,42 @@
    box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
    background-color: $white
    text-align: center
+   +xs
+      padding: 35px 20px 45px
+   &_dots-1
+      &::after
+         pointer-events: none
+         position: absolute
+         top: 0
+         right: 0
+         width: 356px
+         height: 369px
+         background-image: url("../img/decor/decor-dots_5.png")
+         background-repeat: no-repeat
+         content: ''
+   &_dots-2
+      &::after
+         pointer-events: none
+         position: absolute
+         bottom: 9px
+         right: 0
+         width: 370px
+         height: 382px
+         background-image: url("../img/decor/decor-dots_6.png")
+         background-repeat: no-repeat
+         content: ''
+   &_complex
+      &::after
+         bottom: 40px
+         right: -20px
+   &_complex .contact-form__field_email
+      +xs
+         order: -1
+         margin: 0 0 15px!important
+         
+   &_column
+      padding: 35px 55px 45px
+   
    &__title
       position: relative
       margin-bottom: 20px
@@ -164,17 +234,62 @@
       span
          +f('ub300')
    &__row
+      +xs
+         flex-direction: column
+         margin: 0
+      #{$parent}_complex &
+         margin: 0 -15px
+         +xs
+            margin: 0
       #{$parent}_contacts &
          margin: 0 -10px
+         +xs
+            margin: 0
+      
       &:not(:last-child)
          margin-bottom: 30px
+         +xs
+            margin-bottom: 15px
    &__field
+      position: relative
+      z-index: 1
       flex: 1 1 calc(50% - 30px)
       width: calc(50% - 30px)
       margin: 0 15px
+      +xs
+         flex: 0 1 auto
+         width: 100%
+         margin: 0
+      #{$parent}_column &
+         flex: 0 1 auto
+         width: 100%
+         margin: 0
+         &:not(:last-child)
+            margin-bottom: 30px
+            +xs
+               margin-bottom: 15px
+      #{$parent}_complex &
+         margin: 0 15px
+         +xs
+            margin: 0
       #{$parent}_contacts &
          margin: 0 10px
+         +xs
+            margin: 0
+      &:not(:last-child)
+         +xs
+            margin-bottom: 15px
+      &.form-field_message
+         .is-ie &
+            flex: 1 1 calc(100% - 30px)
+            width: calc(100% - 30px)
    &__submit-btn
+      position: relative
+      z-index: 1
+      min-width: 280px
+      +xs
+         min-width: 0
+         width: 100%
       #{$parent}_contacts &
          flex: 1 1 calc(50% - 20px)
          width: calc(50% - 20px)
@@ -207,5 +322,5 @@
             left: 15px
          &::after
             right: 15px
-
+      
 // end contact-form //

@@ -13,10 +13,14 @@
    text-align: center
    font-size: 0
    transform: translate3d(0, 0, 0)
-   background: rgba(#000, .6)
    transition: .3s ease-in-out
    will-change: opacity, transform
    $parent: &
+   &::before
+      +coverdiv
+      opacity: .9
+      background: #17171a url(../img/decor/noise_black.png)
+      content: ''
    &:after
       content: ''
       display: inline-block
@@ -30,21 +34,25 @@
       visibility: visible
    &__close
       position: absolute
-      top: -35px
-      right: 30px
+      top: -5px
+      right: -28px
       z-index: 10
       cursor: pointer
       padding: 0
       display: flex
       align-items: center
       justify-content: center
+      width: 20px
+      height: 20px
       border: 0
+      +xs
+         top: -30px
+         right: 15px
       &:hover svg
          fill: $color1
       svg
-         fill: $white
-         width: 24px
-         height: 24px
+         fill: #808080
+         font-size: 14px
          +trs
    
    &__container
@@ -62,24 +70,10 @@
       border-radius: 5px
       +mob-fix
       &_xs
-         max-width: 440px
+         max-width: 420px
       &_lg
-         max-width: 855px
-   &__inner
-      padding: 45px 25px 50px
-      box-shadow: 0 8px 20px rgba(6, 53, 83, 0.13)
-      border-radius: 17px
-      background-color: #ffffff
-      +xs
-         padding: 30px 25px 35px
-      p
-         color: #5c6164
-         font-size: 18px
-         line-height: 24px
-         text-align: center
-         +xs
-            font-size: 16px
-            
+         max-width: 706px
+         
 body.popup-opened
    overflow: hidden
 
@@ -91,9 +85,14 @@ body.popup-opened
 // *** begin thanks-popup *** //
 .thanks-popup
    text-align: center
-   &__title
-      margin-bottom: 14px
-      text-transform: uppercase
    &__btn
       display: none
+   p
+      color: $color2
+      font-size: 18px
+      line-height: 24px
+      text-align: center
+      +xs
+         font-size: 16px
+      
 // end thanks-popup //

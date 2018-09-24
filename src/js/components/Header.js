@@ -1,7 +1,6 @@
 import {
-  $body,
-  $window,
   throttle,
+	detectIE,
   css,
   Resp, $header, $scrolledElements
 } from '../_helpers';
@@ -11,7 +10,7 @@ class Header {
 		this.body = document.querySelector('body');
 		this.header = document.querySelector('.header');
 		this.nav = this.header.querySelector('.nav');
-		this.navBtn = this.nav.querySelector('.nav__btn');
+		this.navBtn = this.header.querySelector('.nav-btn');
 		this.scrollTop = 0;
 
 		this.init();
@@ -25,7 +24,6 @@ class Header {
 
 	bindEvents() {
 		this.navBtn.addEventListener('click', () => {
-      // this.beforeOpen();
 			this.toggleMenu();
     });
 		 this.onResize();
@@ -36,17 +34,6 @@ class Header {
       this.navBtn.classList.remove(css.active);
       this.nav.classList.remove(css.active);
     };
-  }
-
-  beforeOpen() {
-    this.scrollTop = $window.scrollTop();
-    this.scrollTop > 0 ? this.header.classList.add(css.menuActive) : false;
-  }
-
-  beforeClose() {
-    this.body.classList.remove(css.locked);
-    $body.scrollTop(this.scrollTop);
-    this.header.classList.remove(css.menuActive);
   }
 
 	toggleMenu() {
@@ -61,11 +48,13 @@ class Header {
 		}, 0, this);
 
 		function toggleHeader(e) {
-			const scrolledTop = e.currentTarget.oldScroll > e.currentTarget.scrollY;
+			if (!detectIE()) {
+        const scrolledTop = e.currentTarget.oldScroll > e.currentTarget.scrollY;
 
-      scrolledTop ? _this.header.classList.add(css.visible) : _this.header.classList.remove(css.visible);
+        scrolledTop ? _this.header.classList.add(css.visible) : _this.header.classList.remove(css.visible);
 
-      e.currentTarget.oldScroll = e.currentTarget.scrollY;
+        e.currentTarget.oldScroll = e.currentTarget.scrollY;
+			}
 
       if (window.pageYOffset > 80) {
 				_this.header.classList.add(css.fixed);
@@ -79,8 +68,8 @@ class Header {
 
   initScroll() {
 		const _this = this;
-    const offsetTop = Resp.isDesk ? 100 : 70;
-    const $link = $header.find('.nav_header').find('a');
+    const offsetTop = Resp.isDesk ? 50 : 65;
+    const $link = $header.find('.nav').find('a');
 
     $link.on('click', function (e) {
       e.preventDefault();

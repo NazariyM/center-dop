@@ -6,10 +6,10 @@ block variables
 block content
 
 	//begin main
-	main.main
+	.main
 
 		//begin screen
-		+b.SECTION.screen.section._screen.noise-bg
+		+b.SECTION.screen.section._screen.noise-bg#screen
 			.section__line.section__line_l
 			.section__line.section__line_c
 			.section__line.section__line_r
@@ -38,7 +38,9 @@ block content
 									+btn({
 										type: 'b',
 										text: 'Заказать звонок',
-										classMod: '_red screen__content-btn'})
+										classMod: '_red screen__content-btn',
+										popup: 'call-popup'
+									})
 							+e.img-wrap
 								+e.IMG(src='img/bg/screen-sld_img-1.png' alt='image')
 
@@ -64,17 +66,18 @@ block content
 									+btn({
 										type: 'b',
 										text: 'Консультация',
-										classMod: '_red screen__content-btn'
+										classMod: '_red screen__content-btn',
+										popup: 'consult-popup'
 									})
 							+e.img-wrap
 								+e.IMG(src='img/bg/screen-sld_img-2.png' alt='image')
-			+b.BUTTON.scroll-next-btn: +i('angle-down')
+			+b.BUTTON.scroll-next-btn.js-scroll-to: +i('angle-down')
 			+arcDecor('1')
 
 		//end screen
 
 		//begin advantages
-		+b.SECTION.advantages.section._advantages
+		+b.SECTION.advantages.section._advantages.js-scroll-dest#advantages
 			.section__line.section__line_l
 			.section__line.section__line_c
 			.section__line.section__line_r
@@ -86,7 +89,7 @@ block content
 							| Наши
 							span Преимущества
 				+e.row.row
-					+e.A.item(href='#!' data-popup-target='')
+					+e.A.item(href='#!' data-popup-target='consult-popup')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Гарантия
@@ -100,7 +103,7 @@ block content
 								strong На оборудование —
 								= ' '
 								span согласно условиям производителя
-					+e.A.item(href='#!' data-popup-target='')
+					+e.A.item(href='#!' data-popup-target='consult-popup')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Стоимость
@@ -110,7 +113,7 @@ block content
 							li: span Без скрытых условий
 							li: span Фактический расчет
 							li: span Отсутствие посредников
-					+e.A.item(href='#!' data-popup-target='')
+					+e.A.item(href='#!' data-popup-target='consult-popup')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Техподдержка
@@ -123,7 +126,7 @@ block content
 							li: span С пониманием
 							li: span По эксплуатации и техническим вопросам
 
-					+e.A.item(href='#!' data-popup-target='')
+					+e.A.item(href='#!' data-popup-target='consult-popup')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Скидки
@@ -137,7 +140,7 @@ block content
 		//end advantages
 
 		//begin faq
-		+b.SECTION.faq.section._faq.noise-bg._type-1
+		+b.SECTION.faq.section._faq.noise-bg._type-1#faq
 			.section__line.section__line_l
 			.section__line.section__line_c
 			.section__line.section__line_r
@@ -184,7 +187,7 @@ block content
 		//end faq
 
 		//begin solutions
-		+b.SECTION.solutions.section._solutions
+		+b.SECTION.solutions.section._solutions#solutions
 			.section__line.section__line_c
 			+e.container.container
 				+b.section-title._center._black.solutions__title
@@ -306,7 +309,8 @@ block content
 									+btn({
 										type: 'b',
 										text: 'Заказать комплекс',
-										classMod: '_red complex__order-btn'
+										classMod: '_red complex__order-btn',
+										popup: 'complex-popup'
 									})
 							-i++
 			+arcDecor('1', true)
@@ -315,7 +319,7 @@ block content
 		//end complex
 
 		//begin config
-		+b.SECTION.config.section._config.noise-bg._type-2
+		+b.SECTION.config.section._config.noise-bg._type-2#config
 			.section__line.section__line_l
 			.section__line.section__line_c
 			.section__line.section__line_r
@@ -398,13 +402,14 @@ block content
 					+btn({
 						type: 'b',
 						text: 'Оформить заказ',
-						classMod: '_red config__actions-btn'
+						classMod: '_red config__actions-btn',
+						popup: 'complex-message-popup'
 					})
 			+arcDecor('3')
 		//end config
 
 		//begin equip
-		+b.SECTION.equip.section._equip
+		+b.SECTION.equip.section._equip#equip
 			.section__line.section__line_c
 			+e.container.container
 				+b.section-title._center._black.equip__title
@@ -475,7 +480,7 @@ block content
 		//end equip
 
 		//begin contacts
-		+b.SECTION.contacts.section._contacts
+		+b.SECTION.contacts.section._contacts#contacts
 			.section__line.section__line_l
 			.section__line.section__line_c
 			.section__line.section__line_r

@@ -6,6 +6,9 @@
       height: 100%
       padding-bottom: 165px
       z-index: 1
+      +xs
+         align-items: center
+         padding: 0 15px
    &__slider
       .slick-track,
       .slick-list
@@ -14,18 +17,32 @@
       &-item
          position: relative
          height: 620px
+         +sm
+            height: 550px
+         +xs
+            height: calc(100vh - 100px)
+         +mob-fix
+            height: 120vh
       &-dots
       &-controls
          top: 114px
          left: 25px
          width: 142px
+         +sm
+            top: 70px
+         +xs
+            top: 40px
          &-wrap
             position: relative
    &__bg
       +coverdiv
       +cover
+      +xs
+         background-position: 70% 50%
    &__content
       max-width: 600px
+      +md
+         max-width: 450px
    &__content
       +gpu
       &-title
@@ -35,14 +52,26 @@
          padding-left: 13px
          color: #e6e6e6
          +f('ub300', 22, 34)
+         +md
+            font-size: 19px
+            line-height: 28px
+         +xs
+            padding-right: 10px
+            font-size: 18px
       &-bot
          display: flex
          align-items: center
          margin-top: 34px
+         +xs
+            flex-direction: column
+            align-items: flex-start
+            margin-top: 15px
       &-price
          display: flex
          align-items: center
          margin: 10px 30px 0 9px
+         +xs
+            margin: 10px 0 20px
          &-text
             margin-right: 20px
             color: #d9d9d9
@@ -53,6 +82,15 @@
       bottom: -80px
       right: -165px
       z-index: 1
+      pointer-events: none
+      +md
+         bottom: -20px
+         right: -70px
+         width: 60%
+      +sm
+         bottom: 40px
+      +xs
+         display: none
    &__price-block
       font-size: 36px
    
@@ -61,10 +99,20 @@
 // *** begin advantages *** //
 .advantages
    padding: 109px 0 150px
+   &__container
+      +md
+         max-width: 810px
    &__title
       margin-bottom: 75px
       span
          margin-left: 10px
+   &__row
+      +md
+         flex-wrap: wrap
+      +xs
+         flex-direction: column
+         align-items: center
+         margin: 0
    &__item
       $parent: &
       position: relative
@@ -75,6 +123,21 @@
       min-height: 241px
       background-color: $white
       cursor: pointer
+      +md
+         flex: 0 1 calc(50% - 30px)
+         width: calc(50% - 30px)
+      +xs
+         flex: 1 1 auto
+         width: 100%
+      .is-ie &
+         max-width: 262px
+      &:nth-child(1) ~ &
+         +xs
+            margin: 30px 15px 0
+      &:nth-child(2) ~ &
+         +md
+            margin: 30px 15px 0
+   
       &-decor
          +coverdiv
          box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
@@ -114,19 +177,33 @@
    padding: 110px 0 175px
    &__title
       margin-bottom: 80px
+      +xs
+         margin-bottom: 50px
    &__row
       flex-wrap: wrap
       counter-reset: faqCount
+      +xs
+         flex-direction: column
    &__item
       flex: 0 1 50%
       width: 50%
       padding: 0 15px
       counter-increment: faqCount
+      +xs
+         flex: 0 1 auto
+         width: 100%
+      &:nth-child(1) ~ &
+         +xs
+            padding: 30px 15px 0
       &:nth-child(2) ~ &
          padding: 78px 15px 0
+      .is-ie &
+         max-width: 585px
       &-inner
          position: relative
          padding-left: 80px
+         +sm
+            padding-left: 50px
          &::before
             position: absolute
             left: 8px
@@ -147,6 +224,8 @@
             height: 2px
             background-color: $color1
             content: ''
+            +sm
+               width: 30px
       p
          color: $color6
          font-size: 14px
@@ -182,16 +261,30 @@
          left: -5px
          max-width: 365px
          margin: -10px auto 0
+         +xs
+            margin: 25px auto 0
    &__block
       $parent: &
       background-repeat: no-repeat
       background-size: cover
       height: 290px
+      +xs
+         position: relative
+         float: none
+         width: 100%
+         height: auto
+         padding: 30px 20px
+         background: $white
+         box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
       &_l
          float: left
          width: 545px
          padding: 34px 65px 34px 65px
          background-image: url("../img/decor/solutions-block_l.svg")
+         +md
+            margin-bottom: 60px
+         +xs
+            margin-bottom: 0
       &_r
          float: right
          width: 564px
@@ -201,6 +294,8 @@
          
       &-inner
          position: relative
+         +xs
+            position: static
          #{$parent}_l &
             &::before
                position: absolute
@@ -211,6 +306,9 @@
                border-top: 2px solid $color1
                border-left: 2px solid $color1
                content: ''
+               +xs
+                  top: 0
+                  left: 0
          #{$parent}_r &
             &::before
                position: absolute
@@ -221,6 +319,9 @@
                border-bottom: 2px solid $color1
                border-right: 2px solid $color1
                content: ''
+               +xs
+                  bottom: 0
+                  right: 0
       &-top
          display: flex
          align-items: center
@@ -248,6 +349,17 @@
       top: 50%
       left: 49.7%
       transform: translate3d(-50%, -50%, 0)
+      +xs
+         position: relative
+         top: auto
+         left: -20px
+         z-index: 10
+         display: flex
+         align-items: center
+         justify-content: center
+         width: 150px
+         margin: -40px auto
+         transform: rotate(90deg)
       &::after
          position: absolute
          top: 43%
@@ -275,8 +387,12 @@
       $parent: &
       padding: 28px 0 21px
       border-bottom: 1px solid rgba($black, .06)
+      +xs
+         padding: 15px 0 20px
       &_sm
          padding: 28px 0 29px
+         +xs
+            padding: 15px 0 20px
       &-title
          position: relative
          margin-bottom: 7px
@@ -287,6 +403,8 @@
             z-index: 1
             padding-right: 70px
             background: $white
+            +xs
+               padding-right: 0
          &::after
             position: absolute
             top: 50%
@@ -296,19 +414,27 @@
             background-color: #000000
             opacity: 0.06
             content: ''
+            +xs
+               display: none
       &-sub-title
          @extend #{$parent}-title
          margin-bottom: 11px
          font-size: 16px
+         
       &-list
          line-height: 36px
          color: $color4
          counter-reset: complexList
          column-count: 2
          column-gap: 30px
+         +xs
+            column-count: 1
+            column-gap: 0
          li
             counter-increment: complexList
-            line-height: 36px
+            line-height: 22px
+            &:not(:last-child)
+               margin-bottom: 15px
             &::before
                margin-right: 6px
                content: counters(complexList, ".", decimal-leading-zero) "."
@@ -318,23 +444,45 @@
          display: flex
          flex-wrap: wrap
          margin: 0 -20px
+         +xs
+            margin: 0
       &-checkbox
          pointer-events: none
          flex: 0 1 calc(50% - 40px)
          width: calc(50% - 40px)
          margin: 0 20px
+         +xs
+            margin: 0
+            flex: 0 1 auto
+            width: 100%
+         &:not(:last-child)
+            +xs
+               margin-bottom: 8px
    &__bottom
       display: flex
       justify-content: space-between
       align-items: center
       margin-top: 35px
       padding-right: 67px
+      +sm
+         padding-right: 0
+      +xs
+         flex-direction: column
+         align-items: flex-start
    &__price
       display: flex
       align-items: center
+      +xs
+         flex-direction: column
+         align-items: flex-start
+         margin-bottom: 20px
       &-text
          margin-right: 55px
          text-transform: none
+         +sm
+            margin-right: 40px
+         +xs
+            margin: 0 0 15px
       &-old
    &__order-btn
       min-width: 260px
@@ -352,11 +500,21 @@
    padding: 111px 0 158px
    &__title
       margin-bottom: 56px
+      +xs
+         margin-bottom: 20px
    &__grid
       left: 18px
+      +md
+         left: auto
    &__item
       width: 25%
       padding: 15px 15px 20px
+      +sm
+         width: 50%
+         padding: 15px 50px 20px
+      +xs
+         width: 100%
+         padding: 15px 15px 10px
       &-title
          position: relative
          margin-bottom: 10px
@@ -384,9 +542,21 @@
       z-index: 3
    &__title
       margin-bottom: 65px
+   &__row
+      +sm
+         display: block
+         max-width: 600px
+         margin: 0 auto
+         column-count: 2
+         column-gap: 30px
+      +xs
+         column-count: 1
+         column-gap: 0
    &__list
       padding: 0 15px
       flex: 1
+      +sm
+         flex: 0 1 auto
       li
          line-height: 38px
          &:not(:last-child)
@@ -395,6 +565,11 @@
       position: relative
       z-index: 1
       margin: -38px 0 -175px -13px
+      +sm
+         margin: 20px 0 -175px -13px
+      +xs
+         margin: 20px 0 0
+         
 // end equip //
 
 // *** begin contacts *** //
@@ -405,13 +580,27 @@
       margin-bottom: 70px
    &__contact-block
       margin-bottom: 58px
+   &__row
+      +sm
+         flex-direction: column
    &__col
       &:nth-child(1)
          flex: 0 1 percentage(580 / 1170)
+         +sm
+            flex: 1 1 auto
+            width: 100%
+            margin-bottom: 15px
       &:nth-child(2)
          flex: 0 1 percentage(588 / 1170)
+         +sm
+            flex: 1 1 auto
+            width: 100%
    &__map
       height: 600px
+      +sm
+         height: 400px
+      +xs
+         height: 300px
       .gmnoprint, .gm-style-cc
          display: none
    &__decor-dots

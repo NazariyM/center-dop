@@ -29,7 +29,9 @@ body
 .main
    overflow: hidden
    padding-top: 130px
-   
+   +md
+      padding-top: 80px
+
 .grid
    &__sizer
       float: left
@@ -37,8 +39,12 @@ body
 .section
    $parent: &
    position: relative
+   +xs
+      padding: 60px 0 80px
    &_screen
       z-index: 1
+      +xs
+         padding: 0
    &_advantages
       z-index: 2
    &_faq, &_config, &_contacts
@@ -98,6 +104,8 @@ body
             transform: translateX(194px)
          #{$parent}_advantages &
             top: 15px
+            +xs
+               top: 0
             &::before, &::after
                display: none
          #{$parent}_complex &,
@@ -178,6 +186,10 @@ body
          bottom: 5px
          background-color: $color1
          content: ''
+         +xs
+            top: 10px
+            left: 0
+            bottom: 4px
    &_center
       text-align: center
       &::before
@@ -193,6 +205,10 @@ body
          top: 15px
          left: -15px
          bottom: 15px
+         +xs
+            top: 9px
+            bottom: 9px
+            left: -2px
    &__inner
       position: relative
       display: inline-flex
@@ -200,20 +216,35 @@ body
          justify-content: center
       #{$parent}_left &
          justify-content: flex-start
+      .is-ie &
+         display: inline-block
    &__icon
       position: absolute
       top: -9px
       left: -15px
       flex-shrink: 0
       z-index: -1
+      +xs
+         display: none
       #{$parent}_lg &
          top: -12px
    &__text
       +f('ub700', 40, 50)
       text-transform: uppercase
+      +xs
+         margin-bottom: 5px
+         font-size: 28px
+         line-height: 38px
       #{$parent}_lg &
          font-size: 52px
          line-height: 62px
+         +md
+            font-size: 37px
+            line-height: 44px
+         +xs
+            margin: 0
+            font-size: 28px
+            line-height: 40px
    
       #{$parent}_black &
          color: $color2
@@ -226,6 +257,10 @@ body
    &__descr
       color: $color3
       +f('ub300', 22, 34)
+      +xs
+         font-size: 18px
+         line-height: 24px
+   
       &_color-1
          color: #e6e6e6
       &_color-2
@@ -290,6 +325,8 @@ strong
    pointer-events: none
    +rmin(1950)
       height: 200px
+   .is-ie &
+      height: 129px
    &__mask
       position: absolute
       bottom: 0
@@ -346,6 +383,8 @@ strong
          width: 491px
          height: 633px
          background-image: url("../img/decor/tire-tracks_r.png")
+         +sm
+            display: none
    &_type-2
       &::before
          left: 0

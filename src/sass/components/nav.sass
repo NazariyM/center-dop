@@ -7,12 +7,12 @@
       flex-direction: column
       justify-content: center
       position: absolute
-      top: 100px
+      top: 80px
       left: 0
       width: 100%
       height: 100vh
       z-index: 10
-      padding-bottom: 100px
+      padding-bottom: 80px
       overflow: auto
       opacity: 0
       border: 0
@@ -21,18 +21,21 @@
       transition: transform .4s ease, opacity .4s ease, visibility 0s .4s, -webkit-transform .4s ease
       background: #fff
       text-align: center
-      box-shadow: inset 0 0 25px rgba(28,155,238,.5)
+      box-shadow: inset 0 0 25px rgba($color1, .3)
    +xs
-      top: 70px
-      padding-bottom: 70px
+      top: 65px
+      padding-bottom: 65px
+      box-shadow: inset 0 5px 10px rgba(207,0,15,.3)
    &.is-active
       opacity: 1
       visibility: visible
       transform: translate3d(0, 0, 0)
       transition: transform .4s ease, opacity .4s ease, visibility 0s 0s, -webkit-transform .4s ease
+   
    &__body
       height: 100%
       @extend .container
+      
    &__list
       display: flex
       justify-content: space-between
@@ -45,16 +48,31 @@
          align-items: center
          overflow: auto
          height: 100%
-         padding-bottom: 0
+         padding: 0
       &-item
          position: relative
          +sm
+            width: 100%
             opacity: 0
             transform: translateY(20px)
             transition: .3s ease-in-out
          .is-active &
             opacity: 1
             transform: translateY(0)
+         &::before
+            +sm
+               position: absolute
+               top: 50%
+               left: 0
+               width: 100%
+               height: 1px
+               background: rgba($color1, .3)
+               content: ''
+         &:not(:last-child)
+            +sm
+               margin-bottom: 40px
+            +xs
+               margin-bottom: 30px
          &:not(:last-child)
             &::after
                position: absolute
@@ -69,10 +87,10 @@
                +sm
                   display: none
                
-         $elements: 5
+         $elements: 8
          @for $i from 0 to $elements
             &:nth-child(#{$i + 1})
-               +xs
+               +sm
                   transition-delay: #{$i * 0.1s}
                   
       &-link
@@ -82,65 +100,70 @@
          color: $white
          transition: .3s ease-in-out
          +sm
+            position: relative
+            z-index: 1
+            display: inline-block
+            padding: 0 15px
             color: $color1
             font-size: 16px
+            background: $white
          &:hover
-            color: $color1
+            color: #ff0315
                
-   &__btn
-      $parent: &
-      display: none
-      position: relative
-      top: -5px
-      border: 0
-      outline: 0
-      padding: 0
-      z-index: 11
-      +sm
-         display: block
-      
-      &.is-active span
-         color: $color1
-      
-      &-burger
-         display: block
-         margin: auto
-         width: 40px
-         height: 40px
-         cursor: pointer
-      &-lines
-         display: block
+.nav-btn
+   $parent: &
+   display: none
+   position: relative
+   top: -5px
+   border: 0
+   outline: 0
+   padding: 0
+   z-index: 11
+   +sm
+      display: block
+   
+   &.is-active span
+      color: $color1
+   
+   &__burger
+      display: block
+      margin: auto
+      width: 40px
+      height: 40px
+      cursor: pointer
+   &__lines
+      display: block
+      width: 40px
+      height: 3px
+      &:after, &:before
          width: 40px
          height: 3px
-         &:after, &:before
-            width: 40px
-            height: 3px
-         position: relative
-         transform: translateY(25px)
-         background-image: linear-gradient(to right,#1799ed 0%,#59bffa 100%)
-         transition: all .3s
-         #{$parent}.is-active &
-            background: rgba(255, 255, 255, 0)
-         &:before
-            content: ""
-            position: absolute
-            left: 0
-            bottom: 10px
-            background-image: linear-gradient(to right,#1799ed 0%,#59bffa 100%)
-            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+      position: relative
+      transform: translateY(25px)
+      background-color: $color1
+      transition: all .3s
+      #{$parent}.is-active &
+         background: rgba(255, 255, 255, 0)
+      &:before
+         content: ""
+         position: absolute
+         left: 0
+         bottom: 10px
+         background-color: $color1
+         transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+      &:after
+         content: ""
+         position: absolute
+         left: 0
+         top: 10px
+         background-color: $color1
+         transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+      #{$parent}.is-active &
          &:after
-            content: ""
-            position: absolute
-            left: 0
-            top: 10px
-            background-image: linear-gradient(to right,#1799ed 0%,#59bffa 100%)
-            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
-         #{$parent}.is-active &
-            &:after
-               top: 0
-               transform: rotate(45deg)
-               transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
-            &:before
-               bottom: 0
-               transform: rotate(-45deg)
-               transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+            top: 0
+            transform: rotate(45deg)
+            transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+         &:before
+            bottom: 0
+            transform: rotate(-45deg)
+            transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)

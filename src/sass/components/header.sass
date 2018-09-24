@@ -7,6 +7,10 @@
    transition: .3s ease-in-out
    &.is-fixed
       transform: translate3d(0, calc(-100% + 50px), 0)
+      +sm
+         transform: translate3d(0, calc(-100% + 80px), 0)
+      +xs
+         transform: translate3d(0,calc(-100% + 65px),0)
    &.is-visible
       transform: translate3d(0, 0, 0)
    &__info
@@ -17,6 +21,8 @@
          align-items: center
          justify-content: space-between
          height: 80px
+         +xs
+            height: 65px
    &__logo
       &-text
          +f('ub700', 30, 30)
@@ -29,3 +35,5 @@
             +f('ub300')
    &__contact-block
       margin-top: 10px
+      +xs
+         display: none

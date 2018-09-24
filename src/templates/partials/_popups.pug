@@ -4,8 +4,158 @@ mixin popup(el)
 		when 'thanks-popup'
 			+b.popup(data-popup-id='thanks-popup', tabindex='-1', role='dialog')
 				+e.container._xs
-					+e.close.js-popup-close: +svg('close')
-					+b.thanks-popup.popup__inner
-						+e.title.title-sm Спасибо!
+					+e.close.js-popup-close: +i('close')
+					+b.contact-form.thanks-popup
+						+e.H5.title.title Спасибо!
 						+e.P Наш менеджер свяжется с Вами в ближайшее время
-						+e.BUTTON.btn(data-popup-target='thanks-popup' type='button')
+						+b.BUTTON.thanks-popup__btn(data-popup-target='thanks-popup' type='button')
+
+		when 'call-popup'
+			+b.popup(data-popup-id='call-popup', tabindex='-1', role='dialog')
+				+e.container._xs
+					+e.close.js-popup-close: +i('close')
+					+b.contact-form._column._dots-1
+						+e.H3.title Заказать
+							span звонок
+						+e.FORM.form.js-form(action='#!' method='POST')
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input(type='text' name='' placeholder='Ваше имя' required)
+									+e.icon
+										+i('user-edit')
+
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input.js-tel-input(type='text' name='' placeholder='Номер телефона' required)
+									+e.icon
+										+i('mobile')
+
+							+btn({
+								type: 'b',
+								text: 'Отправить',
+								classMod: '_red contact-form__submit-btn'
+							})(type='submit')
+
+						+e.dots
+							+e.dots-el
+
+		when 'consult-popup'
+			+b.popup(data-popup-id='consult-popup', tabindex='-1', role='dialog')
+				+e.container._xs
+					+e.close.js-popup-close: +i('close')
+					+b.contact-form._column._dots-1
+						+e.H3.title Заказать
+							span консультацию
+						+e.FORM.form.js-form(action='#!' method='POST')
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input(type='text' name='' placeholder='Ваше имя' required)
+									+e.icon
+										+i('user-edit')
+
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input.js-tel-input(type='text' name='' placeholder='Номер телефона' required)
+									+e.icon
+										+i('mobile')
+
+							+btn({
+								type: 'b',
+								text: 'Отправить',
+								classMod: '_red contact-form__submit-btn'
+							})(type='submit')
+
+						+e.dots
+							+e.dots-el
+
+		when 'complex-popup'
+			+b.popup(data-popup-id='complex-popup', tabindex='-1', role='dialog')
+				+e.container._xs
+					+e.close.js-popup-close: +i('close')
+					+b.contact-form._column._dots-2
+						+e.H3.title Заказать
+							span комплекс
+						+e.FORM.form.js-form(action='#!' method='POST')
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input(type='text' name='' placeholder='Ваше имя' required)
+									+e.icon
+										+i('user-edit')
+
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input(type='text' name='' placeholder='Модель, год и комплектация' required)
+									+e.icon
+										+i('car-side')
+
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input.js-tel-input(type='text' name='' placeholder='Номер телефона' required)
+									+e.icon
+										+i('mobile')
+
+								+e.choise или
+
+							+b.form-field.contact-form__field
+								label
+									+e.INPUT.input.js-input(type='text' name='' placeholder='Email' required)
+									+e.icon
+										+i('envelope')
+
+							+btn({
+								type: 'b',
+								text: 'Отправить',
+								classMod: '_red contact-form__submit-btn'
+							})(type='submit')
+
+						+e.dots
+							+e.dots-el
+
+		when 'complex-message-popup'
+			+b.popup(data-popup-id='complex-message-popup', tabindex='-1', role='dialog')
+				+e.container._lg
+					+e.close.js-popup-close: +i('close')
+					+b.contact-form._complex._dots-2
+						+e.H3.title Заказать
+							span комплекс
+						+e.FORM.form.js-form(action='#!' method='POST')
+							+e.row.row
+								+b.form-field.contact-form__field
+									label
+										+e.INPUT.input.js-input(type='text' name='' placeholder='Ваше имя' required)
+										+e.icon
+											+i('user-edit')
+
+								+b.form-field.contact-form__field
+									label
+										+e.INPUT.input.js-input.js-tel-input(type='text' name='' placeholder='Номер телефона' required)
+										+e.icon
+											+i('mobile')
+									+e.choise или
+
+							+e.row.row
+								+b.form-field.contact-form__field
+									label
+										+e.INPUT.input.js-input(type='text' name='' placeholder='Модель, год и комплектация' required)
+										+e.icon
+											+i('car-side')
+								+b.form-field.contact-form__field._email
+									label
+										+e.INPUT.input.js-input(type='text' name='' placeholder='Email' required)
+										+e.icon
+											+i('envelope')
+
+							+e.row.row
+								+b.form-field._message.contact-form__field
+									+b.TEXTAREA.textarea(placeholder='Ваше сообщение (необязательно)')
+									+e.icon
+										+i('comment-alt')
+
+							+btn({
+								type: 'b',
+								text: 'Отправить',
+								classMod: '_red contact-form__submit-btn'
+							})(type='submit')
+
+						+e.dots
+							+e.dots-el

@@ -7,6 +7,8 @@
       display: flex
       justify-content: space-between
       padding-right: 8px
+      +xs
+         flex-direction: column
    &__item
       display: inline-flex
       color: $color2
@@ -16,11 +18,18 @@
       #{$parent}_extended &
          width: 250px
          align-items: flex-start
+         +xs
+            width: 100%
       
       &:not(:last-child)
+         #{$parent}_extended &
+            +xs
+               margin-bottom: 15px
          #{$parent}_default &
             margin-right: 57px
-         
+            +sm
+               margin-right: 35px
+   
       address
          font-style: normal
       a
@@ -67,6 +76,9 @@
    display: flex
    align-items: center
    +f('mp400', 30, 30)
+   +xs
+      flex-direction: column
+      align-items: flex-start
    &_white
       color: $white
    &__current
@@ -80,6 +92,10 @@
       line-height: 16px
       text-decoration: line-through
       color: $color5
+      +sm
+         margin-right: 35px
+      +xs
+         margin: 0 0 10px
       i
          vertical-align: -1px
    i
@@ -119,6 +135,8 @@
    +flexCenter
    border-radius: 50%
    pointer-events: none
+   +xs
+      display: none
    &:hover
       svg
          animation: smallMoveDown .3s .3s ease-in-out
@@ -149,4 +167,9 @@
       z-index: 3
       font-size: 16px
       fill: $white
+   .is-ie &
+      width: 108px
+      height: 108px
+      bottom: -26px
+      z-index: 5
 // end scroll-next-btn //

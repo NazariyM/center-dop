@@ -7,7 +7,6 @@ class Form {
     this.$form = $(formEl);
     this.$input = this.$form.find('.js-input');
     this.$textarea = this.$form.find('.form-textarea');
-    this.$fileBlock = this.$form.find('.file-block');
     this.$formSubmit = this.$form.find('.form-submit');
 
     this.init();
@@ -54,7 +53,7 @@ class Form {
       thanskPopInstance.open();
 
       setTimeout(() => {
-        thanskPopInstance.close();
+        // thanskPopInstance.close();
       }, 2000);
 
       $this[0].reset();

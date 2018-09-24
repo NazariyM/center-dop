@@ -2,10 +2,19 @@
    $parent: &
    display: flex
    align-items: flex-start
+   +md
+      flex-direction: column
    &__nav
       flex: 0 0 276px
       width: 276px
       padding-top: 43px
+      +md
+         flex: 0 1 auto
+         width: 100%
+         padding: 0
+         margin-bottom: 30px
+      +xs
+         margin-bottom: 15px
    &__for
       position: relative
       flex: 1
@@ -24,6 +33,11 @@
       transition: .3s ease-in-out
       color: $white
       +nosel
+      +xs
+         height: 55px
+         line-height: 55px
+         font-size: 17px
+   
       &.is-active
          pointer-events: none
          background: $white
@@ -40,6 +54,8 @@
          fill: $white
          font-size: 11px
          transition: .3s ease-in-out
+         +md
+            transform: rotate(90deg)
          .is-active &
             fill: $color1
             
@@ -49,6 +65,10 @@
       padding: 13px 44px 38px 44px
       box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
       background-color: #ffffff
+      +sm
+         padding: 13px 35px 38px
+      +xs
+         padding: 15px 15px 40px
       &::before, &::after
          position: absolute
          right: 0

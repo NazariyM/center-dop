@@ -6,19 +6,36 @@
       <change beforePath="$PROJECT_DIR$/build/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/screen-sld_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/screen-sld_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bg/screen-sld_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bg/screen-sld_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/screen-sld_bg-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/screen-sld_bg-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/screen-sld_bg-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/screen-sld_bg-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/screen-sld_img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/screen-sld_img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/screen-sld_img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/screen-sld_img-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/Sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Sliders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_common.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_common.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/_blocks.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_blocks.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/_popups.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_popups.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/c-tabs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/c-tabs.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/forms.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/forms.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/nav.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/sliders.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/sliders.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/generated/_sprite-svg.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/generated/_sprite-svg.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/pages/home.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/home.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/home.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/home.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/partials/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/_footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/layouts/_layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/layouts/_layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/_popups.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/_popups.pug" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -138,12 +155,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="27" />
+          <entry key="js" value="34" />
           <entry key="jscsrc" value="1" />
           <entry key="mustache" value="1" />
-          <entry key="pug" value="31" />
-          <entry key="sass" value="65" />
-          <entry key="svg" value="8" />
+          <entry key="pug" value="43" />
+          <entry key="sass" value="84" />
+          <entry key="svg" value="9" />
           <entry key="txt" value="5" />
           <entry key="yaml" value="2" />
         </counts>
@@ -152,20 +169,20 @@
         <counts>
           <entry key="Handlebars/Mustache" value="1" />
           <entry key="JSCS" value="1" />
-          <entry key="Jade" value="31" />
-          <entry key="JavaScript" value="27" />
-          <entry key="SVG" value="8" />
-          <entry key="Sass" value="65" />
+          <entry key="Jade" value="43" />
+          <entry key="JavaScript" value="34" />
+          <entry key="SVG" value="9" />
+          <entry key="Sass" value="84" />
           <entry key="Scratch" value="5" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3066" />
+          <entry key="js" value="3172" />
           <entry key="mustache" value="9" />
-          <entry key="pug" value="5340" />
-          <entry key="sass" value="10200" />
+          <entry key="pug" value="5702" />
+          <entry key="sass" value="12622" />
           <entry key="svg" value="2" />
           <entry key="txt" value="16" />
           <entry key="yaml" value="3" />
@@ -174,11 +191,11 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Handlebars/Mustache" value="9" />
-          <entry key="Jade" value="5340" />
-          <entry key="JavaScript" value="3066" />
+          <entry key="Jade" value="5702" />
+          <entry key="JavaScript" value="3172" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="SVG" value="2" />
-          <entry key="Sass" value="10200" />
+          <entry key="Sass" value="12622" />
           <entry key="Scratch" value="1" />
           <entry key="YAML" value="3" />
         </counts>
@@ -209,35 +226,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="478" column="6" selection-start-line="478" selection-start-column="6" selection-end-line="480" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/templates/partials/_footer.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/helpers/_helpers.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+                <state relative-caret-position="629">
+                  <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -245,17 +235,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/components/nav.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="662">
-                  <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+                <state relative-caret-position="268">
+                  <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/sass/components/header.sass">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+                <state relative-caret-position="379">
+                  <caret line="150" column="12" lean-forward="true" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -267,8 +257,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="390" column="22" lean-forward="true" selection-start-line="390" selection-start-column="22" selection-end-line="390" selection-end-column="22" />
+                <state relative-caret-position="699">
+                  <caret line="208" column="21" selection-start-line="208" selection-start-column="21" selection-end-line="208" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -276,8 +266,26 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+                <state relative-caret-position="662">
+                  <caret line="219" column="30" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/_popups.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="282" column="17" lean-forward="true" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -298,16 +306,25 @@
       <find>defa</find>
       <find>scroll</find>
       <find>list-</find>
-      <find>faq</find>
       <find>decima</find>
-      <find>noise</find>
-      <find>arc</find>
       <find>Дополнительные</find>
       <find>price</find>
       <find>benef</find>
-      <find>config</find>
       <find>scr</find>
+      <find>soluti</find>
       <find>complex</find>
+      <find>file</find>
+      <find>enve</find>
+      <find>cho</find>
+      <find>config</find>
+      <find>title</find>
+      <find>textar</find>
+      <find>Номер</find>
+      <find>noise</find>
+      <find>_old</find>
+      <find>arc</find>
+      <find>is-ie</find>
+      <find>faq</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -332,29 +349,32 @@
         <option value="$PROJECT_DIR$/src/js/components/Grid.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_25.txt" />
         <option value="$PROJECT_DIR$/src/sass/helpers/_helpers.sass" />
-        <option value="$PROJECT_DIR$/src/js/Common.js" />
         <option value="$PROJECT_DIR$/src/index.yaml" />
         <option value="$PROJECT_DIR$/src/sass/app.sass" />
-        <option value="$PROJECT_DIR$/src/templates/layouts/_layout.pug" />
         <option value="$PROJECT_DIR$/src/js/sections/Contacts.js" />
         <option value="$PROJECT_DIR$/src/sass/helpers/_keyframes.sass" />
-        <option value="$PROJECT_DIR$/src/js/components/Header.js" />
-        <option value="$PROJECT_DIR$/src/templates/partials/_header.pug" />
         <option value="$USER_HOME$/Documents/Rectangle_9_copy.svg" />
         <option value="$USER_HOME$/Downloads/Rectangle_9.svg" />
         <option value="$PROJECT_DIR$/src/templates/mixins/_blocks.pug" />
-        <option value="$PROJECT_DIR$/src/sass/components/sliders.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/forms.sass" />
-        <option value="$PROJECT_DIR$/src/js/components/Sliders.js" />
-        <option value="$PROJECT_DIR$/src/sass/components/c-tabs.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/_blocks.sass" />
-        <option value="$PROJECT_DIR$/src/sass/components/footer.sass" />
-        <option value="$PROJECT_DIR$/src/templates/home.pug" />
         <option value="$PROJECT_DIR$/src/templates/partials/_footer.pug" />
-        <option value="$PROJECT_DIR$/src/sass/pages/home.sass" />
-        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/sliders.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/footer.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/c-tabs.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/Form.js" />
+        <option value="$PROJECT_DIR$/src/templates/layouts/_layout.pug" />
+        <option value="$PROJECT_DIR$/src/templates/partials/_popups.pug" />
+        <option value="$PROJECT_DIR$/src/templates/partials/_header.pug" />
         <option value="$PROJECT_DIR$/src/sass/components/nav.sass" />
         <option value="$PROJECT_DIR$/src/sass/components/header.sass" />
+        <option value="$PROJECT_DIR$/src/js/Common.js" />
+        <option value="$PROJECT_DIR$/src/sass/components/_popups.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/Sliders.js" />
+        <option value="$PROJECT_DIR$/src/js/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/templates/home.pug" />
+        <option value="$PROJECT_DIR$/src/sass/components/_blocks.sass" />
+        <option value="$PROJECT_DIR$/src/sass/pages/home.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/forms.sass" />
+        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
       </list>
     </option>
   </component>
@@ -385,10 +405,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="-22" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="922" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -518,7 +537,7 @@
       <workItem from="1537632062400" duration="317000" />
       <workItem from="1537689181308" duration="9159000" />
       <workItem from="1537717646804" duration="11193000" />
-      <workItem from="1537733028650" duration="8193000" />
+      <workItem from="1537733028650" duration="24097000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1537459661835</created>
@@ -555,14 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537730919268</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="upd">
+      <created>1537762974175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537762974175</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115581000" />
+    <option name="totallyTimeSpent" value="131485000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977778" weight="0.17916666" />
@@ -656,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_variables.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/CTabs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -701,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_25.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -721,13 +733,6 @@
     <entry file="file://$PROJECT_DIR$/rules.jscsrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/Common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -739,13 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/layouts/_layout.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -763,93 +761,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/partials/_header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Rectangle_9_copy.svg" />
     <entry file="file://$USER_HOME$/Downloads/Rectangle_9.svg" />
     <entry file="file://$USER_HOME$/Downloads/55.svg" />
-    <entry file="file://$PROJECT_DIR$/src/templates/mixins/_blocks.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/sliders.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/partials/_popups.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/c-tabs.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Sliders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="68" column="89" selection-start-line="68" selection-start-column="89" selection-end-line="68" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="478" column="6" selection-start-line="478" selection-start-column="6" selection-end-line="480" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="390" column="22" lean-forward="true" selection-start-line="390" selection-start-column="22" selection-end-line="390" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/partials/_footer.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -857,10 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
+    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_variables.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -871,17 +785,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/nav.sass">
+    <entry file="file://$PROJECT_DIR$/src/sass/components/sliders.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/mixins/_blocks.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="n#checkBox#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/c-tabs.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/layouts/_layout.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/partials/_popups.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="28" column="93" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/header.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/partials/_header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_popups.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/decor/solutions-block_r.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Sliders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="114" column="7" lean-forward="true" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/nav.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="282" column="17" lean-forward="true" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="208" column="21" selection-start-line="208" selection-start-column="21" selection-end-line="208" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="219" column="30" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="150" column="12" lean-forward="true" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
         </state>
       </provider>
     </entry>

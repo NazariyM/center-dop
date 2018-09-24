@@ -106,7 +106,15 @@ const screenSld = new Slider({
   dotsClass: 'screen__slider-dots slider-dots slider-dots_gray',
   appendArrows: '.screen__slider-controls',
   appendDots: '.screen__slider-controls',
-  infinite: true
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        speed: 800
+      }
+    }
+  ]
 });
 
 const solutionsSld = new Slider({
@@ -117,5 +125,13 @@ const solutionsSld = new Slider({
   appendDots: '.solutions__slider-controls',
   counter: true,
   infinite: true,
-  speed: 1200
+  speed: 1200,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        speed: 800
+      }
+    }
+  ]
 });

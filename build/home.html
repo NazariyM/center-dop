@@ -5,7 +5,7 @@
     <title>Главная</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fff">
+    <meta name="theme-color" content="#cf000f">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
   </head>
@@ -38,46 +38,46 @@
               <a href="tel:+79650990090">+7 (965) 099 00 90</a>
             </div>
           </div>
+          <button class="nav-btn" type="button">
+            <span class="nav-btn__burger">
+              <span class="nav-btn__lines"></span>
+            </span>
+          </button>
         </div>
       </div>
       <div class="nav">
         <nav class="nav__body">
           <ul class="nav__list">
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#services">Главная</a>
+              <a class="nav__list-link" href="#screen">Главная</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#pros">Преимущества</a>
+              <a class="nav__list-link" href="#advantages">Преимущества</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#work">FAQ</a>
+              <a class="nav__list-link" href="#faq">FAQ</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#guarantees">Решения</a>
+              <a class="nav__list-link" href="#solutions">Решения</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#testimonials">Конфигуратор</a>
+              <a class="nav__list-link" href="#config">Конфигуратор</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#testimonials">Доп. опции</a>
+              <a class="nav__list-link" href="#equip">Доп. опции</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="#testimonials">Контакты</a>
+              <a class="nav__list-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button class="nav__btn" type="button">
-          <span class="nav__btn-burger">
-            <span class="nav__btn-lines"></span>
-          </span>
-        </button>
       </div>
     </header>
     <!--end header-->
     <!--begin main-->
-    <main class="main">
+    <div class="main">
       <!--begin screen-->
-      <section class="screen section section_screen noise-bg">
+      <section class="screen section section_screen noise-bg" id="screen">
         <div class="section__line section__line_l"></div>
         <div class="section__line section__line_c"></div>
         <div class="section__line section__line_r"></div>
@@ -109,7 +109,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn btn_red screen__content-btn" type="button">
+                    <button class="btn btn_red screen__content-btn" type="button" data-popup-target="call-popup">
                       <span>Заказать звонок</span>
                     </button>
                   </div>
@@ -144,7 +144,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn btn_red screen__content-btn" type="button">
+                    <button class="btn btn_red screen__content-btn" type="button" data-popup-target="consult-popup">
                       <span>Консультация</span>
                     </button>
                   </div>
@@ -156,7 +156,7 @@
             </div>
           </div>
         </div>
-        <button class="scroll-next-btn">
+        <button class="scroll-next-btn js-scroll-to">
           <svg class="icon-angle-down ">
             <use xlink:href="img/sprite.svg#icon-angle-down"></use>
           </svg>
@@ -184,7 +184,7 @@
       </section>
       <!--end screen-->
       <!--begin advantages-->
-      <section class="advantages section section_advantages">
+      <section class="advantages section section_advantages js-scroll-dest" id="advantages">
         <div class="section__line section__line_l"></div>
         <div class="section__line section__line_c"></div>
         <div class="section__line section__line_r"></div>
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="advantages__row row">
-            <a class="advantages__item" href="#!" data-popup-target="">
+            <a class="advantages__item" href="#!" data-popup-target="consult-popup">
               <span class="advantages__item-decor"></span>
               <span class="advantages__item-top">
                 <h5 class="advantages__item-title title title_black">Гарантия</h5>
@@ -215,7 +215,7 @@
                 </li>
               </ul>
             </a>
-            <a class="advantages__item" href="#!" data-popup-target="">
+            <a class="advantages__item" href="#!" data-popup-target="consult-popup">
               <span class="advantages__item-decor"></span>
               <span class="advantages__item-top">
                 <h5 class="advantages__item-title title title_black">Стоимость</h5>
@@ -236,7 +236,7 @@
                 </li>
               </ul>
             </a>
-            <a class="advantages__item" href="#!" data-popup-target="">
+            <a class="advantages__item" href="#!" data-popup-target="consult-popup">
               <span class="advantages__item-decor"></span>
               <span class="advantages__item-top">
                 <h5 class="advantages__item-title title title_black">Техподдержка</h5>
@@ -255,7 +255,7 @@
                 </li>
               </ul>
             </a>
-            <a class="advantages__item" href="#!" data-popup-target="">
+            <a class="advantages__item" href="#!" data-popup-target="consult-popup">
               <span class="advantages__item-decor"></span>
               <span class="advantages__item-top">
                 <h5 class="advantages__item-title title title_black">Скидки</h5>
@@ -291,7 +291,7 @@
       </section>
       <!--end advantages-->
       <!--begin faq-->
-      <section class="faq section section_faq noise-bg noise-bg_type-1">
+      <section class="faq section section_faq noise-bg noise-bg_type-1" id="faq">
         <div class="section__line section__line_l"></div>
         <div class="section__line section__line_c"></div>
         <div class="section__line section__line_r"></div>
@@ -367,7 +367,7 @@
       </section>
       <!--end faq-->
       <!--begin solutions-->
-      <section class="solutions section section_solutions">
+      <section class="solutions section section_solutions" id="solutions">
         <div class="section__line section__line_c"></div>
         <div class="solutions__container container">
           <div class="section-title section-title_center section-title_black solutions__title">
@@ -717,7 +717,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn_red complex__order-btn" type="button">
+                  <button class="btn btn_red complex__order-btn" type="button" data-popup-target="complex-popup">
                     <span>Заказать комплекс</span>
                   </button>
                 </div>
@@ -841,7 +841,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn_red complex__order-btn" type="button">
+                  <button class="btn btn_red complex__order-btn" type="button" data-popup-target="complex-popup">
                     <span>Заказать комплекс</span>
                   </button>
                 </div>
@@ -965,7 +965,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn_red complex__order-btn" type="button">
+                  <button class="btn btn_red complex__order-btn" type="button" data-popup-target="complex-popup">
                     <span>Заказать комплекс</span>
                   </button>
                 </div>
@@ -1089,7 +1089,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn_red complex__order-btn" type="button">
+                  <button class="btn btn_red complex__order-btn" type="button" data-popup-target="complex-popup">
                     <span>Заказать комплекс</span>
                   </button>
                 </div>
@@ -1115,7 +1115,7 @@
       </section>
       <!--end complex-->
       <!--begin config-->
-      <section class="config section section_config noise-bg noise-bg_type-2">
+      <section class="config section section_config noise-bg noise-bg_type-2" id="config">
         <div class="section__line section__line_l"></div>
         <div class="section__line section__line_c"></div>
         <div class="section__line section__line_r"></div>
@@ -1597,7 +1597,7 @@
             </div>
           </div>
           <div class="config__actions">
-            <button class="btn btn_red config__actions-btn" type="button">
+            <button class="btn btn_red config__actions-btn" type="button" data-popup-target="complex-message-popup">
               <span>Оформить заказ</span>
             </button>
           </div>
@@ -1625,7 +1625,7 @@
       </section>
       <!--end config-->
       <!--begin equip-->
-      <section class="equip section section_equip">
+      <section class="equip section section_equip" id="equip">
         <div class="section__line section__line_c"></div>
         <div class="equip__container container">
           <div class="section-title section-title_center section-title_black equip__title">
@@ -1764,7 +1764,7 @@
       </section>
       <!--end equip-->
       <!--begin contacts-->
-      <section class="contacts section section_contacts">
+      <section class="contacts section section_contacts" id="contacts">
         <div class="section__line section__line_l"></div>
         <div class="section__line section__line_c"></div>
         <div class="section__line section__line_r"></div>
@@ -1860,7 +1860,7 @@
         <img class="contacts__decor-dots contacts__decor-dots_r" src="img/decor/decor-dots_4.png" alt="image" title="" />
       </section>
       <!--end contacts-->
-    </main>
+    </div>
     <!--end main-->
     <!--begin footer-->
     <footer class="footer section section_footer">
@@ -1889,7 +1889,244 @@
       </div>
     </footer>
     <!--end footer-->
-    <!--+popup({ name: 'thanks-popup' })-->
+    <div class="popup" data-popup-id="call-popup" tabindex="-1" role="dialog">
+      <div class="popup__container popup__container_xs">
+        <div class="popup__close js-popup-close">
+          <svg class="icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="contact-form contact-form_column contact-form_dots-1">
+          <h3 class="contact-form__title">Заказать
+            <span>звонок</span>
+          </h3>
+          <form class="contact-form__form js-form" action="#!" method="POST">
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input" type="text" name="" placeholder="Ваше имя" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-user-edit ">
+                    <use xlink:href="img/sprite.svg#icon-user-edit"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input js-tel-input" type="text" name="" placeholder="Номер телефона" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-mobile ">
+                    <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <button class="btn btn_red contact-form__submit-btn" type="submit">
+              <span>Отправить</span>
+            </button>
+          </form>
+          <div class="contact-form__dots">
+            <div class="contact-form__dots-el"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="consult-popup" tabindex="-1" role="dialog">
+      <div class="popup__container popup__container_xs">
+        <div class="popup__close js-popup-close">
+          <svg class="icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="contact-form contact-form_column contact-form_dots-1">
+          <h3 class="contact-form__title">Заказать
+            <span>консультацию</span>
+          </h3>
+          <form class="contact-form__form js-form" action="#!" method="POST">
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input" type="text" name="" placeholder="Ваше имя" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-user-edit ">
+                    <use xlink:href="img/sprite.svg#icon-user-edit"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input js-tel-input" type="text" name="" placeholder="Номер телефона" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-mobile ">
+                    <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <button class="btn btn_red contact-form__submit-btn" type="submit">
+              <span>Отправить</span>
+            </button>
+          </form>
+          <div class="contact-form__dots">
+            <div class="contact-form__dots-el"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="complex-popup" tabindex="-1" role="dialog">
+      <div class="popup__container popup__container_xs">
+        <div class="popup__close js-popup-close">
+          <svg class="icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="contact-form contact-form_column contact-form_dots-2">
+          <h3 class="contact-form__title">Заказать
+            <span>комплекс</span>
+          </h3>
+          <form class="contact-form__form js-form" action="#!" method="POST">
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input" type="text" name="" placeholder="Ваше имя" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-user-edit ">
+                    <use xlink:href="img/sprite.svg#icon-user-edit"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input" type="text" name="" placeholder="Модель, год и комплектация" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-car-side ">
+                    <use xlink:href="img/sprite.svg#icon-car-side"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input js-tel-input" type="text" name="" placeholder="Номер телефона" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-mobile ">
+                    <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                  </svg>
+                </div>
+              </label>
+              <div class="form-field__choise">или</div>
+            </div>
+            <div class="form-field contact-form__field">
+              <label>
+                <input class="form-field__input js-input" type="text" name="" placeholder="Email" required="required" />
+                <div class="form-field__icon">
+                  <svg class="icon-envelope ">
+                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <button class="btn btn_red contact-form__submit-btn" type="submit">
+              <span>Отправить</span>
+            </button>
+          </form>
+          <div class="contact-form__dots">
+            <div class="contact-form__dots-el"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="complex-message-popup" tabindex="-1" role="dialog">
+      <div class="popup__container popup__container_lg">
+        <div class="popup__close js-popup-close">
+          <svg class="icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="contact-form contact-form_complex contact-form_dots-2">
+          <h3 class="contact-form__title">Заказать
+            <span>комплекс</span>
+          </h3>
+          <form class="contact-form__form js-form" action="#!" method="POST">
+            <div class="contact-form__row row">
+              <div class="form-field contact-form__field">
+                <label>
+                  <input class="form-field__input js-input" type="text" name="" placeholder="Ваше имя" required="required" />
+                  <div class="form-field__icon">
+                    <svg class="icon-user-edit ">
+                      <use xlink:href="img/sprite.svg#icon-user-edit"></use>
+                    </svg>
+                  </div>
+                </label>
+              </div>
+              <div class="form-field contact-form__field">
+                <label>
+                  <input class="form-field__input js-input js-tel-input" type="text" name="" placeholder="Номер телефона" required="required" />
+                  <div class="form-field__icon">
+                    <svg class="icon-mobile ">
+                      <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                    </svg>
+                  </div>
+                </label>
+                <div class="form-field__choise">или</div>
+              </div>
+            </div>
+            <div class="contact-form__row row">
+              <div class="form-field contact-form__field">
+                <label>
+                  <input class="form-field__input js-input" type="text" name="" placeholder="Модель, год и комплектация" required="required" />
+                  <div class="form-field__icon">
+                    <svg class="icon-car-side ">
+                      <use xlink:href="img/sprite.svg#icon-car-side"></use>
+                    </svg>
+                  </div>
+                </label>
+              </div>
+              <div class="form-field contact-form__field contact-form__field_email">
+                <label>
+                  <input class="form-field__input js-input" type="text" name="" placeholder="Email" required="required" />
+                  <div class="form-field__icon">
+                    <svg class="icon-envelope ">
+                      <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                    </svg>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="contact-form__row row">
+              <div class="form-field form-field_message contact-form__field">
+                <textarea class="textarea" placeholder="Ваше сообщение (необязательно)"></textarea>
+                <div class="form-field__icon">
+                  <svg class="icon-comment-alt ">
+                    <use xlink:href="img/sprite.svg#icon-comment-alt"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn_red contact-form__submit-btn" type="submit">
+              <span>Отправить</span>
+            </button>
+          </form>
+          <div class="contact-form__dots">
+            <div class="contact-form__dots-el"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="thanks-popup" tabindex="-1" role="dialog">
+      <div class="popup__container popup__container_xs">
+        <div class="popup__close js-popup-close">
+          <svg class="icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="contact-form thanks-popup">
+          <h5 class="contact-form__title title">Спасибо!</h5>
+          <p>Наш менеджер свяжется с Вами в ближайшее время</p>
+          <button class="thanks-popup__btn" data-popup-target="thanks-popup" type="button"></button>
+        </div>
+      </div>
+    </div>
     <!--LOAD SCRIPTS-->
     <script src="js/app.js"></script>
   </body>
