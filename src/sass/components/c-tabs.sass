@@ -23,6 +23,7 @@
       background: #17171a url(../img/decor/noise_black.png)
       transition: .3s ease-in-out
       color: $white
+      +nosel
       &.is-active
          pointer-events: none
          background: $white
@@ -45,7 +46,7 @@
    &__tab
       display: none
       position: relative
-      padding: 13px 34px 38px 54px
+      padding: 13px 44px 38px 44px
       box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
       background-color: #ffffff
       &::before, &::after

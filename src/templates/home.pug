@@ -6,15 +6,18 @@ block variables
 block content
 
 	//begin main
-	.main
+	main.main
 
 		//begin screen
-		+b.SECTION.screen.section.noise-bg
+		+b.SECTION.screen.section._screen.noise-bg
+			.section__line.section__line_l
+			.section__line.section__line_c
+			.section__line.section__line_r
 			+e.slider-controls-wrap.container
 				+e.slider-controls.slider-controls._gray
 			+e.slider.slider.js-screen-slider
 				+e.slider-item
-					+e.bg(style='background-image: url(img/bg/screen-sld_1.jpg)')
+					+e.bg(style='background-image: url(img/bg/screen-sld_bg-1.jpg)')
 						+e.container.container
 							+e.content
 								+b.section-title._left._white._lg.screen__content-title
@@ -36,9 +39,11 @@ block content
 										type: 'b',
 										text: 'Заказать звонок',
 										classMod: '_red screen__content-btn'})
+							+e.img-wrap
+								+e.IMG(src='img/bg/screen-sld_img-1.png' alt='image')
 
 				+e.slider-item
-					+e.bg(style='background-image: url(img/bg/screen-sld_2.jpg)')
+					+e.bg(style='background-image: url(img/bg/screen-sld_bg-2.jpg)')
 						+e.container.container
 							+e.content
 								+b.section-title._left._white._lg.screen__content-title
@@ -61,22 +66,27 @@ block content
 										text: 'Консультация',
 										classMod: '_red screen__content-btn'
 									})
-			+arcDecor('1')
+							+e.img-wrap
+								+e.IMG(src='img/bg/screen-sld_img-2.png' alt='image')
 			+b.BUTTON.scroll-next-btn: +i('angle-down')
+			+arcDecor('1')
 
 		//end screen
 
-		//begin benefits
-		+b.SECTION.benefits.section
+		//begin advantages
+		+b.SECTION.advantages.section._advantages
+			.section__line.section__line_l
+			.section__line.section__line_c
+			.section__line.section__line_r
 			+e.container.container
-				+b.section-title._center._black.benefits__title
+				+b.section-title._center._black.advantages__title
 					+e.inner
 						+e.I.icon.icon-N
 						+e.H2.text
 							| Наши
 							span Преимущества
 				+e.row.row
-					+e.item
+					+e.A.item(href='#!' data-popup-target='')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Гарантия
@@ -90,7 +100,7 @@ block content
 								strong На оборудование —
 								= ' '
 								span согласно условиям производителя
-					+e.item
+					+e.A.item(href='#!' data-popup-target='')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Стоимость
@@ -100,7 +110,7 @@ block content
 							li: span Без скрытых условий
 							li: span Фактический расчет
 							li: span Отсутствие посредников
-					+e.item
+					+e.A.item(href='#!' data-popup-target='')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Техподдержка
@@ -113,7 +123,7 @@ block content
 							li: span С пониманием
 							li: span По эксплуатации и техническим вопросам
 
-					+e.item
+					+e.A.item(href='#!' data-popup-target='')
 						+e.item-decor
 						+e.item-top
 							+e.H5.item-title.title._black Скидки
@@ -124,10 +134,13 @@ block content
 							li: span Индивидуальные ситуации
 
 			+arcDecor('1', true)
-		//end benefits
+		//end advantages
 
 		//begin faq
-		+b.SECTION.faq.section.noise-bg._type-1
+		+b.SECTION.faq.section._faq.noise-bg._type-1
+			.section__line.section__line_l
+			.section__line.section__line_c
+			.section__line.section__line_r
 			+e.container.container
 				+b.section-title._left._white.faq__title
 					+e.inner
@@ -171,7 +184,8 @@ block content
 		//end faq
 
 		//begin solutions
-		+b.SECTION.solutions.section
+		+b.SECTION.solutions.section._solutions
+			.section__line.section__line_c
 			+e.container.container
 				+b.section-title._center._black.solutions__title
 					+e.inner
@@ -216,7 +230,10 @@ block content
 		//end solutions
 
 		//begin complex
-		+b.SECTION.complex.section
+		+b.SECTION.complex.section._complex
+			.section__line.section__line_l
+			.section__line.section__line_c
+			.section__line.section__line_r
 			+e.container.container
 				+b.section-title._center._black.complex__title
 					+e.inner
@@ -298,7 +315,10 @@ block content
 		//end complex
 
 		//begin config
-		+b.SECTION.config.section.noise-bg._type-2
+		+b.SECTION.config.section._config.noise-bg._type-2
+			.section__line.section__line_l
+			.section__line.section__line_c
+			.section__line.section__line_r
 			+e.container.container
 				+b.section-title._left._white.config__title
 					+e.inner
@@ -384,7 +404,8 @@ block content
 		//end config
 
 		//begin equip
-		+b.SECTION.equip.section
+		+b.SECTION.equip.section._equip
+			.section__line.section__line_c
 			+e.container.container
 				+b.section-title._center._black.equip__title
 					+e.inner
@@ -454,7 +475,10 @@ block content
 		//end equip
 
 		//begin contacts
-		+b.SECTION.contacts
+		+b.SECTION.contacts.section._contacts
+			.section__line.section__line_l
+			.section__line.section__line_c
+			.section__line.section__line_r
 			+e.container.container
 				+b.section-title._center._black.contacts__title
 					+e.inner
@@ -513,6 +537,8 @@ block content
 
 					+e.col.col
 						+e.map(data-zoom='17' data-center-lat='55.766820' data-center-lng='37.404096' data-marker-lat='55.766400' data-marker-lng='37.404096' data-marker-icon='img/other/map-marker.png')
+			+e.IMG.decor-dots._l(src='img/decor/decor-dots_3.png' alt='image')
+			+e.IMG.decor-dots._r(src='img/decor/decor-dots_4.png' alt='image')
 
 		//end contacts
 

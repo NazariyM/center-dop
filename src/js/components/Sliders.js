@@ -116,5 +116,6 @@ const solutionsSld = new Slider({
   appendArrows: '.solutions__slider-controls',
   appendDots: '.solutions__slider-controls',
   counter: true,
-  infinite: true
+  infinite: true,
+  speed: 1200
 });

@@ -75,15 +75,18 @@
     </header>
     <!--end header-->
     <!--begin main-->
-    <div class="main">
+    <main class="main">
       <!--begin screen-->
-      <section class="screen section noise-bg">
+      <section class="screen section section_screen noise-bg">
+        <div class="section__line section__line_l"></div>
+        <div class="section__line section__line_c"></div>
+        <div class="section__line section__line_r"></div>
         <div class="screen__slider-controls-wrap container">
           <div class="screen__slider-controls slider-controls slider-controls_gray"></div>
         </div>
         <div class="screen__slider slider js-screen-slider">
           <div class="screen__slider-item">
-            <div class="screen__bg" style="background-image: url(img/bg/screen-sld_1.jpg)">
+            <div class="screen__bg" style="background-image: url(img/bg/screen-sld_bg-1.jpg)">
               <div class="screen__container container">
                 <div class="screen__content">
                   <div class="section-title section-title_left section-title_white section-title_lg screen__content-title">
@@ -111,11 +114,14 @@
                     </button>
                   </div>
                 </div>
+                <div class="screen__img-wrap">
+                  <img src="img/bg/screen-sld_img-1.png" alt="image" title="" />
+                </div>
               </div>
             </div>
           </div>
           <div class="screen__slider-item">
-            <div class="screen__bg" style="background-image: url(img/bg/screen-sld_2.jpg)">
+            <div class="screen__bg" style="background-image: url(img/bg/screen-sld_bg-2.jpg)">
               <div class="screen__container container">
                 <div class="screen__content">
                   <div class="section-title section-title_left section-title_white section-title_lg screen__content-title">
@@ -143,10 +149,18 @@
                     </button>
                   </div>
                 </div>
+                <div class="screen__img-wrap">
+                  <img src="img/bg/screen-sld_img-2.png" alt="image" title="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button class="scroll-next-btn">
+          <svg class="icon-angle-down ">
+            <use xlink:href="img/sprite.svg#icon-angle-down"></use>
+          </svg>
+        </button>
         <div class="arc-decor arc-decor_color-1">
           <svg class="arc-decor__mask arc-decor__mask_top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="149" viewBox="0 0 1920 149">
             <defs>
@@ -167,17 +181,15 @@
             </g>
           </svg>
         </div>
-        <button class="scroll-next-btn">
-          <svg class="icon-angle-down ">
-            <use xlink:href="img/sprite.svg#icon-angle-down"></use>
-          </svg>
-        </button>
       </section>
       <!--end screen-->
-      <!--begin benefits-->
-      <section class="benefits section">
-        <div class="benefits__container container">
-          <div class="section-title section-title_center section-title_black benefits__title">
+      <!--begin advantages-->
+      <section class="advantages section section_advantages">
+        <div class="section__line section__line_l"></div>
+        <div class="section__line section__line_c"></div>
+        <div class="section__line section__line_r"></div>
+        <div class="advantages__container container">
+          <div class="section-title section-title_center section-title_black advantages__title">
             <div class="section-title__inner">
               <i class="section-title__icon icon-N"></i>
               <h2 class="section-title__text">Наши
@@ -185,14 +197,14 @@
               </h2>
             </div>
           </div>
-          <div class="benefits__row row">
-            <div class="benefits__item">
-              <div class="benefits__item-decor"></div>
-              <div class="benefits__item-top">
-                <h5 class="benefits__item-title title title_black">Гарантия</h5>
-                <div class="benefits__item-icon icon-certificate"></div>
-              </div>
-              <ul class="benefits__item-list list-triangled">
+          <div class="advantages__row row">
+            <a class="advantages__item" href="#!" data-popup-target="">
+              <span class="advantages__item-decor"></span>
+              <span class="advantages__item-top">
+                <h5 class="advantages__item-title title title_black">Гарантия</h5>
+                <span class="advantages__item-icon icon-certificate"></span>
+              </span>
+              <ul class="advantages__item-list list-triangled">
                 <li>
                   <strong>На работу —</strong>
                   <span>до смены владельца</span>
@@ -202,14 +214,14 @@
                   <span>согласно условиям производителя</span>
                 </li>
               </ul>
-            </div>
-            <div class="benefits__item">
-              <div class="benefits__item-decor"></div>
-              <div class="benefits__item-top">
-                <h5 class="benefits__item-title title title_black">Стоимость</h5>
-                <div class="benefits__item-icon icon-like"></div>
-              </div>
-              <ul class="benefits__item-list list-triangled">
+            </a>
+            <a class="advantages__item" href="#!" data-popup-target="">
+              <span class="advantages__item-decor"></span>
+              <span class="advantages__item-top">
+                <h5 class="advantages__item-title title title_black">Стоимость</h5>
+                <span class="advantages__item-icon icon-like"></span>
+              </span>
+              <ul class="advantages__item-list list-triangled">
                 <li>
                   <span>Боль конкурентов</span>
                 </li>
@@ -223,14 +235,14 @@
                   <span>Отсутствие посредников</span>
                 </li>
               </ul>
-            </div>
-            <div class="benefits__item">
-              <div class="benefits__item-decor"></div>
-              <div class="benefits__item-top">
-                <h5 class="benefits__item-title title title_black">Техподдержка</h5>
-                <div class="benefits__item-icon icon-wrench"></div>
-              </div>
-              <ul class="benefits__item-list list-triangled">
+            </a>
+            <a class="advantages__item" href="#!" data-popup-target="">
+              <span class="advantages__item-decor"></span>
+              <span class="advantages__item-top">
+                <h5 class="advantages__item-title title title_black">Техподдержка</h5>
+                <span class="advantages__item-icon icon-wrench"></span>
+              </span>
+              <ul class="advantages__item-list list-triangled">
                 <li>
                   <strong>24/ 7 —</strong>
                   <span>без выходных</span>
@@ -242,14 +254,14 @@
                   <span>По эксплуатации и техническим вопросам</span>
                 </li>
               </ul>
-            </div>
-            <div class="benefits__item">
-              <div class="benefits__item-decor"></div>
-              <div class="benefits__item-top">
-                <h5 class="benefits__item-title title title_black">Скидки</h5>
-                <div class="benefits__item-icon icon-discount"></div>
-              </div>
-              <ul class="benefits__item-list list-triangled">
+            </a>
+            <a class="advantages__item" href="#!" data-popup-target="">
+              <span class="advantages__item-decor"></span>
+              <span class="advantages__item-top">
+                <h5 class="advantages__item-title title title_black">Скидки</h5>
+                <span class="advantages__item-icon icon-discount"></span>
+              </span>
+              <ul class="advantages__item-list list-triangled">
                 <li>
                   <span>По рекомендации</span>
                 </li>
@@ -260,7 +272,7 @@
                   <span>Индивидуальные ситуации</span>
                 </li>
               </ul>
-            </div>
+            </a>
           </div>
         </div>
         <div class="arc-decor arc-decor_color-1">
@@ -277,9 +289,12 @@
           <div class="arc-decor__noise"></div>
         </div>
       </section>
-      <!--end benefits-->
+      <!--end advantages-->
       <!--begin faq-->
-      <section class="faq section noise-bg noise-bg_type-1">
+      <section class="faq section section_faq noise-bg noise-bg_type-1">
+        <div class="section__line section__line_l"></div>
+        <div class="section__line section__line_c"></div>
+        <div class="section__line section__line_r"></div>
         <div class="faq__container container">
           <div class="section-title section-title_left section-title_white faq__title">
             <div class="section-title__inner">
@@ -352,7 +367,8 @@
       </section>
       <!--end faq-->
       <!--begin solutions-->
-      <section class="solutions section">
+      <section class="solutions section section_solutions">
+        <div class="section__line section__line_c"></div>
         <div class="solutions__container container">
           <div class="section-title section-title_center section-title_black solutions__title">
             <div class="section-title__inner">
@@ -540,7 +556,10 @@
       </section>
       <!--end solutions-->
       <!--begin complex-->
-      <section class="complex section">
+      <section class="complex section section_complex">
+        <div class="section__line section__line_l"></div>
+        <div class="section__line section__line_c"></div>
+        <div class="section__line section__line_r"></div>
         <div class="complex__container container">
           <div class="section-title section-title_center section-title_black complex__title">
             <div class="section-title__inner">
@@ -1096,7 +1115,10 @@
       </section>
       <!--end complex-->
       <!--begin config-->
-      <section class="config section noise-bg noise-bg_type-2">
+      <section class="config section section_config noise-bg noise-bg_type-2">
+        <div class="section__line section__line_l"></div>
+        <div class="section__line section__line_c"></div>
+        <div class="section__line section__line_r"></div>
         <div class="config__container container">
           <div class="section-title section-title_left section-title_white config__title">
             <div class="section-title__inner">
@@ -1603,7 +1625,8 @@
       </section>
       <!--end config-->
       <!--begin equip-->
-      <section class="equip section">
+      <section class="equip section section_equip">
+        <div class="section__line section__line_c"></div>
         <div class="equip__container container">
           <div class="section-title section-title_center section-title_black equip__title">
             <div class="section-title__inner">
@@ -1741,7 +1764,10 @@
       </section>
       <!--end equip-->
       <!--begin contacts-->
-      <section class="contacts">
+      <section class="contacts section section_contacts">
+        <div class="section__line section__line_l"></div>
+        <div class="section__line section__line_c"></div>
+        <div class="section__line section__line_r"></div>
         <div class="contacts__container container">
           <div class="section-title section-title_center section-title_black contacts__title">
             <div class="section-title__inner">
@@ -1830,12 +1856,17 @@
             </div>
           </div>
         </div>
+        <img class="contacts__decor-dots contacts__decor-dots_l" src="img/decor/decor-dots_3.png" alt="image" title="" />
+        <img class="contacts__decor-dots contacts__decor-dots_r" src="img/decor/decor-dots_4.png" alt="image" title="" />
       </section>
       <!--end contacts-->
-    </div>
+    </main>
     <!--end main-->
     <!--begin footer-->
-    <footer class="footer">
+    <footer class="footer section section_footer">
+      <div class="section__line section__line_l"></div>
+      <div class="section__line section__line_c"></div>
+      <div class="section__line section__line_r"></div>
       <div class="footer__inner noise-bg">
         <div class="footer__container container">
           <p class="footer__text">

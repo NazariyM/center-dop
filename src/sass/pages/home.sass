@@ -5,6 +5,7 @@
       align-items: flex-end
       height: 100%
       padding-bottom: 165px
+      z-index: 1
    &__slider
       .slick-track,
       .slick-list
@@ -26,6 +27,7 @@
    &__content
       max-width: 600px
    &__content
+      +gpu
       &-title
          margin-bottom: 10px
          
@@ -46,13 +48,18 @@
             color: #d9d9d9
       &-btn
          min-width: 210px
+   &__img-wrap
+      position: absolute
+      bottom: -80px
+      right: -165px
+      z-index: 1
    &__price-block
       font-size: 36px
    
 // end screen //
 
-// *** begin benefits *** //
-.benefits
+// *** begin advantages *** //
+.advantages
    padding: 109px 0 150px
    &__title
       margin-bottom: 75px
@@ -66,8 +73,8 @@
       margin: 0 15px
       padding: 32px 33px 27px 27px
       min-height: 241px
-      //background-color: $white
-      cursor: default
+      background-color: $white
+      cursor: pointer
       &-decor
          +coverdiv
          box-shadow: 0 15px 40px rgba(26, 3, 4, 0.1)
@@ -100,7 +107,7 @@
          flex: 0 1 calc(100% - 50px)
       &-icon
          height: 34px
-// end benefits //
+// end advantages //
 
 // *** begin faq *** //
 .faq
@@ -161,10 +168,14 @@
          left: 50%
          bottom: -42px
    &__slider
+      .slick-list
+         margin: 0 -40px
       &-item
          position: relative
          +gpu
+         padding: 0 40px
          +clr
+         
       &-controls
          position: relative
          top: auto
@@ -257,6 +268,9 @@
    &__title
       left: -2px
       margin-bottom: 116px
+      &::before
+         left: calc(50% - 3px)
+         content: ''
    &__item
       $parent: &
       padding: 28px 0 21px
@@ -364,7 +378,7 @@
 
 // *** begin equip *** //
 .equip
-   padding: 110px 0 120px
+   padding: 110px 0 170px
    background-color: #ebebed
    &__container
       z-index: 3
@@ -385,12 +399,12 @@
 
 // *** begin contacts *** //
 .contacts
-   padding: 107px 0 0
+   padding: 107px 0 50px
    background-color: $white
    &__title
       margin-bottom: 70px
    &__contact-block
-      margin-bottom: 55px
+      margin-bottom: 58px
    &__col
       &:nth-child(1)
          flex: 0 1 percentage(580 / 1170)
@@ -400,4 +414,11 @@
       height: 600px
       .gmnoprint, .gm-style-cc
          display: none
+   &__decor-dots
+      position: absolute
+      bottom: 50px
+      &_l
+         left: 0
+      &_r
+         right: 0
 // end contacts //

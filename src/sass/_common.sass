@@ -35,8 +35,133 @@ body
       float: left
    
 .section
+   $parent: &
    position: relative
+   &_screen
+      z-index: 1
+   &_advantages
+      z-index: 2
+   &_faq, &_config, &_contacts
+      z-index: 3
+   &_complex
+      z-index: 2
+   &__line
+      position: absolute
+      z-index: 1
+      top: 0
+      bottom: 0
+      width: 1px
+      pointer-events: none
+      &::before, &::after
+         position: absolute
+         width: 1px
+         top: 0
+         bottom: 0
+         content: ''
+      &_l
+         left: 50%
+         margin-left: -391px
+         &::before
+            transform: translateX(-389px)
+         &::after
+            transform: translateX(-195px)
+         #{$parent}_advantages &,
+         #{$parent}_complex &,
+         #{$parent}_contacts &
+            top: -23px
+            +r(1599)
+               top: -32px
+            +md
+               top: -40px
+            &::after
+               display: none
+         #{$parent}_complex &
+            &::before
+               top: -59px!important
+            
+         #{$parent}_faq &,
+         #{$parent}_config &
+            bottom: 27px
+            &::before
+               top: -58px
+               bottom: 74px
+            &::after
+               top: -25px
+               bottom: 33px
+         
+      &_c
+         left: 50%
+         margin-left: -4px
+         &::before
+            transform: translateX(-194px)
+         &::after
+            transform: translateX(194px)
+         #{$parent}_advantages &
+            top: 15px
+            &::before, &::after
+               display: none
+         #{$parent}_complex &,
+         #{$parent}_contacts &
+            &::before, &::after
+               display: none
+         #{$parent}_solutions &,
+         #{$parent}_equip &
+            background-color: $black
+            opacity: 0.06
+            &::before, &::after
+               display: none
    
+      &_r
+         right: 50%
+         margin-right: -391px
+         &::before
+            transform: translateX(193px)
+         &::after
+            transform: translateX(390px)
+         #{$parent}_advantages &,
+         #{$parent}_complex &,
+         #{$parent}_contacts &
+            top: -23px
+            +r(1599)
+               top: -32px
+            +md
+               top: -40px
+            &::before
+               display: none
+         #{$parent}_faq &,
+         #{$parent}_config &
+            bottom: 27px
+            &::after
+               top: -58px
+               bottom: 74px
+            &::before
+               top: -25px
+               bottom: 33px
+   
+      #{$parent}_screen &,
+      #{$parent}_faq &,
+      #{$parent}_config &
+         opacity: .06
+         background: $white
+         &::before, &::after
+            background: $white
+      #{$parent}_advantages &,
+      #{$parent}_complex &,
+      #{$parent}_contacts &
+         opacity: .06
+         background: $black
+         &::before, &::after
+            background: $black
+            top: -60px
+      #{$parent}_faq &,
+      #{$parent}_config &
+         top: -22px
+      #{$parent}_footer &
+         top: 80px
+         opacity: .06
+         background: $black
+      
+
 .section-title
    $parent: &
    position: relative
@@ -206,7 +331,7 @@ strong
    &::before, &::after
       position: absolute
       z-index: 1
-      +cover
+      background-repeat: no-repeat
       content: ''
    &_type-1
       &::before
@@ -214,19 +339,23 @@ strong
          left: 0
          width: 808px
          height: 803px
-         background: url("../img/decor/tire-tracks_l.png")
+         background-image: url("../img/decor/tire-tracks_l.png")
       &::after
          top: 10.5%
          right: 0
          width: 491px
          height: 633px
-         background: url("../img/decor/tire-tracks_r.png")
+         background-image: url("../img/decor/tire-tracks_r.png")
    &_type-2
       &::before
+         left: 0
+         bottom: 22%
          width: 255px
          height: 579px
-         background: url("../img/decor/gear_l.png")
+         background-image: url("../img/decor/gear_l.png")
       &::after
+         right: 0
+         bottom: 22%
          width: 290px
          height: 579px
-         background: url("../img/decor/gear_r.png")
+         background-image: url("../img/decor/gear_r.png")
